@@ -90,7 +90,7 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
-
+	Lcd_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -100,6 +100,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		MyMain();
   }
   /* USER CODE END 3 */
 }

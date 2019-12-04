@@ -66,12 +66,12 @@ void Error_Handler(void);
 #define CS_SET_GPIO_Port GPIOC
 #define DC_SET_Pin GPIO_PIN_9
 #define DC_SET_GPIO_Port GPIOC
-#define MOSI_Pin GPIO_PIN_10
-#define MOSI_GPIO_Port GPIOC
-#define SCK_Pin GPIO_PIN_11
+#define SCK_Pin GPIO_PIN_10
 #define SCK_GPIO_Port GPIOC
-#define MISO_Pin GPIO_PIN_12
+#define MISO_Pin GPIO_PIN_11
 #define MISO_GPIO_Port GPIOC
+#define MOSI_Pin GPIO_PIN_12
+#define MOSI_GPIO_Port GPIOC
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

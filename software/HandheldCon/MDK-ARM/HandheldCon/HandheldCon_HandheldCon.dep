@@ -1,212 +1,9 @@
 Dependencies for Project 'HandheldCon', Target 'HandheldCon': (DO NOT MODIFY !)
-F (startup_stm32f407xx.s)(0x5DE76C42)(--cpu Cortex-M4.fp -g --pd "__MICROLIB SETA 1"-I.\RTE\_HandheldCon-I"D:\SoftWare\Keil MDK-ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include"-I"D:\SoftWare\Keil MDK-ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"--pd "__UVISION_VERSION SETA 527"--pd "_RTE_ SETA 1"--pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst--xref -o handheldcon\startup_stm32f407xx.o--depend handheldcon\startup_stm32f407xx.d)
-F (../Src/main.c)(0x5DE76FB0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/main.o -MD)
-I (..\Inc\main.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-I (..\Inc\spi.h)(0x5DE76FB0)
-I (..\Inc\gpio.h)(0x5DE76C3E)
-I (..\USER\MyMain.h)(0x5DE76FB0)
-I (..\USER\gui.h)(0x5D9DB7BC)
-I (..\DSP\Include\arm_math.h)(0x5DA179AE)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\math.h)(0x5C40E42A)
-F (../Src/gpio.c)(0x5DE76C3E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/gpio.o -MD)
-I (..\Inc\gpio.h)(0x5DE76C3E)
-I (..\Inc\main.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (../Src/spi.c)(0x5DE77038)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/spi.o -MD)
-I (..\Inc\spi.h)(0x5DE76FB0)
-I (..\Inc\main.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (../Src/sys.c)(0x5DE76C3F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/sys.o -MD)
-I (..\Inc\sys.h)(0x5DE76C3F)
-I (..\Inc\main.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (../Src/stm32f4xx_it.c)(0x5DE76C3F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_it.o -MD)
-I (..\Inc\main.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_it.h)(0x5DE76C3F)
-F (../Src/stm32f4xx_hal_msp.c)(0x5DE76C3F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_msp.o -MD)
-I (..\Inc\main.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (..\USER\font.c)(0x5D9DC8EE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/font.o -MD)
+F (startup_stm32f407xx.s)(0x5DE79C4F)(--cpu Cortex-M4.fp -g --pd "__MICROLIB SETA 1"-I.\RTE\_HandheldCon-I"D:\SoftWare\Keil MDK-ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include"-I"D:\SoftWare\Keil MDK-ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"--pd "__UVISION_VERSION SETA 527"--pd "_RTE_ SETA 1"--pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst--xref -o handheldcon\startup_stm32f407xx.o--depend handheldcon\startup_stm32f407xx.d)
+F (..\USER\font.c)(0x5D9DC8EE)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/font.o -MD)
 I (..\USER\font.h)(0x5DE772BB)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -235,10 +32,10 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (..\USER\gui.c)(0x5DE772D1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/gui.o -MD)
+F (..\USER\gui.c)(0x5DE772D1)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/gui.o -MD)
 I (..\USER\font.h)(0x5DE772BB)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -271,10 +68,10 @@ I (..\USER\gui.h)(0x5D9DB7BC)
 I (..\DSP\Include\arm_math.h)(0x5DA179AE)
 I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
 I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\math.h)(0x5C40E42A)
-I (..\Inc\spi.h)(0x5DE76FB0)
-I (..\Inc\main.h)(0x5DE76C3F)
+I (..\Inc\spi.h)(0x5DE79C4C)
+I (..\Inc\main.h)(0x5DE79C4D)
 I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdio.h)(0x5C40E42A)
-F (..\USER\MyMain.c)(0x5DE77010)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/mymain.o -MD)
+F (..\USER\MyMain.c)(0x5DE79BF9)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/mymain.o -MD)
 I (..\USER\MyMain.h)(0x5DE76FB0)
 I (..\USER\gui.h)(0x5D9DB7BC)
 I (..\DSP\Include\arm_math.h)(0x5DA179AE)
@@ -287,9 +84,9 @@ I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
 I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
 I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
 I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\math.h)(0x5C40E42A)
-I (..\Inc\main.h)(0x5DE76C3F)
+I (..\Inc\main.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -311,42 +108,12 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-I (..\Inc\spi.h)(0x5DE76FB0)
-I (..\Inc\gpio.h)(0x5DE76C3E)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_spi.o -MD)
+I (..\Inc\spi.h)(0x5DE79C4C)
+I (..\Inc\gpio.h)(0x5DE79C4C)
+F (../Src/main.c)(0x5DE79C4D)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/main.o -MD)
+I (..\Inc\main.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
-I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_rcc.o -MD)
-I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -375,9 +142,18 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_rcc_ex.o -MD)
+I (..\Inc\spi.h)(0x5DE79C4C)
+I (..\Inc\gpio.h)(0x5DE79C4C)
+I (..\USER\MyMain.h)(0x5DE76FB0)
+I (..\USER\gui.h)(0x5D9DB7BC)
+I (..\DSP\Include\arm_math.h)(0x5DA179AE)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\string.h)(0x5C40E42A)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\math.h)(0x5C40E42A)
+F (../Src/gpio.c)(0x5DE79C4C)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/gpio.o -MD)
+I (..\Inc\gpio.h)(0x5DE79C4C)
+I (..\Inc\main.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -406,9 +182,11 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_flash.o -MD)
+F (../Src/spi.c)(0x5DE79C4C)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/spi.o -MD)
+I (..\Inc\spi.h)(0x5DE79C4C)
+I (..\Inc\main.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -437,9 +215,11 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_flash_ex.o -MD)
+F (../Src/sys.c)(0x5DE79C4C)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/sys.o -MD)
+I (..\Inc\sys.h)(0x5DE79C4C)
+I (..\Inc\main.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -468,9 +248,10 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_flash_ramfunc.o -MD)
+F (../Src/stm32f4xx_it.c)(0x5DE79C4C)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_it.o -MD)
+I (..\Inc\main.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -499,9 +280,11 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_gpio.o -MD)
+I (..\Inc\stm32f4xx_it.h)(0x5DE79C4D)
+F (../Src/stm32f4xx_hal_msp.c)(0x5DE79C4D)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_msp.o -MD)
+I (..\Inc\main.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -530,9 +313,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_dma_ex.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_spi.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -561,9 +344,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_dma.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_rcc.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -592,9 +375,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_pwr.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_rcc_ex.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -623,9 +406,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_pwr_ex.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_flash.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -654,9 +437,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_cortex.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_flash_ex.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -685,9 +468,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_flash_ramfunc.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -716,9 +499,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_exti.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_gpio.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -747,9 +530,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_tim.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_dma_ex.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -778,9 +561,9 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x5D024DDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_tim_ex.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_dma.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
@@ -809,7 +592,224 @@ I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_H
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
-F (../Src/system_stm32f4xx.c)(0x5D024D8E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/system_stm32f4xx.o -MD)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_pwr.o -MD)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_pwr_ex.o -MD)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_cortex.o -MD)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal.o -MD)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_exti.o -MD)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_tim.o -MD)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
+F (C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x5D024DDF)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/stm32f4xx_hal_tim_ex.o -MD)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stdint.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_version.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x5D024D94)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)
+I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\stddef.h)(0x5C40E42A)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D024DDF)
+I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5D024DDF)
+F (../Src/system_stm32f4xx.c)(0x5D024D8E)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I ../DSP/Include -I ../USER-I./RTE/_HandheldCon-I"D:/SoftWare/Keil MDK-ARM/PACK/ARM/CMSIS/5.5.1/CMSIS/Core/Include"-I"D:/SoftWare/Keil MDK-ARM/PACK/Keil/STM32F4xx_DFP/2.12.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o handheldcon/system_stm32f4xx.o -MD)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D024D8D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5D024D8D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\core_cm4.h)(0x5D024D94)
@@ -822,7 +822,7 @@ I (D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\include\arm_acle.h)(0x5C48BD2A)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x5D024D94)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5D024D8E)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D024DDF)
-I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE76C3F)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x5DE79C4D)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5D024DDF)
 I (C:\Users\liu\STM32Cube\Repository\STM32Cube_FW_F4_V1.24.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5D024DDF)

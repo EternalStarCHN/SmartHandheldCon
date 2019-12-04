@@ -67,7 +67,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)
     PC11     ------> SPI3_MISO
     PC12     ------> SPI3_MOSI 
     */
-    GPIO_InitStruct.Pin = MOSI_Pin|SCK_Pin|MISO_Pin;
+    GPIO_InitStruct.Pin = SCK_Pin|MISO_Pin|MOSI_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -96,7 +96,7 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
     PC11     ------> SPI3_MISO
     PC12     ------> SPI3_MOSI 
     */
-    HAL_GPIO_DeInit(GPIOC, MOSI_Pin|SCK_Pin|MISO_Pin);
+    HAL_GPIO_DeInit(GPIOC, SCK_Pin|MISO_Pin|MOSI_Pin);
 
   /* USER CODE BEGIN SPI3_MspDeInit 1 */
 
@@ -108,7 +108,7 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
 void SPI_WriteByte(uint8_t data)
 {
 	HAL_SPI_Transmit(&hspi3,&data,1,3);
-//	while(((hspi3.Instance->SR)&SPI_FLAG_TXE)==RESET);	//绛夊緟鍙戦?佸尯绌?
+//	while(((hspi3.Instance->SR)&SPI_FLAG_TXE)==RESET);	//绛夊緟鍙�??佸尯�??
 //	(hspi3.Instance->TXDR)=data;	 												//鍙戦?佷竴涓猙yte
 //	while(((hspi3.Instance->SR)&SPI_FLAG_TXE)==RESET);	//绛夊緟鎺ユ敹瀹屼竴涓猙yte
 }
@@ -122,11 +122,11 @@ void LCD_SPI_Init()
 }
 
 /****************************************************************************
-* 鍚?    绉帮細Lcd_WriteIndex(u8 Index)
-* 鍔?    鑳斤細鍚戞恫鏅跺睆鍐欎竴涓?8浣嶆寚浠?
-* 鍏ュ彛鍙傛暟锛欼ndex   瀵勫瓨鍣ㄥ湴鍧?
-* 鍑哄彛鍙傛暟锛氭棤
-* 璇?    鏄庯細璋冪敤鍓嶉渶鍏堥?変腑鎺у埗鍣紝鍐呴儴鍑芥暟
+* �??    绉帮細Lcd_WriteIndex(u8 Index)
+* �??    鑳斤細鍚戞恫鏅跺睆鍐欎竴�??8浣嶆寚浠?
+* 鍏ュ彛鍙傛暟锛欼ndex   瀵勫瓨鍣ㄥ湴�??
+* 鍑哄彛鍙傛暟锛氭�?
+* �??    鏄庯細璋冪敤鍓嶉渶鍏�??変腑鎺у埗鍣紝鍐呴儴鍑芥�?
 ****************************************************************************/
 void Lcd_WriteIndex(uint8_t Index)
 {
@@ -137,11 +137,11 @@ void Lcd_WriteIndex(uint8_t Index)
 }
 
 /****************************************************************************
-* 鍚?    绉帮細Lcd_WriteData(u8 Data)
-* 鍔?    鑳斤細鍚戞恫鏅跺睆鍐欎竴涓?8浣嶆暟鎹?
-* 鍏ュ彛鍙傛暟锛歞at     瀵勫瓨鍣ㄦ暟鎹?
-* 鍑哄彛鍙傛暟锛氭棤
-* 璇?    鏄庯細鍚戞帶鍒跺櫒鎸囧畾鍦板潃鍐欏叆鏁版嵁锛屽唴閮ㄥ嚱鏁?
+* �??    绉帮細Lcd_WriteData(u8 Data)
+* �??    鑳斤細鍚戞恫鏅跺睆鍐欎竴�??8浣嶆暟鎹?
+* 鍏ュ彛鍙傛暟锛歞at     瀵勫瓨鍣ㄦ暟�??
+* 鍑哄彛鍙傛暟锛氭�?
+* �??    鏄庯細鍚戞帶鍒跺櫒鎸囧畾鍦板潃鍐欏叆鏁版嵁锛屽唴閮ㄥ嚱鏁?
 ****************************************************************************/
 void Lcd_WriteData(uint8_t Data)
 {
@@ -152,11 +152,11 @@ void Lcd_WriteData(uint8_t Data)
 }
 
 /****************************************************************************
-* 鍚?    绉帮細void LCD_WriteReg(u8 Index,u16 Data)
-* 鍔?    鑳斤細鍐欏瘎瀛樺櫒鏁版嵁
+* �??    绉帮細void LCD_WriteReg(u8 Index,u16 Data)
+* �??    鑳斤細鍐欏瘎瀛樺櫒鏁版嵁
 * 鍏ュ彛鍙傛暟锛欼ndex,Data
-* 鍑哄彛鍙傛暟锛氭棤
-* 璇?    鏄庯細鏈嚱鏁颁负缁勫悎鍑芥暟锛屽悜Index鍦板潃鐨勫瘎瀛樺櫒鍐欏叆Data鍊?
+* 鍑哄彛鍙傛暟锛氭�?
+* �??    鏄庯細鏈�?嚱鏁颁负缁勫悎鍑芥暟锛屽悜Index鍦板潃鐨勫瘎瀛樺櫒鍐欏叆Data�??
 ****************************************************************************/
 void LCD_WriteReg(uint8_t Index,uint16_t Data)
 {
@@ -165,11 +165,11 @@ void LCD_WriteReg(uint8_t Index,uint16_t Data)
 }
 
 /****************************************************************************
-* 鍚?    绉帮細void Lcd_WriteData_16Bit(u16 Data)
-* 鍔?    鑳斤細鍚戞恫鏅跺睆鍐欎竴涓?16浣嶆暟鎹?
+* �??    绉帮細void Lcd_WriteData_16Bit(u16 Data)
+* �??    鑳斤細鍚戞恫鏅跺睆鍐欎竴�??16浣嶆暟鎹?
 * 鍏ュ彛鍙傛暟锛欴ata
-* 鍑哄彛鍙傛暟锛氭棤
-* 璇?    鏄庯細鍚戞帶鍒跺櫒鎸囧畾鍦板潃鍐欏叆涓?涓?16浣嶆暟鎹?
+* 鍑哄彛鍙傛暟锛氭�?
+* �??    鏄庯細鍚戞帶鍒跺櫒鎸囧畾鍦板潃鍐欏叆�??�??16浣嶆暟鎹?
 ****************************************************************************/
 void Lcd_WriteData_16Bit(uint16_t Data)
 {
@@ -178,11 +178,11 @@ void Lcd_WriteData_16Bit(uint16_t Data)
 }
 
 /****************************************************************************
-* 鍚?    绉帮細void Lcd_Reset(void)
-* 鍔?    鑳斤細娑叉櫠纭浣嶅嚱鏁?
-* 鍏ュ彛鍙傛暟锛氭棤
-* 鍑哄彛鍙傛暟锛氭棤
-* 璇?    鏄庯細娑叉櫠鍒濆鍖栧墠闇?鎵ц涓?娆″浣嶆搷浣?
+* �??    绉帮細void Lcd_Reset(void)
+* �??    鑳斤細娑叉櫠纭浣嶅嚱�??
+* 鍏ュ彛鍙傛暟锛氭�?
+* 鍑哄彛鍙傛暟锛氭�?
+* �??    鏄庯細娑叉櫠鍒濆鍖栧墠�??鎵ц�??娆�?�浣嶆搷浣?
 ****************************************************************************/
 void Lcd_Reset(void)
 {
@@ -192,11 +192,11 @@ void Lcd_Reset(void)
 	HAL_Delay(50);
 }
 /****************************************************************************
-* 鍚?    绉帮細void Lcd_Init(void)
-* 鍔?    鑳斤細娑叉櫠鍒濆鍖栧嚱鏁?
-* 鍏ュ彛鍙傛暟锛氭棤
-* 鍑哄彛鍙傛暟锛氭棤
-* 璇?    鏄庯細娑叉櫠鍒濆鍖朹ILI9225_176X220
+* �??    绉帮細void Lcd_Init(void)
+* �??    鑳斤細娑叉櫠鍒濆鍖栧嚱�??
+* 鍏ュ彛鍙傛暟锛氭�?
+* 鍑哄彛鍙傛暟锛氭�?
+* �??    鏄庯細娑叉櫠鍒濆鍖朹ILI9225_176X220
 ****************************************************************************/
 void Lcd_Init(void)
 {
@@ -239,7 +239,7 @@ void Lcd_Init(void)
 	Lcd_WriteData(0x10);   		//SAP[2:0];BT[3:0]
 
 	Lcd_WriteIndex(0xC5);    	//VCM control
-	Lcd_WriteData(0x3e); 			//瀵规瘮搴﹁皟鑺?
+	Lcd_WriteData(0x3e); 			//瀵规瘮搴﹁皟�??
 	Lcd_WriteData(0x28);
 
 	Lcd_WriteIndex(0xC7);    	//VCM control2
@@ -247,7 +247,7 @@ void Lcd_Init(void)
 
 	Lcd_WriteIndex(0x36);    	// Memory Access Control
 #ifdef USE_HORIZONTAL
-	Lcd_WriteData(0xE8); 			//C8	   //48 68绔栧睆//28 E8 妯睆
+	Lcd_WriteData(0xE8); 			//C8	   //48 68绔栧�?//28 E8 妯�?
 #else
 	Lcd_WriteData(0x48);
 #endif
@@ -314,9 +314,9 @@ void Lcd_Init(void)
 
 /*************************************************
 鍑芥暟鍚嶏細LCD_Set_XY
-鍔熻兘锛氳缃甽cd鏄剧ず璧峰鐐?
-鍏ュ彛鍙傛暟锛歺y鍧愭爣
-杩斿洖鍊硷細鏃?
+鍔熻兘锛氳缃甽cd鏄剧ず璧峰�??
+鍏ュ彛鍙傛暟锛歺y鍧愭�?
+杩斿洖鍊硷細�??
 *************************************************/
 void Lcd_SetXY(uint16_t Xpos, uint16_t Ypos)
 {
@@ -328,11 +328,11 @@ void Lcd_SetXY(uint16_t Xpos, uint16_t Ypos)
 }
 /*************************************************
 鍑芥暟鍚嶏細LCD_Set_Region
-鍔熻兘锛氳缃甽cd鏄剧ず鍖哄煙锛屽湪姝ゅ尯鍩熷啓鐐规暟鎹嚜鍔ㄦ崲琛?
-鍏ュ彛鍙傛暟锛歺y璧风偣鍜岀粓鐐?
-杩斿洖鍊硷細鏃?
+鍔熻兘锛氳缃甽cd鏄剧ず鍖哄煙锛屽湪姝ゅ尯鍩熷啓鐐规暟鎹嚜鍔ㄦ崲�??
+鍏ュ彛鍙傛暟锛歺y璧风偣鍜�?粓鐐?
+杩斿洖鍊硷細�??
 *************************************************/
-//璁剧疆鏄剧ず绐楀彛
+//璁剧疆鏄剧ず绐楀�?
 void Lcd_SetRegion(uint16_t xStar, uint16_t yStar,uint16_t xEnd,uint16_t yEnd)
 {
 	Lcd_WriteIndex(0x2a);
@@ -347,22 +347,21 @@ void Lcd_SetRegion(uint16_t xStar, uint16_t yStar,uint16_t xEnd,uint16_t yEnd)
 
 /*************************************************
 鍑芥暟鍚嶏細LCD_DrawPoint
-鍔熻兘锛氱敾涓?涓偣
+鍔熻兘锛氱敾�??涓�?
 鍏ュ彛鍙傛暟锛歺y鍧愭爣鍜岄鑹叉暟鎹?
-杩斿洖鍊硷細鏃?
+杩斿洖鍊硷細�??
 *************************************************/
 void Gui_DrawPoint(uint16_t x,uint16_t y,uint16_t Data)
 {
 	Lcd_SetXY(x,y);
 	Lcd_WriteData_16Bit(Data);
-
 }
 
 /*************************************************
 鍑芥暟鍚嶏細Lcd_Clear
-鍔熻兘锛氬叏灞忔竻灞忓嚱鏁?
+鍔熻兘锛氬叏灞忔竻灞忓嚱�??
 鍏ュ彛鍙傛暟锛氬～鍏呴鑹睠OLOR
-杩斿洖鍊硷細鏃?
+杩斿洖鍊硷細�??
 *************************************************/
 void Lcd_Clear(uint16_t Color)
 {

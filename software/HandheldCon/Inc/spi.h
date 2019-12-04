@@ -35,7 +35,7 @@ extern SPI_HandleTypeDef hspi3;
 /* USER CODE BEGIN Private defines */
 #define LCD_X_SIZE	        240
 #define LCD_Y_SIZE	        320
-//瀹氫箟鏄惁浣跨敤妯睆 		0,涓嶄娇锟???.1,浣跨敤
+//瀹氫箟鏄惁浣跨敤妯睆 		0,涓嶄娇锟???.1,浣跨�?
 #define USE_HORIZONTAL  		1
 #ifdef USE_HORIZONTAL
 #define X_MAX_PIXEL	        LCD_Y_SIZE
@@ -51,19 +51,19 @@ extern SPI_HandleTypeDef hspi3;
 #define WHITE		0xFFFF
 #define BLACK		0x0000
 #define YELLOW  0xFFE0
-#define GRAY0   0xEF7D   		//鐏拌壊0  00110 001011 00101
-#define GRAY1   0x8410      //鐏拌壊1  00000 000000 00000
-#define GRAY2   0x4208      //鐏拌壊2  11111 111110 11111C
+#define GRAY0   0xEF7D   		//鐏拌�?0  00110 001011 00101
+#define GRAY1   0x8410      //鐏拌�?1  00000 000000 00000
+#define GRAY2   0x4208      //鐏拌�?2  11111 111110 11111C
 
 //娑叉櫠鎺у埗鍙ｇ疆1鎿嶄綔璇彞瀹忓畾锟???
 #define	LCD_CS_SET  	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_SET);
 #define	LCD_DC_SET  	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9, GPIO_PIN_SET);
-#define	LCD_RST_SET  	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_12, GPIO_PIN_SET);
+#define	LCD_RST_SET  	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_SET);
 
 //娑叉櫠鎺у埗鍙ｇ疆0鎿嶄綔璇彞瀹忓畾锟???
 #define	LCD_CS_CLR  	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_RESET);
 #define	LCD_DC_CLR  	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9, GPIO_PIN_RESET);
-#define	LCD_RST_CLR  	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_12, GPIO_PIN_RESET);
+#define	LCD_RST_CLR  	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_RESET);
 
 #define SPI_SPEED_SET(SPIHandle,SPIScale)	do{(SPIHandle.Instance->CR1)&=0xFFC7;(SPIHandle.Instance->CR1)|=SPIScale;}while(0);
 /* USER CODE END Private defines */
