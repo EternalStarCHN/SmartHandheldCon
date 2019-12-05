@@ -64,8 +64,39 @@ void Error_Handler(void);
 #define RST_GPIO_Port GPIOC
 #define CS_Pin GPIO_PIN_5
 #define CS_GPIO_Port GPIOC
-#define LED_Pin GPIO_PIN_15
+#define LED_Pin GPIO_PIN_0
 #define LED_GPIO_Port GPIOB
+#define LightControl_Pin GPIO_PIN_12
+#define LightControl_GPIO_Port GPIOC
+#define LightControl_EXTI_IRQn EXTI15_10_IRQn
+#define Confirm_Pin GPIO_PIN_0
+#define Confirm_GPIO_Port GPIOD
+#define Confirm_EXTI_IRQn EXTI0_IRQn
+#define Return_Pin GPIO_PIN_1
+#define Return_GPIO_Port GPIOD
+#define Return_EXTI_IRQn EXTI1_IRQn
+#define Up_Pin GPIO_PIN_2
+#define Up_GPIO_Port GPIOD
+#define Up_EXTI_IRQn EXTI2_IRQn
+#define Down_Pin GPIO_PIN_3
+#define Down_GPIO_Port GPIOD
+#define Down_EXTI_IRQn EXTI3_IRQn
+#define Left_Pin GPIO_PIN_4
+#define Left_GPIO_Port GPIOD
+#define Left_EXTI_IRQn EXTI4_IRQn
+#define Right_Pin GPIO_PIN_5
+#define Right_GPIO_Port GPIOD
+#define Right_EXTI_IRQn EXTI9_5_IRQn
+#define Led_Red_Pin GPIO_PIN_10
+#define Led_Red_GPIO_Port GPIOG
+#define Led_Yellow_Pin GPIO_PIN_11
+#define Led_Yellow_GPIO_Port GPIOG
+#define Led_Blue_Pin GPIO_PIN_12
+#define Led_Blue_GPIO_Port GPIOG
+#define Led_Green_Pin GPIO_PIN_13
+#define Led_Green_GPIO_Port GPIOG
+#define Buzzer_Pin GPIO_PIN_14
+#define Buzzer_GPIO_Port GPIOG
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

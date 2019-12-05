@@ -11,8 +11,8 @@ void User_main(void)
 	Lcd_Clear(WHITE);
 	while(1)
 	{
-		//Lcd_Clear(BLUE);
-		Gui_DrawFont_GBK16(50,5,RED,WHITE,"<Beef Cake System>");
+		LCD_DrawSqure(100,100,100,100,BLUE);
+		//Gui_DrawFont_GBK24(100,5,RED,WHITE,"<HandheldCon>");
 	}
 }
 

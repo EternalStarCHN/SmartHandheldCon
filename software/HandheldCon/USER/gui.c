@@ -382,4 +382,10 @@ void LCD_OUTPUT_Float(uint16_t LineX, uint16_t LineY, char *string,float32_t str
 	Gui_DrawFont_GBK16(LineX, LineY, BLACK, WHITE, tmp);
 }
 
+void LCD_DrawSqure(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t color){
+	int i = 0;
+	if((x+width)>320||(y+length)>240) return;
+	for(i=0;i<length;i++)
+	Gui_DrawLine(x,  y+i, x+width, y+i, color);
+}
 
