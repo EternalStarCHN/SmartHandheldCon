@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "MyMain.h"
+#include "User_main.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -88,19 +88,20 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_SPI3_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 	Lcd_Init();
+	Lcd_Clear(WHITE);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+		User_main();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		MyMain();
   }
   /* USER CODE END 3 */
 }

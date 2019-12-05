@@ -1,15 +1,11 @@
-#include "font.h"
-#include "gui.h"
 #include "spi.h"
+#include "gui.h"
+#include "font.h"
 #include <stdio.h>
-//ï¿½ï¿½ILI93xxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªGBRï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ÎªRGBï¿½ï¿½Ê½ï¿½ï¿½
-//Í¨ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½×ªï¿½ï¿½
-//c:GBRï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½É«Öµ
-//ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½RGBï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½É«Öµ
-uint16_t Adc_table[2048];
-float FFT_table[2048];
-int LastX_Wave=0,LastY_Wave=70;
-int LastX_FFT=20,LastY_FFT=200;
+//´ÓILI93xx¶Á³öµÄÊý¾ÝÎªGBR¸ñÊ½£¬¶øÎÒÃÇÐ´ÈëµÄÊ±ºòÎªRGB¸ñÊ½¡£
+//Í¨¹ý¸Ãº¯Êý×ª»»
+//c:GBR¸ñÊ½µÄÑÕÉ«Öµ
+//·µ»ØÖµ£ºRGB¸ñÊ½µÄÑÕÉ«Öµ
 uint16_t LCD_BGR2RGB(uint16_t c)
 {
   uint16_t r,g,b,rgb;   
@@ -22,7 +18,7 @@ uint16_t LCD_BGR2RGB(uint16_t c)
 }
 
 void Gui_Circle(uint16_t X,uint16_t Y,uint16_t R,uint16_t fc) 
-{//Bresenhamï¿½ã·¨ 
+{//BresenhamËã·¨ 
     uint16_t a,b; 
     int32_t c; 
     a=0; 
@@ -60,7 +56,7 @@ void Gui_Circle(uint16_t X,uint16_t Y,uint16_t R,uint16_t fc)
     } 
 	
 } 
-//ï¿½ï¿½ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Bresenham ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨
+//»­Ïßº¯Êý£¬Ê¹ÓÃBresenham »­ÏßËã·¨
 void Gui_DrawLine(uint16_t x0, uint16_t y0,uint16_t x1, uint16_t y1,uint16_t Color)   
 {
 int32_t dx,         // difference in x's
@@ -74,8 +70,8 @@ int32_t dx,         // difference in x's
 
 
 	Lcd_SetXY(x0,y0);
-	dx = x1-x0;				//ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½
-	dy = y1-y0;				//ï¿½ï¿½ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½
+	dx = x1-x0;				//¼ÆËãx¾àÀë
+	dy = y1-y0;				//¼ÆËãy¾àÀë
 
 	if (dx>=0)
 	{
@@ -99,37 +95,37 @@ int32_t dx,         // difference in x's
 
 	dx2 = dx << 1;
 	dy2 = dy << 1;
-	//xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½yï¿½ï¿½ï¿½ë£¬ï¿½ï¿½Ã´Ã¿ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ã£¬Ã¿ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¸ï¿½ï¿½ï¿½
-	//ï¿½ï¿½ï¿½ßµÄµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ë£¬ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//x¾àÀë´óÓÚy¾àÀë£¬ÄÇÃ´Ã¿¸öxÖáÉÏÖ»ÓÐÒ»¸öµã£¬Ã¿¸öyÖáÉÏÓÐÈô¸É¸öµã
+	//ÇÒÏßµÄµãÊýµÈÓÚx¾àÀë£¬ÒÔxÖáµÝÔö»­µã
 	if (dx > dy)
 	{
 		// initialize error term
 		error = dy2 - dx; 
 
 		// draw the line
-		for (index=0; index <= dx; index++)//Òªï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á³¬ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½
+		for (index=0; index <= dx; index++)//Òª»­µÄµãÊý²»»á³¬¹ýx¾àÀë
 		{
-			//ï¿½ï¿½ï¿½ï¿½
+			//»­µã
 			Gui_DrawPoint(x0,y0,Color);
 			
 			// test if error has overflowed
-			if (error >= 0) //ï¿½Ç·ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½Öµ
+			if (error >= 0) //ÊÇ·ñÐèÒªÔö¼Óy×ø±êÖµ
 			{
 				error-=dx2;
 
 				// move to next line
-				y0+=y_inc;//ï¿½ï¿½ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½Öµ
+				y0+=y_inc;//Ôö¼Óy×ø±êÖµ
 			} // end if error overflowed
 
 			// adjust the error term
 			error+=dy2;
 
 			// move to the next pixel
-			x0+=x_inc;//xï¿½ï¿½ï¿½ï¿½ÖµÃ¿ï¿½Î»ï¿½ï¿½ï¿½ó¶¼µï¿½ï¿½ï¿½1
+			x0+=x_inc;//x×ø±êÖµÃ¿´Î»­µãºó¶¼µÝÔö1
 		} // end for
 	} // end if |slope| <= 1
-	//yï¿½ï¿½ï¿½ï¿½ï¿½xï¿½á£¬ï¿½ï¿½Ã¿ï¿½ï¿½yï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ã£¬xï¿½ï¿½ï¿½ï¿½ï¿½É¸ï¿½ï¿½ï¿½
-	//ï¿½ï¿½yï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//yÖá´óÓÚxÖá£¬ÔòÃ¿¸öyÖáÉÏÖ»ÓÐÒ»¸öµã£¬xÖáÈô¸É¸öµã
+	//ÒÔyÖáÎªµÝÔö»­µã
 	else
 	{
 		// initialize error term
@@ -193,9 +189,9 @@ void Gui_box2(uint16_t x,uint16_t y,uint16_t w,uint16_t h, uint8_t mode)
 
 
 /**************************************************************************************
-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½Ê¾Ò»Í¹ï¿½ï¿½Ä°ï¿½Å¥ï¿½ï¿½
-ï¿½ï¿½    ï¿½ï¿½: u16 x1,y1,x2,y2 ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Çºï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½
-ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½
+¹¦ÄÜÃèÊö: ÔÚÆÁÄ»ÏÔÊ¾Ò»Í¹ÆðµÄ°´Å¥¿ò
+Êä    Èë: u16 x1,y1,x2,y2 °´Å¥¿ò×óÉÏ½ÇºÍÓÒÏÂ½Ç×ø±ê
+Êä    ³ö: ÎÞ
 **************************************************************************************/
 void DisplayButtonDown(uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2)
 {
@@ -208,9 +204,9 @@ void DisplayButtonDown(uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2)
 }
 
 /**************************************************************************************
-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½Ê¾Ò»ï¿½ï¿½ï¿½ÂµÄ°ï¿½Å¥ï¿½ï¿½
-ï¿½ï¿½    ï¿½ï¿½: u16 x1,y1,x2,y2 ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Çºï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½
-ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½
+¹¦ÄÜÃèÊö: ÔÚÆÁÄ»ÏÔÊ¾Ò»°¼ÏÂµÄ°´Å¥¿ò
+Êä    Èë: u16 x1,y1,x2,y2 °´Å¥¿ò×óÉÏ½ÇºÍÓÒÏÂ½Ç×ø±ê
+Êä    ³ö: ÎÞ
 **************************************************************************************/
 void DisplayButtonUp(uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2)
 {
@@ -386,61 +382,4 @@ void LCD_OUTPUT_Float(uint16_t LineX, uint16_t LineY, char *string,float32_t str
 	Gui_DrawFont_GBK16(LineX, LineY, BLACK, WHITE, tmp);
 }
 
-void LCD_OUTPUT_Wave(void)
-{
-//		User_AdcStartBlokingMode(Adc_table,2048);
-		for(uint16_t counter = 0;counter < 2048;counter ++)
-		{
-			//printf("%f\r\n",(109*(3.3*Adc_table[counter]/4095)-100));
-			if(counter<2040)
-			{
-			if(counter%12==0)
-			{
-				int temp;
-				temp=counter/6;
-				Gui_DrawLine(LastX_Wave,LastY_Wave,temp,(int)(80*(3.3*Adc_table[counter]/4095)+70) ,RED);
-				LastX_Wave=temp;
-				LastY_Wave=(80*(3.3*Adc_table[counter]/4095)+70);
-				HAL_Delay(10);
-			}
-			}
-			else
-			{
-				//HAL_Delay(1000);
-				LastX_Wave=0;
-				LastY_Wave=70;
-				Lcd_Clear(WHITE);
-				
-			}
-		}
-}
-void LCD_OUTPUT_FFT(void)
-{
-	
-//	User_FastRfft2048BlokingMode(FFT_table);
-	//User_AdcStartBlokingMode(Adc_table,2048);
-	for(uint16_t counter = 1;counter < 1024;counter ++)
-	{
-			if(counter<1020)
-			{
-			if(counter%4==0)
-			{
-				int temp;
-				temp=20+(counter/4);
-				Gui_DrawLine(LastX_FFT,LastY_FFT,temp,200-((int)((FFT_table[counter])/2)) ,BLACK);
-				LastX_FFT=temp;
-				LastY_FFT=200-((FFT_table[counter])/35);
-				HAL_Delay(10);
-			}
-			}
-			else
-			{
-				HAL_Delay(1000);
-				LastX_FFT=20;
-				LastY_FFT=200;
-				Lcd_Clear(WHITE);
-				
-			}
-	}
-}
 

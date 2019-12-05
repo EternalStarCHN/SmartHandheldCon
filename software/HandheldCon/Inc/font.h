@@ -4,7 +4,6 @@
  extern "C" {
 #endif
 
-
 #include "stm32f4xx_hal.h"
 
 #define USE_ONCHIP_FLASH_FONT 1
