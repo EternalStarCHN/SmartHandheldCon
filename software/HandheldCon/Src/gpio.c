@@ -139,12 +139,9 @@ void MX_GPIO_Init(void)
 /* USER CODE BEGIN 2 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	if(GPIO_Pin == Confirm_Pin){
-		HAL_Delay(20);
-    if(!HAL_GPIO_ReadPin(Confirm_GPIO_Port,Confirm_Pin))
-			{
-			}
+
 	}
-	if(GPIO_Pin == Return_Pin){
+	if(GPIO_Pin == Menu_Pin){
 		
 	}	
 	if(GPIO_Pin == Up_Pin){
@@ -161,6 +158,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	}	
 	if(GPIO_Pin == LightControl_Pin){
 			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+	}	
+	if(GPIO_Pin == Return_Pin){
+		
 	}	
 }
 /* USER CODE END 2 */
