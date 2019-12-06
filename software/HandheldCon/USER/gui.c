@@ -56,6 +56,7 @@ void Gui_Circle(uint16_t X,uint16_t Y,uint16_t R,uint16_t fc)
     } 
 	
 } 
+
 //画线函数，使用Bresenham 画线算法
 void Gui_DrawLine(uint16_t x0, uint16_t y0,uint16_t x1, uint16_t y1,uint16_t Color)   
 {
@@ -385,7 +386,33 @@ void LCD_OUTPUT_Float(uint16_t LineX, uint16_t LineY, char *string,float32_t str
 void LCD_DrawSqure(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t color){
 	int i = 0;
 	if((x+width)>320||(y+length)>240) return;
-	for(i=0;i<length;i++)
-	Gui_DrawLine(x,  y+i, x+width, y+i, color);
+	for(i=0;i<length+1;i++)
+	Gui_DrawLine( x,  y+i, x+width, y+i, color);
 }
 
+void LCD_DrawSqure1(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t border_color,uint16_t internal_color){
+	int i = 0;
+	if((x+width)>320||(y+length)>240) return;
+	Gui_DrawLine( x,  y, x+width, y, border_color);
+	for(i=1;i<length;i++){
+		Gui_DrawPoint( x, y+i, border_color);
+		Gui_DrawLine( x+1,  y+i, x+width-1, y+i, internal_color);
+		Gui_DrawPoint( x+width, y+i, border_color);		
+	}
+	Gui_DrawLine( x,  y+length, x+width, y+length, border_color);
+}
+
+void LCD_DrawFullCircle(uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint16_t color)
+{
+	uint16_t x,y,r=Radius;
+	for(y=Ypos - r;y<Ypos +r;y++)
+		{
+			for(x=Xpos - r;x<Xpos+r;x++)
+				{
+					if(((x-Xpos)*(x-Xpos)+(y-Ypos)*(y-Ypos)) <= r*r)
+						{
+							Gui_DrawPoint(x,y,color);
+						}
+				}
+		}
+}
