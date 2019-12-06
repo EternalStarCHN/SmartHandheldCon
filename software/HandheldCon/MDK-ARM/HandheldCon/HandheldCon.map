@@ -1292,10 +1292,14 @@ Removing Unused input sections from the image.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 482 unused section(s) (total 22333 bytes) removed from the image.
 =======
 485 unused section(s) (total 22746 bytes) removed from the image.
 >>>>>>> 9a7cc34404a4a0d29df8a4cba4d7e5dae7b38d0f
+=======
+480 unused section(s) (total 22322 bytes) removed from the image.
+>>>>>>> parent of 9a7cc34... Ver1.0
 =======
 480 unused section(s) (total 22322 bytes) removed from the image.
 >>>>>>> parent of 9a7cc34... Ver1.0
@@ -1471,6 +1475,7 @@ Image Symbol Table
     [Anonymous Symbol]                       0x080002d2   Section        0  stm32f4xx_it.o(.text.EXTI9_5_IRQHandler)
     [Anonymous Symbol]                       0x080002d8   Section        0  main.o(.text.Error_Handler)
 <<<<<<< HEAD
+<<<<<<< HEAD
     [Anonymous Symbol]                       0x080002da   Section        0  spi.o(.text.Gui_DrawPoint)
     [Anonymous Symbol]                       0x080002f4   Section        0  stm32f4xx_hal.o(.text.HAL_Delay)
     [Anonymous Symbol]                       0x0800031c   Section        0  gpio.o(.text.HAL_GPIO_EXTI_Callback)
@@ -1525,6 +1530,8 @@ Image Symbol Table
     i.__scatterload_zeroinit                 0x08001656   Section       14  handlers.o(i.__scatterload_zeroinit)
 >>>>>>> 9a7cc34404a4a0d29df8a4cba4d7e5dae7b38d0f
 =======
+=======
+>>>>>>> parent of 9a7cc34... Ver1.0
     [Anonymous Symbol]                       0x080002dc   Section        0  gui.o(.text.Gui_DrawLine)
     [Anonymous Symbol]                       0x080003a2   Section        0  spi.o(.text.Gui_DrawPoint)
     [Anonymous Symbol]                       0x080003bc   Section        0  stm32f4xx_hal.o(.text.HAL_Delay)
@@ -1578,6 +1585,9 @@ Image Symbol Table
     i.__scatterload_copy                     0x080016e6   Section       14  handlers.o(i.__scatterload_copy)
     i.__scatterload_null                     0x080016f4   Section        2  handlers.o(i.__scatterload_null)
     i.__scatterload_zeroinit                 0x080016f6   Section       14  handlers.o(i.__scatterload_zeroinit)
+<<<<<<< HEAD
+>>>>>>> parent of 9a7cc34... Ver1.0
+=======
 >>>>>>> parent of 9a7cc34... Ver1.0
     STACK                                    0x20000070   Section     1024  startup_stm32f407xx.o(STACK)
 
@@ -1804,6 +1814,7 @@ Image Symbol Table
     EXTI9_5_IRQHandler                       0x080002d3   Thumb Code     6  stm32f4xx_it.o(.text.EXTI9_5_IRQHandler)
     Error_Handler                            0x080002d9   Thumb Code     2  main.o(.text.Error_Handler)
 <<<<<<< HEAD
+<<<<<<< HEAD
     Gui_DrawPoint                            0x080002db   Thumb Code    24  spi.o(.text.Gui_DrawPoint)
     HAL_Delay                                0x080002f5   Thumb Code    40  stm32f4xx_hal.o(.text.HAL_Delay)
     HAL_GPIO_EXTI_Callback                   0x0800031d   Thumb Code    56  gpio.o(.text.HAL_GPIO_EXTI_Callback)
@@ -1857,6 +1868,8 @@ Image Symbol Table
     Region$$Table$$Limit                     0x08001694   Number         0  anon$$obj.o(Region$$Table)
 >>>>>>> 9a7cc34404a4a0d29df8a4cba4d7e5dae7b38d0f
 =======
+=======
+>>>>>>> parent of 9a7cc34... Ver1.0
     Gui_DrawLine                             0x080002dd   Thumb Code   198  gui.o(.text.Gui_DrawLine)
     Gui_DrawPoint                            0x080003a3   Thumb Code    24  spi.o(.text.Gui_DrawPoint)
     HAL_Delay                                0x080003bd   Thumb Code    40  stm32f4xx_hal.o(.text.HAL_Delay)
@@ -1909,6 +1922,9 @@ Image Symbol Table
     AHBPrescTable                            0x08001704   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
     Region$$Table$$Base                      0x08001714   Number         0  anon$$obj.o(Region$$Table)
     Region$$Table$$Limit                     0x08001734   Number         0  anon$$obj.o(Region$$Table)
+<<<<<<< HEAD
+>>>>>>> parent of 9a7cc34... Ver1.0
+=======
 >>>>>>> parent of 9a7cc34... Ver1.0
     SystemCoreClock                          0x20000000   Data           4  system_stm32f4xx.o(.data.SystemCoreClock)
     uwTickFreq                               0x20000004   Data           1  stm32f4xx_hal.o(.data.uwTickFreq)
@@ -1928,6 +1944,7 @@ Memory Map of the image
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001738, Max: 0x00100000, ABSOLUTE)
 
     Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001728, Max: 0x00100000, ABSOLUTE)
@@ -1941,10 +1958,16 @@ Memory Map of the image
 
     Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001734, Max: 0x00100000, ABSOLUTE)
 >>>>>>> parent of 9a7cc34... Ver1.0
+=======
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001748, Max: 0x00100000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001734, Max: 0x00100000, ABSOLUTE)
+>>>>>>> parent of 9a7cc34... Ver1.0
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000188   Data   RO            3    RESET               startup_stm32f407xx.o
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     0x08000188   0x08000188   0x00000000   Code   RO          722  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
@@ -2059,6 +2082,8 @@ Memory Map of the image
     0x08000198   0x08000198   0x00000000   Code   RO         1006    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
     0x08000198   0x08000198   0x00000004   Code   RO          995    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
 =======
+=======
+>>>>>>> parent of 9a7cc34... Ver1.0
     0x08000188   0x08000188   0x00000000   Code   RO          720  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
     0x08000188   0x08000188   0x00000004   Code   RO          990    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
     0x0800018c   0x0800018c   0x00000004   Code   RO          993    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
@@ -2068,6 +2093,9 @@ Memory Map of the image
     0x08000198   0x08000198   0x00000000   Code   RO         1000    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
     0x08000198   0x08000198   0x00000000   Code   RO         1002    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
     0x08000198   0x08000198   0x00000004   Code   RO          991    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+<<<<<<< HEAD
+>>>>>>> parent of 9a7cc34... Ver1.0
+=======
 >>>>>>> parent of 9a7cc34... Ver1.0
     0x0800019c   0x0800019c   0x00000024   Code   RO            4    .text               startup_stm32f407xx.o
     0x080001c0   0x080001c0   0x00000062   Code   RO          723    .text               mc_w.l(uldiv.o)
@@ -2154,6 +2182,7 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     0x20000000   0x08001698   0x00000004   Data   RW          189    .data.SystemCoreClock  system_stm32f4xx.o
     0x20000004   0x0800169c   0x00000001   Data   RW          685    .data.uwTickFreq    stm32f4xx_hal.o
     0x20000005   0x0800169d   0x00000003   PAD
@@ -2164,6 +2193,8 @@ Memory Map of the image
     0x2000006c   0x080016a4   0x00000004   PAD
 >>>>>>> 9a7cc34404a4a0d29df8a4cba4d7e5dae7b38d0f
 =======
+=======
+>>>>>>> parent of 9a7cc34... Ver1.0
     0x20000000   0x08001738   0x00000004   Data   RW          185    .data.SystemCoreClock  system_stm32f4xx.o
     0x20000004   0x0800173c   0x00000001   Data   RW          681    .data.uwTickFreq    stm32f4xx_hal.o
     0x20000005   0x0800173d   0x00000003   PAD
@@ -2172,6 +2203,9 @@ Memory Map of the image
     0x20000010        -       0x00000058   Zero   RW          113    .bss.hspi1          spi.o
     0x20000068        -       0x00000004   Zero   RW          682    .bss.uwTick         stm32f4xx_hal.o
     0x2000006c   0x08001744   0x00000004   PAD
+<<<<<<< HEAD
+>>>>>>> parent of 9a7cc34... Ver1.0
+=======
 >>>>>>> parent of 9a7cc34... Ver1.0
     0x20000070        -       0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
 
@@ -2185,7 +2219,11 @@ Image component sizes
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
        510          0          0          0          1       4588   gpio.o
+=======
+       526          0          0          0          0       4492   gpio.o
+>>>>>>> parent of 9a7cc34... Ver1.0
 =======
        526          0          0          0          0       4492   gpio.o
 >>>>>>> parent of 9a7cc34... Ver1.0
@@ -2193,6 +2231,7 @@ Image component sizes
        176          0          0          0          0       2794   main.o
       1174          0          0          0         88       8161   spi.o
         36          8        392          0       1024        836   startup_stm32f407xx.o
+<<<<<<< HEAD
 <<<<<<< HEAD
        208          0          0          5          4       7417   stm32f4xx_hal.o
        198          0          0          0          0      10004   stm32f4xx_hal_cortex.o
@@ -2214,6 +2253,8 @@ Image component sizes
         36          8        392          0       1024        828   startup_stm32f407xx.o
 =======
 >>>>>>> parent of 9a7cc34... Ver1.0
+=======
+>>>>>>> parent of 9a7cc34... Ver1.0
        208          0          0          5          4       7417   stm32f4xx_hal.o
        198          0          0          0          0      10004   stm32f4xx_hal_cortex.o
        468          0          0          0          0       5139   stm32f4xx_hal_gpio.o
@@ -2226,8 +2267,12 @@ Image component sizes
 
     ----------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
       5058          8        440         12       1124      80207   Object Totals
 >>>>>>> 9a7cc34404a4a0d29df8a4cba4d7e5dae7b38d0f
+=======
+      5218          8        440         12       1124      79277   Object Totals
+>>>>>>> parent of 9a7cc34... Ver1.0
 =======
       5218          8        440         12       1124      79277   Object Totals
 >>>>>>> parent of 9a7cc34... Ver1.0
@@ -2275,6 +2320,7 @@ Image component sizes
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       5488         24        440         12       1124      79694   Grand Totals
       5488         24        440         12       1124      79694   ELF Image Totals
       5488         24        440         12          0          0   ROM Totals
@@ -2293,14 +2339,23 @@ Image component sizes
       5500         24        440         12       1124      79589   ELF Image Totals
       5500         24        440         12          0          0   ROM Totals
 >>>>>>> parent of 9a7cc34... Ver1.0
+=======
+      5500         24        440         12       1124      79589   Grand Totals
+      5500         24        440         12       1124      79589   ELF Image Totals
+      5500         24        440         12          0          0   ROM Totals
+>>>>>>> parent of 9a7cc34... Ver1.0
 
 ==============================================================================
 
     Total RO  Size (Code + RO Data)                 5940 (   5.80kB)
     Total RW  Size (RW Data + ZI Data)              1136 (   1.11kB)
 <<<<<<< HEAD
+<<<<<<< HEAD
     Total ROM Size (Code + RO Data + RW Data)       5792 (   5.66kB)
 >>>>>>> 9a7cc34404a4a0d29df8a4cba4d7e5dae7b38d0f
+=======
+    Total ROM Size (Code + RO Data + RW Data)       5952 (   5.81kB)
+>>>>>>> parent of 9a7cc34... Ver1.0
 =======
     Total ROM Size (Code + RO Data + RW Data)       5952 (   5.81kB)
 >>>>>>> parent of 9a7cc34... Ver1.0

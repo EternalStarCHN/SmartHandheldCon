@@ -341,10 +341,14 @@
               <Undefine></Undefine>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <IncludePath>../Inc;     ..\User;     ..\DSP\Include;     ..\Inc; C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc; C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy; C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include; C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include</IncludePath>
 =======
               <IncludePath>../Inc;     ..\User;     ..\DSP\Include;     ..\Inc;C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc;C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include;C:/Users/liu/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include</IncludePath>
 >>>>>>> 9a7cc34404a4a0d29df8a4cba4d7e5dae7b38d0f
+=======
+              <IncludePath>../Inc;    ..\User;    ..\DSP\Include;    ..\Inc;C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc;C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include;C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include</IncludePath>
+>>>>>>> parent of 9a7cc34... Ver1.0
 =======
               <IncludePath>../Inc;    ..\User;    ..\DSP\Include;    ..\Inc;C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc;C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include;C:/Users/HP/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include</IncludePath>
 >>>>>>> parent of 9a7cc34... Ver1.0
