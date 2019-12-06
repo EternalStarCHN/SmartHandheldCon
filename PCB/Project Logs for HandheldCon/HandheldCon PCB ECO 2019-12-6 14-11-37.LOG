@@ -1,0 +1,223 @@
+Added Component: Designator=*1(ASM1117_3.3V)
+Add component. Clean all parameters for all variants
+Added Component: Designator=B1(XH2.54-LI-2P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=B2(BEEP 5x9x5.5)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C1(1206C)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C2(1206C)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D1(LED-0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D2(LED-0805Y)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D3(LED-0805B)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D4(LED-0805G)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J1(TP4056)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J2(Fe-HDR1X9/2.54-S)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J3(Fe-HDR1X4/2.54-S)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K1(DIP-3X6X4.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K2(DIP-3X6X4.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K3(DIP-3X6X4.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K4(DIP-3X6X4.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K5(DIP-3X6X4.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K6(DIP-3X6X4.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K7(DIP-3X6X4.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K8(DIP-3X6X4.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MCU1(ºËÐÄ°åµ××ù)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Q1(SOT-23)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R3(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R4(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R5(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R6(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R7(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R8(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R9(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R10(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R11(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R12(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R13(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R14(0805R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SW1(KFT DIP-7X7)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SW2(KFT DIP-7X7)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U1(DCDCÉýÑ¹5V)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=3V3 Pin=*1-2
+Added Pin To Net: NetName=3V3 Pin=B2-1
+Added Pin To Net: NetName=3V3 Pin=C2-1
+Added Pin To Net: NetName=3V3 Pin=D1-A
+Added Pin To Net: NetName=3V3 Pin=D2-A
+Added Pin To Net: NetName=3V3 Pin=D3-A
+Added Pin To Net: NetName=3V3 Pin=D4-A
+Added Pin To Net: NetName=3V3 Pin=J2-9
+Added Pin To Net: NetName=3V3 Pin=MCU1-3
+Added Net: Name=3V3
+Added Pin To Net: NetName=5V Pin=*1-3
+Added Pin To Net: NetName=5V Pin=C1-1
+Added Pin To Net: NetName=5V Pin=K1-1
+Added Pin To Net: NetName=5V Pin=K2-1
+Added Pin To Net: NetName=5V Pin=K3-1
+Added Pin To Net: NetName=5V Pin=K4-1
+Added Pin To Net: NetName=5V Pin=K5-1
+Added Pin To Net: NetName=5V Pin=K6-1
+Added Pin To Net: NetName=5V Pin=K7-1
+Added Pin To Net: NetName=5V Pin=K8-1
+Added Pin To Net: NetName=5V Pin=R1-1
+Added Pin To Net: NetName=5V Pin=R2-1
+Added Pin To Net: NetName=5V Pin=R3-1
+Added Pin To Net: NetName=5V Pin=R4-1
+Added Pin To Net: NetName=5V Pin=R5-1
+Added Pin To Net: NetName=5V Pin=R6-1
+Added Pin To Net: NetName=5V Pin=R7-1
+Added Pin To Net: NetName=5V Pin=R8-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Net: Name=5V
+Added Pin To Net: NetName=GND Pin=*1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J2-8
+Added Pin To Net: NetName=GND Pin=K1-3
+Added Pin To Net: NetName=GND Pin=K2-3
+Added Pin To Net: NetName=GND Pin=K3-3
+Added Pin To Net: NetName=GND Pin=K4-3
+Added Pin To Net: NetName=GND Pin=K5-3
+Added Pin To Net: NetName=GND Pin=K6-3
+Added Pin To Net: NetName=GND Pin=K7-3
+Added Pin To Net: NetName=GND Pin=K8-3
+Added Pin To Net: NetName=GND Pin=MCU1-1
+Added Pin To Net: NetName=GND Pin=R12-2
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Net: Name=GND
+Added Pin To Net: NetName=NetB1_1 Pin=B1-1
+Added Pin To Net: NetName=NetB1_1 Pin=J1-3
+Added Net: Name=NetB1_1
+Added Pin To Net: NetName=NetB1_2 Pin=B1-2
+Added Pin To Net: NetName=NetB1_2 Pin=SW1-4
+Added Net: Name=NetB1_2
+Added Pin To Net: NetName=NetB2_2 Pin=B2-2
+Added Pin To Net: NetName=NetB2_2 Pin=Q1-C
+Added Net: Name=NetB2_2
+Added Pin To Net: NetName=NetD1_K Pin=D1-K
+Added Pin To Net: NetName=NetD1_K Pin=R9-2
+Added Net: Name=NetD1_K
+Added Pin To Net: NetName=NetD2_K Pin=D2-K
+Added Pin To Net: NetName=NetD2_K Pin=R11-2
+Added Net: Name=NetD2_K
+Added Pin To Net: NetName=NetD3_K Pin=D3-K
+Added Pin To Net: NetName=NetD3_K Pin=R13-2
+Added Net: Name=NetD3_K
+Added Pin To Net: NetName=NetD4_K Pin=D4-K
+Added Pin To Net: NetName=NetD4_K Pin=R14-2
+Added Net: Name=NetD4_K
+Added Pin To Net: NetName=NetJ1_4 Pin=J1-4
+Added Pin To Net: NetName=NetJ1_4 Pin=SW1-5
+Added Net: Name=NetJ1_4
+Added Pin To Net: NetName=NetQ1_B Pin=Q1-B
+Added Pin To Net: NetName=NetQ1_B Pin=R10-1
+Added Net: Name=NetQ1_B
+Added Pin To Net: NetName=NetQ1_E Pin=Q1-E
+Added Pin To Net: NetName=NetQ1_E Pin=R12-1
+Added Net: Name=NetQ1_E
+Added Pin To Net: NetName=NetSW2_4 Pin=SW2-4
+Added Pin To Net: NetName=NetSW2_4 Pin=U1-4
+Added Net: Name=NetSW2_4
+Added Pin To Net: NetName=PA4 Pin=J2-5
+Added Pin To Net: NetName=PA4 Pin=MCU1-91
+Added Net: Name=PA4
+Added Pin To Net: NetName=PA5 Pin=J2-3
+Added Pin To Net: NetName=PA5 Pin=MCU1-90
+Added Net: Name=PA5
+Added Pin To Net: NetName=PA6 Pin=J2-1
+Added Pin To Net: NetName=PA6 Pin=MCU1-89
+Added Net: Name=PA6
+Added Pin To Net: NetName=PA7 Pin=J2-4
+Added Pin To Net: NetName=PA7 Pin=MCU1-88
+Added Net: Name=PA7
+Added Pin To Net: NetName=PB0 Pin=J2-2
+Added Pin To Net: NetName=PB0 Pin=MCU1-85
+Added Net: Name=PB0
+Added Pin To Net: NetName=PC4 Pin=J2-6
+Added Pin To Net: NetName=PC4 Pin=MCU1-87
+Added Net: Name=PC4
+Added Pin To Net: NetName=PC5 Pin=J2-7
+Added Pin To Net: NetName=PC5 Pin=MCU1-86
+Added Net: Name=PC5
+Added Pin To Net: NetName=PC11 Pin=MCU1-28
+Added Pin To Net: NetName=PC11 Pin=R7-2
+Added Net: Name=PC11
+Added Pin To Net: NetName=PC12 Pin=MCU1-27
+Added Pin To Net: NetName=PC12 Pin=R8-2
+Added Net: Name=PC12
+Added Pin To Net: NetName=PD0 Pin=MCU1-26
+Added Pin To Net: NetName=PD0 Pin=R1-2
+Added Net: Name=PD0
+Added Pin To Net: NetName=PD1 Pin=MCU1-25
+Added Pin To Net: NetName=PD1 Pin=R2-2
+Added Net: Name=PD1
+Added Pin To Net: NetName=PD2 Pin=MCU1-24
+Added Pin To Net: NetName=PD2 Pin=R3-2
+Added Net: Name=PD2
+Added Pin To Net: NetName=PD3 Pin=MCU1-23
+Added Pin To Net: NetName=PD3 Pin=R4-2
+Added Net: Name=PD3
+Added Pin To Net: NetName=PD4 Pin=MCU1-22
+Added Pin To Net: NetName=PD4 Pin=R5-2
+Added Net: Name=PD4
+Added Pin To Net: NetName=PD5 Pin=MCU1-21
+Added Pin To Net: NetName=PD5 Pin=R6-2
+Added Net: Name=PD5
+Added Pin To Net: NetName=PG10 Pin=MCU1-17
+Added Pin To Net: NetName=PG10 Pin=R9-1
+Added Net: Name=PG10
+Added Pin To Net: NetName=PG11 Pin=MCU1-16
+Added Pin To Net: NetName=PG11 Pin=R11-1
+Added Net: Name=PG11
+Added Pin To Net: NetName=PG12 Pin=MCU1-15
+Added Pin To Net: NetName=PG12 Pin=R13-1
+Added Net: Name=PG12
+Added Pin To Net: NetName=PG13 Pin=MCU1-14
+Added Pin To Net: NetName=PG13 Pin=R14-1
+Added Net: Name=PG13
+Added Pin To Net: NetName=PG14 Pin=MCU1-13
+Added Pin To Net: NetName=PG14 Pin=R10-2
+Added Net: Name=PG14
+Added Pin To Net: NetName=VCC Pin=J1-5
+Added Pin To Net: NetName=VCC Pin=SW2-5
+Added Net: Name=VCC
+Added Class: Name=HandheldCon

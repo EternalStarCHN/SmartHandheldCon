@@ -27,7 +27,8 @@
 /* Configure GPIO                                                             */
 /*----------------------------------------------------------------------------*/
 /* USER CODE BEGIN 1 */
-
+uint8_t Menu_Flag = 0;
+uint8_t Game_Index = 0;
 /* USER CODE END 1 */
 
 /** Configure pins as 
@@ -84,15 +85,15 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PtPin */
-  GPIO_InitStruct.Pin = LightControl_Pin;
+  /*Configure GPIO pins : PCPin PCPin */
+  GPIO_InitStruct.Pin = Return_Pin|LightControl_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(LightControl_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PDPin PDPin PDPin PDPin 
                            PDPin PDPin */
-  GPIO_InitStruct.Pin = Confirm_Pin|Return_Pin|Up_Pin|Down_Pin 
+  GPIO_InitStruct.Pin = Confirm_Pin|Menu_Pin|Up_Pin|Down_Pin 
                           |Left_Pin|Right_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -139,13 +140,10 @@ void MX_GPIO_Init(void)
 /* USER CODE BEGIN 2 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	if(GPIO_Pin == Confirm_Pin){
-		HAL_Delay(20);
-    if(!HAL_GPIO_ReadPin(Confirm_GPIO_Port,Confirm_Pin))
-			{
-			}
+	
 	}
-	if(GPIO_Pin == Return_Pin){
-		
+	if(GPIO_Pin == Menu_Pin){
+		Menu_Flag = 0;
 	}	
 	if(GPIO_Pin == Up_Pin){
 		
@@ -162,6 +160,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	if(GPIO_Pin == LightControl_Pin){
 			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 	}	
+	if(GPIO_Pin == Return_Pin){
+		
+	}
 }
 /* USER CODE END 2 */
 
