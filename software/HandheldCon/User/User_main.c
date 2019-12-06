@@ -11,8 +11,7 @@ void User_main(void)
 	Lcd_Clear(WHITE);
 	while(1)
 	{
-		//LCD_DrawSqure(100,100,100,100,BLUE);
-		LCD_DrawFullCircle(160,120,30,GREEN);
+		LCD_DrawSqure(100,100,100,100,BLUE);
 		//Gui_DrawFont_GBK24(100,5,RED,WHITE,"<HandheldCon>");
 	}
 }
