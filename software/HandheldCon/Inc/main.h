@@ -58,6 +58,9 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Menu_Pin GPIO_PIN_1
+#define Menu_GPIO_Port GPIOF
+#define Menu_EXTI_IRQn EXTI1_IRQn
 #define DC_Pin GPIO_PIN_4
 #define DC_GPIO_Port GPIOA
 #define RST_Pin GPIO_PIN_4
@@ -75,15 +78,9 @@ void Error_Handler(void);
 #define Confirm_Pin GPIO_PIN_0
 #define Confirm_GPIO_Port GPIOD
 #define Confirm_EXTI_IRQn EXTI0_IRQn
-#define Menu_Pin GPIO_PIN_1
-#define Menu_GPIO_Port GPIOD
-#define Menu_EXTI_IRQn EXTI1_IRQn
 #define Up_Pin GPIO_PIN_2
 #define Up_GPIO_Port GPIOD
 #define Up_EXTI_IRQn EXTI2_IRQn
-#define Down_Pin GPIO_PIN_3
-#define Down_GPIO_Port GPIOD
-#define Down_EXTI_IRQn EXTI3_IRQn
 #define Left_Pin GPIO_PIN_4
 #define Left_GPIO_Port GPIOD
 #define Left_EXTI_IRQn EXTI4_IRQn
@@ -100,6 +97,9 @@ void Error_Handler(void);
 #define Led_Green_GPIO_Port GPIOG
 #define Buzzer_Pin GPIO_PIN_14
 #define Buzzer_GPIO_Port GPIOG
+#define Down_Pin GPIO_PIN_3
+#define Down_GPIO_Port GPIOB
+#define Down_EXTI_IRQn EXTI3_IRQn
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -2,18 +2,18 @@
 #include "spi.h"
 #include "gpio.h"
 #include "gui.h"
-//TIM3 触发输出事件连接到ADC1 PA1端口控制采样速率 ADC1 PA1使用DMA2S0
+#include "User_Logic.h"
 
+extern uint8_t Menu_Flag;
 
 //此处为真正的mian函数 自动生成部分请不要动
 void User_main(void)
 {
 	Lcd_Clear(WHITE);
+	Menu_Flag = 1;
 	while(1)
 	{
-		//LCD_DrawSqure(100,100,100,100,BLUE);
-		LCD_DrawFullCircle(160,120,30,GREEN);
-		//Gui_DrawFont_GBK24(100,5,RED,WHITE,"<HandheldCon>");
+	Logic();
 	}
 }
 

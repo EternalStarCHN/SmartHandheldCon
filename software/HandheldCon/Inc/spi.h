@@ -45,6 +45,8 @@ extern SPI_HandleTypeDef hspi1;
 #define Y_MAX_PIXEL	        LCD_Y_SIZE
 #endif
 
+#define RGB(r,g,b) ( (r>>3)<<11|(g>>2)<<5|(b>>3) ) //color transform
+
 #define RED			0xF800
 #define GREEN		0x07E0
 #define BLUE 		0x001F
