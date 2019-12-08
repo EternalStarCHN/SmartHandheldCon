@@ -32,5 +32,5 @@ handheldcon/user_main.o: ..\User\User_main.c ..\Inc\main.h \
   ..\Inc\main.h ..\Inc\gpio.h ..\User\User_Logic.h ..\Inc\gui.h \
   ..\DSP\Include\arm_math.h \
   C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
-  ..\User\User_Logic.h
+  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\User\snake.h \
+  ..\User\User_Logic.h ..\User\snake.h

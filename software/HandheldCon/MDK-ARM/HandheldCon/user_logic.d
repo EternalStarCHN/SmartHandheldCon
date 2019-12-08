@@ -30,6 +30,7 @@ handheldcon/user_logic.o: ..\USER\User_Logic.c ..\User\User_Logic.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
-  ..\User\User_Logic.h ..\Inc\gui.h ..\DSP\Include\arm_math.h \
+  ..\User\User_Logic.h ..\User\snake.h ..\Inc\gui.h \
+  ..\DSP\Include\arm_math.h \
   C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\Inc\spi.h

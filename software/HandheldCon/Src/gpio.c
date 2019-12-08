@@ -37,6 +37,11 @@ uint8_t Left_Flag = 0;
 uint8_t Right_Flag = 0;
 
 extern uint8_t Menu_Refresh;
+extern uint8_t Up_Status;
+extern uint8_t Down_Status;
+extern uint8_t Left_Status;
+extern uint8_t Right_Status;
+
 /* USER CODE END 1 */
 
 /** Configure pins as 
@@ -183,6 +188,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 					Menu_Index--;
 				}
 			}
+			Up_Flag = 1;
+			Down_Status = Left_Status = Right_Status = 0;
 		}
 	}	
 	else if(GPIO_Pin == Down_Pin){
@@ -197,18 +204,22 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Menu_Index ++;
 				}
 			}
+			Down_Flag = 1;
+			Up_Status = Left_Status = Right_Status = 0;
 		}
 	}	
 	else if(GPIO_Pin == Left_Pin){
 		delay_ms(30);
 		if(HAL_GPIO_ReadPin(Left_GPIO_Port,Left_Pin)){
-			
+			Left_Flag = 1;
+			Down_Status =Up_Status = Right_Status = 0;
 		}
 	}	
 	else if(GPIO_Pin == Right_Pin){
 		delay_ms(30);
 		if(HAL_GPIO_ReadPin(Right_GPIO_Port,Right_Pin)){
-			
+			Right_Flag = 1;
+			Down_Status = Left_Status = Up_Status = 0;
 		}
 	}	
 	else if(GPIO_Pin == LightControl_Pin){

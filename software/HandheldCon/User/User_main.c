@@ -3,6 +3,7 @@
 #include "gpio.h"
 #include "gui.h"
 #include "User_Logic.h"
+#include "snake.h"
 
 extern uint8_t Menu_Flag;
 
@@ -11,9 +12,11 @@ void User_main(void)
 {
 	Lcd_Clear(WHITE);
 	Menu_Flag = 1;
+	Init_SNAKE();
 	while(1)
 	{
-	Logic();
+	//Logic();
+		Run_SNAKE();
 	}
 }
 

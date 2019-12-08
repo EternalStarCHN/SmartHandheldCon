@@ -31,4 +31,5 @@ handheldcon/gpio.o: ..\Src\gpio.c ..\Inc\gpio.h ..\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
   ..\User\User_Logic.h ..\Inc\gui.h ..\DSP\Include\arm_math.h \
   C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\Inc\spi.h
+  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\Inc\spi.h \
+  ..\User\snake.h ..\User\User_Logic.h

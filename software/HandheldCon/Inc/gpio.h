@@ -28,7 +28,8 @@
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-#include "User_Logic.h""
+#include "User_Logic.h"
+#include "snake.h"
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */

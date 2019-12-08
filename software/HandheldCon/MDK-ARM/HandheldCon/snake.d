@@ -1,4 +1,5 @@
-handheldcon/main.o: ..\Src\main.c ..\Inc\main.h \
+handheldcon/snake.o: ..\USER\snake.c ..\User\snake.h ..\User\User_Logic.h \
+  ..\Inc\gpio.h ..\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -28,9 +29,8 @@ handheldcon/main.o: ..\Src\main.c ..\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h ..\Inc\spi.h \
-  ..\Inc\main.h ..\Inc\gpio.h ..\User\User_Logic.h ..\Inc\gui.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
+  ..\User\User_Logic.h ..\User\snake.h ..\Inc\gui.h \
   ..\DSP\Include\arm_math.h \
   C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\User\snake.h \
-  ..\User\User_Logic.h ..\User\User_main.h
+  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\Inc\spi.h

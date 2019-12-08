@@ -11,6 +11,7 @@
 "handheldcon\system_stm32f4xx.o"
 "handheldcon\user_main.o"
 "handheldcon\user_logic.o"
+"handheldcon\snake.o"
 "handheldcon\stm32f4xx_hal_spi.o"
 "handheldcon\stm32f4xx_hal_rcc.o"
 "handheldcon\stm32f4xx_hal_rcc_ex.o"
