@@ -12,11 +12,9 @@ void User_main(void)
 {
 	Lcd_Clear(WHITE);
 	Menu_Flag = 1;
-	Init_SNAKE();
 	while(1)
 	{
-	//Logic();
-		Run_SNAKE();
+	Logic();
 	}
 }
 

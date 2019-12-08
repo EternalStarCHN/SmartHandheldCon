@@ -1,12 +1,17 @@
 #include "User_Logic.h"
 
 uint8_t Menu_Refresh = 0;
+uint8_t Game1_Refresh = 0;
 extern uint8_t Menu_Flag;
 extern uint8_t Menu_Index;
+extern uint8_t Game_Flag;
 
 void Logic(void){
-	if(Menu_Flag == 1){
+	if(Menu_Flag == 1 && Game_Flag == 0){
 		Menu_Show(Menu_Index);
+	}
+	if(Game_Flag == 1 && Menu_Flag == 0){
+		Game_Start(Menu_Index);
 	}
 }
 
@@ -62,5 +67,23 @@ void Menu_Show(uint8_t Menu_Index){
 			Gui_DrawFont_Num32(280, 200, RED, WHITE, 3);
 			break;
 		default:;break;
+	}
+}
+
+void Game_Start(uint8_t Menu_Index){
+	switch(Menu_Index){
+		case 1: 
+			if(!Game1_Refresh){
+				Init_SNAKE();
+				Game1_Refresh++;
+			}
+
+			Run_SNAKE();
+			break;
+		case 2:
+			
+			break;
+		
+		default: ;break;
 	}
 }

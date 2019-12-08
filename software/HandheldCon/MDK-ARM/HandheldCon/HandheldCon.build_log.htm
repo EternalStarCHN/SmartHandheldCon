@@ -3,35 +3,161 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.28.0.0
+IDE-Version: ¦ÌVision V5.27.1.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: L HP, HP Inc., LIC=MGXG8-3TWA0-UMS9A-1EWSY-9FM8J-M5I6G
+License Information: 1 11, 111, LIC=V85FJ-UBY14-RF8IZ-JRMCK-Y1SVB-QJPEW
  
 Tool Versions:
-Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
-Toolchain Path:  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin
+Toolchain:       MDK-ARM Professional  Version: 5.27.1.0
+Toolchain Path:  D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\Bin
 C Compiler:      ArmClang.exe V6.12
 Assembler:       Armasm.exe V6.12
 Linker/Locator:  ArmLink.exe V6.12
 Library Manager: ArmAr.exe V6.12
 Hex Converter:   FromElf.exe V6.12
-CPU DLL:         SARMCM3.DLL V5.28.0.0
-Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      Segger\JL2CM3.dll V2.99.36.0
-Dialog DLL:      TCM.DLL V1.36.2.0
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.35.0
+Dialog DLL:      TCM.DLL V1.36.1.0
  
 <h2>Project:</h2>
-C:\Users\HP\Desktop\STM32FinalTask\software\HandheldCon\MDK-ARM\HandheldCon.uvprojx
+G:\Desktop\STM32FinalTask\software\HandheldCon\MDK-ARM\HandheldCon.uvprojx
 Project File Date:  12/08/2019
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.12', folder: 'C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'HandheldCon'
+*** Using Compiler 'V6.12', folder: 'D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\Bin'
+Rebuild target 'HandheldCon'
+assembling startup_stm32f407xx.s...
+compiling font.c...
+compiling gpio.c...
+compiling sys.c...
+compiling main.c...
+compiling spi.c...
+compiling stm32f4xx_it.c...
+compiling gui.c...
+compiling stm32f4xx_hal_msp.c...
+compiling system_stm32f4xx.c...
 compiling User_main.c...
+../USER/User_Logic.c(35): warning: passing 'char [14]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(110,5,RGB(178,34,34),RGB(255,255,255),"-HandHeldCon-");
+                                                                                 ^~~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(37): warning: passing 'char [26]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,50,RGB(178,34,34),RGB(255,255,255),"Game1:Gluttonous Snake <-");
+                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(38): warning: passing 'char [13]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,90,RGB(178,34,34),RGB(255,255,255),"Game2:Tetris");
+                                                                                 ^~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(39): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,130,RGB(178,34,34),RGB(255,255,255),"Game3:");
+                                                                                  ^~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(40): warning: passing 'char [8]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK16(225,220,RGB(178,34,34),RGB(255,255,255),"Choose:");
+                                                                                   ^~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(48): warning: passing 'char [14]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(110,5,RGB(178,34,34),RGB(255,255,255),"-HandHeldCon-");
+                                                                                 ^~~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(50): warning: passing 'char [23]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,50,RGB(178,34,34),RGB(255,255,255),"Game1:Gluttonous Snake");
+                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(51): warning: passing 'char [26]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,90,RGB(178,34,34),RGB(255,255,255),"Game2:Tetris           <-");
+                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(52): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,130,RGB(178,34,34),RGB(255,255,255),"Game3:");
+                                                                                  ^~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(53): warning: passing 'char [8]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK16(225,220,RGB(178,34,34),RGB(255,255,255),"Choose:");
+                                                                                   ^~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(61): warning: passing 'char [14]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(110,5,RGB(178,34,34),RGB(255,255,255),"-HandHeldCon-");
+                                                                                 ^~~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(63): warning: passing 'char [23]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,50,RGB(178,34,34),RGB(255,255,255),"Game1:Gluttonous Snake");
+                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(64): warning: passing 'char [13]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,90,RGB(178,34,34),RGB(255,255,255),"Game2:Tetris");
+                                                                                 ^~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(65): warning: passing 'char [25]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK24(20,130,RGB(178,34,34),RGB(255,255,255),"Game3:                <-");
+                                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc\gui.h(17): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/User_Logic.c(66): warning: passing 'char [8]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                        Gui_DrawFont_GBK16(225,220,RGB(178,34,34),RGB(255,255,255),"Choose:");
+                                                                                   ^~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+15 warnings generated.
+compiling User_Logic.c...
+../USER/snake.c(30): warning: passing 'char [12]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(120,0,RED,BLACK,"YOUR SCORE:");
+                                           ^~~~~~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+1 warning generated.
+compiling snake.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_tim_ex.c...
 linking...
-Program Size: Code=7700 RO-data=1996 RW-data=16 ZI-data=1160  
+Program Size: Code=9180 RO-data=4056 RW-data=16 ZI-data=1160  
 FromELF: creating hex file...
-"HandheldCon\HandheldCon.axf" - 0 Error(s), 0 Warning(s).
+"HandheldCon\HandheldCon.axf" - 0 Error(s), 16 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -43,24 +169,24 @@ Package Vendor: ARM
    * Component: DSP Variant: Library Version: 1.6.0
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.12.0.pack
-                Keil.STM32F4xx_DFP.2.12.0
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
                 STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_HandheldCon
-  C:\SoftWare\Keil_v5\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
-  C:\SoftWare\Keil_v5\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include
-  C:\SoftWare\Keil_v5\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  D:\SoftWare\Keil MDK-ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  D:\SoftWare\Keil MDK-ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\DSP\Include
+  D:\SoftWare\Keil MDK-ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.2.0
 
    * Component: ARM::CMSIS:DSP:Library:1.6.0
-      Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib
       Include file:  CMSIS\DSP\Include\arm_math.h
-Build Time Elapsed:  00:00:02
+      Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

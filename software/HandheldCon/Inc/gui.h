@@ -20,6 +20,7 @@ void LCD_OUTPUT_Float(uint16_t LineX, uint16_t LineY, char *string,float32_t str
 void LCD_DrawSqure(uint16_t x,uint16_t y,uint16_t whith,uint16_t length,uint16_t color);
 void LCD_DrawSqure1(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t border_color,uint16_t internal_color);
 void LCD_DrawFullCircle(uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint16_t color);
+void LCD_DrawSqureBorder(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t border_color);
 #ifdef __cplusplus
 }
 #endif

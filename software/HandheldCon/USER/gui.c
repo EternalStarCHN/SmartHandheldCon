@@ -416,3 +416,11 @@ void LCD_DrawFullCircle(uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint16_t col
 				}
 		}
 }
+
+void LCD_DrawSqureBorder(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t border_color){
+	if((x+width)>320||(y+length)>240) return;
+		Gui_DrawLine( x,  y, x+width, y, border_color);
+		Gui_DrawLine( x,  y+length, x+width, y+length, border_color);
+		Gui_DrawLine( x,  y+1, x, y+length-1, border_color);
+		Gui_DrawLine( x+width,  y+1, x+width, y+length-1, border_color);
+}
