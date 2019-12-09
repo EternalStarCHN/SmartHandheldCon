@@ -1,7 +1,10 @@
 #include "User_Logic.h"
 
 uint8_t Menu_Refresh = 0;
+uint8_t Game1_Flag = 0;
 uint8_t Game1_Refresh = 0;
+uint8_t Game1_Dead = 0;
+
 extern uint8_t Menu_Flag;
 extern uint8_t Menu_Index;
 extern uint8_t Game_Flag;
@@ -73,6 +76,7 @@ void Menu_Show(uint8_t Menu_Index){
 void Game_Start(uint8_t Menu_Index){
 	switch(Menu_Index){
 		case 1: 
+			Game1_Flag = 1;
 			if(!Game1_Refresh){
 				Init_SNAKE();
 				Game1_Refresh++;

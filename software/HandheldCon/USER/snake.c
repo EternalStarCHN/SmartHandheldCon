@@ -1,19 +1,20 @@
 #include"snake.h"
 
-uint8_t Up_Pre=0;
-uint8_t Down_Pre=0;
-uint8_t Left_Pre=0;
-uint8_t Right_Pre=0;
+uint8_t Game1_Up_Pre=0;
+uint8_t Game1_Down_Pre=0;
+uint8_t Game1_Left_Pre=0;
+uint8_t Game1_Right_Pre=0;
 
-uint8_t Up_Status = 0;
-uint8_t Down_Status = 0;
-uint8_t Left_Status =0;
-uint8_t Right_Status =0;
+uint8_t Game1_Up_Status = 0;
+uint8_t Game1_Down_Status = 0;
+uint8_t Game1_Left_Status =0;
+uint8_t Game1_Right_Status =0;
 
-extern uint8_t Up_Flag;
-extern uint8_t Down_Flag;
-extern uint8_t Left_Flag;
-extern uint8_t Right_Flag;
+extern uint8_t Game1_Up_Flag;
+extern uint8_t Game1_Down_Flag;
+extern uint8_t Game1_Left_Flag;
+extern uint8_t Game1_Right_Flag;
+extern uint8_t Game1_Dead;
 
 Snake Snake_R;
 Food Food_R;
@@ -21,8 +22,8 @@ Food Food_R;
 void Init_SNAKE(void){
 	uint8_t i;
 	
-	Up_Status = Down_Status = Left_Status = Right_Status = 0;//CLear
-	Up_Pre = Down_Pre = Left_Pre = Right_Pre = 0;//CLear
+	Game1_Up_Status = Game1_Down_Status = Game1_Left_Status = Game1_Right_Status = 0;//CLear
+	Game1_Up_Pre = Game1_Down_Pre = Game1_Left_Pre = Game1_Right_Pre = 0;//CLear
 	
 	Lcd_Clear(BLACK); //背景色
 	//LCD_DrawSqure1(0,18,320,222,WHITE,BLACK);
@@ -45,24 +46,20 @@ void Init_SNAKE(void){
 	}
 }
 
-
-
-
-
 void Run_SNAKE(void){
 	uint8_t i = 0;
 	HAL_Delay(1000);
 	
-	if(Up_Flag)
-		Up_Status = 1;
-	if(Down_Flag)
-		Down_Status = 1;
-	if(Left_Flag)
-		Left_Status = 1;
-	if(Right_Flag)
-		Right_Status = 1;
+	if(Game1_Up_Flag)
+		Game1_Up_Status = 1;
+	if(Game1_Down_Flag)
+		Game1_Down_Status = 1;
+	if(Game1_Left_Flag)
+		Game1_Left_Status = 1;
+	if(Game1_Right_Flag)
+		Game1_Right_Status = 1;
 	
-	if((Up_Status==1&&Down_Pre==0)||(Down_Flag==1&&Up_Pre==1))
+	if((Game1_Up_Status==1&&Game1_Down_Pre==0)||(Game1_Down_Flag==1&&Game1_Up_Pre==1))
 	{
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Length,SNAKE_Length,BLACK);
 		for(i=0;i<Snake_R.Long-1;i++){
@@ -74,13 +71,13 @@ void Run_SNAKE(void){
 		for(i=0;i<Snake_R.Long;i++){
 			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Length,SNAKE_Length,RED);
 		}
-		if(Down_Flag==0){
-			Up_Pre = Up_Status;
+		if(Game1_Down_Flag==0){
+			Game1_Up_Pre = Game1_Up_Status;
 		}
-		Up_Flag = 0;
+		Game1_Up_Flag = 0;
 	} 
 		
-	if((Down_Status==1&&Up_Pre==0)||(Up_Flag==1&&Down_Pre==1))
+	if((Game1_Down_Status==1&&Game1_Up_Pre==0)||(Game1_Up_Flag==1&&Game1_Down_Pre==1))
 	{
 	
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Length,SNAKE_Length,BLACK);
@@ -93,13 +90,13 @@ void Run_SNAKE(void){
 		for(i=0;i<Snake_R.Long;i++){
 			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Length,SNAKE_Length,RED);
 		}
-		if(Up_Flag==0){
-			Down_Pre = Down_Status;
+		if(Game1_Up_Flag==0){
+			Game1_Down_Pre = Game1_Down_Status;
 		}
-		Down_Flag = 0;
+		Game1_Down_Flag = 0;
 	} 
 	
-		if((Left_Status==1&&Right_Pre==0)||(Right_Flag==1&&Left_Pre==1))
+		if((Game1_Left_Status==1&&Game1_Right_Pre==0)||(Game1_Right_Flag==1&&Game1_Left_Pre==1))
 	{
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Length,SNAKE_Length,BLACK);
 		for(i=0;i<Snake_R.Long-1;i++){
@@ -111,13 +108,13 @@ void Run_SNAKE(void){
 		for(i=0;i<Snake_R.Long;i++){
 			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Length,SNAKE_Length,RED);
 		}
-		if(Right_Flag==0){
-			Left_Pre = Left_Status;
+		if(Game1_Right_Flag==0){
+			Game1_Left_Pre = Game1_Left_Status;
 		}
-		Left_Flag = 0;
+		Game1_Left_Flag = 0;
 	} 
 		
-	if((Right_Status==1&&Left_Pre==0)||(Left_Flag==1&&Right_Pre==1))
+	if((Game1_Right_Status==1&&Game1_Left_Pre==0)||(Game1_Left_Flag==1&&Game1_Right_Pre==1))
 	{
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Length,SNAKE_Length,BLACK);
 		for(i=0;i<Snake_R.Long-1;i++){
@@ -129,10 +126,31 @@ void Run_SNAKE(void){
 		for(i=0;i<Snake_R.Long;i++){
 			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Length,SNAKE_Length,RED);
 		}
-		if(Left_Flag==0){
-			Right_Pre = Right_Status;
+		if(Game1_Left_Flag==0){
+			Game1_Right_Pre = Game1_Right_Status;
 		}
-	Right_Flag = 0;
+	Game1_Right_Flag = 0;
 	} 	
 }
+
+void Display_dead(void)
+{
+	Game1_Dead = 1;
+	LCD_DrawSqureBorder(0,18,320,222,BLACK);
+//	LCD_Fill(0,0,8,280,DARKBLUE);
+//	LCD_Fill(232,0,240,280,DARKBLUE);
+//	LCD_Fill(0,0,240,8,DARKBLUE);
+//	LCD_Fill(0,272,240,280,DARKBLUE);
+	Gui_DrawFont_GBK16(140,100,WHITE,BLACK,"GAME OVER! ");
+	Gui_DrawFont_GBK16(100,150,WHITE,BLACK,"PRESS Confirm TO RESTART");
+	Gui_DrawFont_GBK16(100,200,WHITE,BLACK,"PRESS Return TO MENU");
+	while(Key_Value!=KEY_DOWN)
+	{
+	Key_Value=KEY_Scan(0);;
+	}
+	LCD_Clear(BLACK);
+	Init_SNAKE();
+}
+
+
 	

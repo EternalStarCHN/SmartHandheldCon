@@ -32,16 +32,17 @@ uint8_t Menu_Flag = 0;
 uint8_t Menu_Index = 1;
 uint8_t Game_Flag = 0;
 uint8_t Return_Flag = 0;
-uint8_t Up_Flag = 0;
-uint8_t Down_Flag = 0;
-uint8_t Left_Flag = 0;
-uint8_t Right_Flag = 0;
+uint8_t Game1_Up_Flag = 0;
+uint8_t Game1_Down_Flag = 0;
+uint8_t Game1_Left_Flag = 0;
+uint8_t Game1_Right_Flag = 0;
 
 extern uint8_t Menu_Refresh;
-extern uint8_t Up_Status;
-extern uint8_t Down_Status;
-extern uint8_t Left_Status;
-extern uint8_t Right_Status;
+extern uint8_t Game1_Up_Status;
+extern uint8_t Game1_Down_Status;
+extern uint8_t Game1_Left_Status;
+extern uint8_t Game1_Right_Status;
+extern uint8_t Game1_Flag;
 extern uint8_t Game1_Refresh;
 /* USER CODE END 1 */
 
@@ -205,8 +206,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 					Menu_Index--;
 				}
 			}
-			Up_Flag = 1;
-			Down_Status = Left_Status = Right_Status = 0;
+			if(Game1_Flag == 1){
+				Game1_Up_Flag = 1;
+				Game1_Down_Status = Game1_Left_Status = Game1_Right_Status = 0;
+			}
 		}
 	}	
 	
@@ -224,8 +227,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Menu_Index ++;
 				}
 			}
-			Down_Flag = 1;
-			Up_Status = Left_Status = Right_Status = 0;
+			if(Game1_Flag == 1){
+				Game1_Down_Flag = 1;
+				Game1_Up_Status = Game1_Left_Status = Game1_Right_Status = 0;
+			}
 		}
 	}	
 	
@@ -234,8 +239,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 		delay_ms(30);
 		if(HAL_GPIO_ReadPin(Left_GPIO_Port,Left_Pin))
 		{
-			Left_Flag = 1;
-			Down_Status =Up_Status = Right_Status = 0;
+			Game1_Left_Flag = 1;
+			Game1_Down_Status =Game1_Up_Status = Game1_Right_Status = 0;
 		}
 	}	
 	
@@ -244,8 +249,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 		delay_ms(30);
 		if(HAL_GPIO_ReadPin(Right_GPIO_Port,Right_Pin))
 		{
-			Right_Flag = 1;
-			Down_Status = Left_Status = Up_Status = 0;
+			Game1_Right_Flag = 1;
+			Game1_Down_Status = Game1_Left_Status = Game1_Up_Status = 0;
 		}
 	}	
 	else if(GPIO_Pin == LightControl_Pin){
