@@ -44,6 +44,8 @@ extern uint8_t Game1_Left_Status;
 extern uint8_t Game1_Right_Status;
 extern uint8_t Game1_Flag;
 extern uint8_t Game1_Refresh;
+extern uint8_t Game1_Dead;
+extern uint8_t Game1_Restart;
 /* USER CODE END 1 */
 
 /** Configure pins as 
@@ -167,7 +169,7 @@ void MX_GPIO_Init(void)
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	if(GPIO_Pin == Confirm_Pin){
-		delay_ms(30);
+		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Confirm_GPIO_Port,Confirm_Pin))
 		{
 			if(Menu_Flag == 1){
@@ -181,7 +183,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Menu_Pin){
-		delay_ms(30);
+		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Menu_GPIO_Port,Menu_Pin))
 		{
 			Menu_Flag = 1;
@@ -194,7 +196,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Up_Pin){
-		delay_ms(30);
+		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Up_GPIO_Port,Up_Pin))
 		{
 			if(Menu_Flag == 1){
@@ -215,7 +217,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Down_Pin){
-		delay_ms(30);
+		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Down_GPIO_Port,Down_Pin))
 		{
 			if(Menu_Flag == 1){
@@ -230,38 +232,47 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			if(Game1_Flag == 1){
 				Game1_Down_Flag = 1;
 				Game1_Up_Status = Game1_Left_Status = Game1_Right_Status = 0;
+				if(Game1_Dead){
+					
+				}
 			}
 		}
 	}	
 	
 	
 	else if(GPIO_Pin == Left_Pin){
-		delay_ms(30);
+		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Left_GPIO_Port,Left_Pin))
 		{
-			Game1_Left_Flag = 1;
-			Game1_Down_Status =Game1_Up_Status = Game1_Right_Status = 0;
+			if(Game1_Flag == 1){
+				Game1_Left_Flag = 1;
+				Game1_Down_Status =Game1_Up_Status = Game1_Right_Status = 0;
+			}
 		}
 	}	
 	
 	
 	else if(GPIO_Pin == Right_Pin){
-		delay_ms(30);
+		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Right_GPIO_Port,Right_Pin))
 		{
-			Game1_Right_Flag = 1;
-			Game1_Down_Status = Game1_Left_Status = Game1_Up_Status = 0;
+			if(Game1_Flag == 1){
+				Game1_Right_Flag = 1;
+				Game1_Down_Status = Game1_Left_Status = Game1_Up_Status = 0;
+			}
 		}
 	}	
+	
+	
 	else if(GPIO_Pin == LightControl_Pin){
-		delay_ms(30);
+		delay_ms(20);
     if(HAL_GPIO_ReadPin(LightControl_GPIO_Port,LightControl_Pin))
 		HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 	}	
 	
 	
 	else if(GPIO_Pin == Return_Pin){
-		delay_ms(30);
+		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Return_GPIO_Port,Return_Pin))
 		{
 			

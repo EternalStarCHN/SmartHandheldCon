@@ -10,6 +10,9 @@ uint8_t Game1_Down_Status = 0;
 uint8_t Game1_Left_Status =0;
 uint8_t Game1_Right_Status =0;
 
+uint8_t Game1_Dead_Refresh = 0;
+uint8_t Game1_Restart = 0;
+
 extern uint8_t Game1_Up_Flag;
 extern uint8_t Game1_Down_Flag;
 extern uint8_t Game1_Left_Flag;
@@ -136,20 +139,21 @@ void Run_SNAKE(void){
 void Display_dead(void)
 {
 	Game1_Dead = 1;
-	LCD_DrawSqureBorder(0,18,320,222,BLACK);
-//	LCD_Fill(0,0,8,280,DARKBLUE);
-//	LCD_Fill(232,0,240,280,DARKBLUE);
-//	LCD_Fill(0,0,240,8,DARKBLUE);
-//	LCD_Fill(0,272,240,280,DARKBLUE);
-	Gui_DrawFont_GBK16(140,100,WHITE,BLACK,"GAME OVER! ");
-	Gui_DrawFont_GBK16(100,150,WHITE,BLACK,"PRESS Confirm TO RESTART");
-	Gui_DrawFont_GBK16(100,200,WHITE,BLACK,"PRESS Return TO MENU");
-	while(Key_Value!=KEY_DOWN)
-	{
-	Key_Value=KEY_Scan(0);;
+	if(!Game1_Dead_Refresh){
+		Lcd_Clear(BLACK);
+		Game1_Dead_Refresh++;
 	}
-	LCD_Clear(BLACK);
-	Init_SNAKE();
+	LCD_DrawSqureBorder(0,18,320,222,RED);
+	Gui_DrawFont_GBK16(120,100,WHITE,BLACK,"GAME OVER! ");
+	Gui_DrawFont_GBK16(120,150,WHITE,BLACK,"Restart <-");
+	Gui_DrawFont_GBK16(120,170,WHITE,BLACK,"Menu    <-");
+//	while(Key_Value!=KEY_DOWN)
+//	{
+//	Key_Value=KEY_Scan(0);;
+//	}
+//	LCD_Clear(BLACK);
+	
+	//Init_SNAKE();
 }
 
 

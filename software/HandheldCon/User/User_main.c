@@ -14,7 +14,8 @@ void User_main(void)
 	Menu_Flag = 1;
 	while(1)
 	{
-	Logic();
+		Display_dead();
+	//Logic();
 	}
 }
 

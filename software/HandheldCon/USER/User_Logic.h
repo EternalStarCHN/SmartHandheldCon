@@ -10,5 +10,6 @@ void delay_ms(uint16_t time);
 void Menu(void);
 void Menu_Show(uint8_t Menu_Index);
 void Game_Start(uint8_t Menu_Index);
+void Display_dead(void);
 
 #endif
