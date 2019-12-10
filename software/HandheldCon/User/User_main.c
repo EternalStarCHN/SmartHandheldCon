@@ -4,6 +4,7 @@
 #include "gui.h"
 #include "User_Logic.h"
 #include "snake.h"
+#include "rng.h"
 
 extern uint8_t Menu_Flag;
 
@@ -12,10 +13,10 @@ void User_main(void)
 {
 	Lcd_Clear(WHITE);
 	Menu_Flag = 1;
+	char num[256]={0};
 	while(1)
 	{
-		Display_dead();
-	//Logic();
+		Logic();
 	}
 }
 

@@ -46,6 +46,10 @@ extern uint8_t Game1_Flag;
 extern uint8_t Game1_Refresh;
 extern uint8_t Game1_Dead;
 extern uint8_t Game1_Restart;
+extern uint8_t Game1_Dead_Refresh;
+extern uint8_t Game1_Pass;
+extern uint8_t Game1_Pass_Refresh;
+extern uint8_t Game1_Continue;
 /* USER CODE END 1 */
 
 /** Configure pins as 
@@ -177,7 +181,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Menu_Flag = 0;
 				Menu_Refresh = 0;
 			}
-				
+			if(Game_Flag&&Game1_Flag&&Game1_Dead){
+				Game1_Restart = 1;
+				Game1_Dead_Refresh = 0;
+			}
+			if(Game_Flag&&Game1_Flag&&Game1_Pass){
+				Game1_Continue = 1;
+				Game1_Pass_Refresh = 0;
+			}
 		}
 	}
 	
@@ -189,9 +200,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			Menu_Flag = 1;
 			Menu_Index = 1;
 			Game_Flag = 0;
-			Game1_Refresh = 0;			
+			Game1_Flag = 0;
+			Game1_Dead = 0;
+			Game1_Pass = 0;
+			Game1_Restart = 0;
+			Game1_Refresh = 0;	   //主界面刷新标志复位
+			Game1_Dead_Refresh = 0;//死亡界面刷新标志复位
+			Game1_Pass_Refresh = 0;//死亡界面刷新标志复位
 		}
-		
 	}	
 	
 	
@@ -208,7 +224,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 					Menu_Index--;
 				}
 			}
-			if(Game1_Flag == 1){
+			if(Game_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass){
 				Game1_Up_Flag = 1;
 				Game1_Down_Status = Game1_Left_Status = Game1_Right_Status = 0;
 			}
@@ -229,12 +245,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Menu_Index ++;
 				}
 			}
-			if(Game1_Flag == 1){
+			if(Game_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass){
 				Game1_Down_Flag = 1;
 				Game1_Up_Status = Game1_Left_Status = Game1_Right_Status = 0;
-				if(Game1_Dead){
-					
-				}
 			}
 		}
 	}	
@@ -244,7 +257,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Left_GPIO_Port,Left_Pin))
 		{
-			if(Game1_Flag == 1){
+			if(Game_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass){
 				Game1_Left_Flag = 1;
 				Game1_Down_Status =Game1_Up_Status = Game1_Right_Status = 0;
 			}
@@ -256,7 +269,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Right_GPIO_Port,Right_Pin))
 		{
-			if(Game1_Flag == 1){
+			if(Game_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass){
 				Game1_Right_Flag = 1;
 				Game1_Down_Status = Game1_Left_Status = Game1_Up_Status = 0;
 			}
@@ -275,10 +288,34 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 		delay_ms(20);
 		if(HAL_GPIO_ReadPin(Return_GPIO_Port,Return_Pin))
 		{
-			
+			if(Game1_Flag&&Game1_Flag&&Game1_Dead){
+				Menu_Flag = 1;
+				Menu_Index = 1;
+				Game_Flag = 0;
+				Game1_Flag = 0;
+				Game1_Dead = 0;
+				Game1_Pass = 0;
+				Game1_Restart = 0;
+				Game1_Refresh = 0;	   //主界面刷新标志复位
+				Game1_Dead_Refresh = 0;//死亡界面刷新标志复位
+			}
+				if(Game1_Flag&&Game1_Flag&&Game1_Pass){
+				Menu_Flag = 1;
+				Menu_Index = 1;
+				Game_Flag = 0;
+				Game1_Flag = 0;
+				Game1_Dead = 0;
+				Game1_Pass = 0;
+				Game1_Restart = 0;
+				Game1_Continue = 0;
+				Game1_Refresh = 0;	   //主界面刷新标志复位
+				Game1_Dead_Refresh = 0;//死亡界面刷新标志复位
+				Game1_Pass_Refresh = 0;
+			}
 		}
 	}	
 }
+
 /* USER CODE END 2 */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

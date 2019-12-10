@@ -3,7 +3,7 @@
 uint8_t Menu_Refresh = 0;
 uint8_t Game1_Flag = 0;
 uint8_t Game1_Refresh = 0;
-uint8_t Game1_Dead = 0;
+
 
 extern uint8_t Menu_Flag;
 extern uint8_t Menu_Index;
@@ -24,7 +24,7 @@ void delay_ms(uint16_t time)
    while(time--)
    {
       i = 12000;  
-      while(i--) ;    
+      while(i--);    
    }
 }
 
@@ -81,7 +81,6 @@ void Game_Start(uint8_t Menu_Index){
 				Init_SNAKE();
 				Game1_Refresh++;
 			}
-
 			Run_SNAKE();
 			break;
 		case 2:

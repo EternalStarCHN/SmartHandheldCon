@@ -4,8 +4,11 @@
 #include "gpio.h"
 #include "gui.h"
 #include "spi.h"
-#define SNAKE_Length 5
-#define SNAKE_Max_Long 10 
+#include "time.h"
+#include "rng.h"
+
+#define SNAKE_Area 5
+#define SNAKE_Max_Long 64 
 typedef struct 
 {
 uint8_t X;
@@ -29,7 +32,7 @@ uint8_t Level;
 void Init_SNAKE(void);
 void Run_SNAKE(void);
 void Display_Pass(void);
-void Display_dead(void);
+void Display_Dead(void);
 void Trun_On_Point (uint8_t x,uint8_t y);
 void Trun_Off_Point (uint8_t x,uint8_t y);
 
