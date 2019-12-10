@@ -13,6 +13,7 @@
 "handheldcon\user_main.o"
 "handheldcon\user_logic.o"
 "handheldcon\snake.o"
+"handheldcon\user_pic.o"
 "handheldcon\stm32f4xx_hal_rng.o"
 "handheldcon\stm32f4xx_hal_rcc.o"
 "handheldcon\stm32f4xx_hal_rcc_ex.o"
@@ -30,7 +31,7 @@
 "handheldcon\stm32f4xx_hal_spi.o"
 "handheldcon\stm32f4xx_hal_tim.o"
 "handheldcon\stm32f4xx_hal_tim_ex.o"
-"D:\SoftWare\Keil MDK-ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib"
+"C:\SoftWare\Keil_v5\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib"
 --library_type=microlib --strict --scatter "HandheldCon\HandheldCon.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

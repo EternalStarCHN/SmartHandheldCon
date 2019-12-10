@@ -5,6 +5,7 @@
 #include "User_Logic.h"
 #include "snake.h"
 #include "rng.h"
+#include "User_Pic.h"
 
 extern uint8_t Menu_Flag;
 
@@ -16,7 +17,8 @@ void User_main(void)
 	char num[256]={0};
 	while(1)
 	{
-		Logic();
+		LCD_Image2LcdDrawBmp565Pic(0, 0,gImage_111);
+		//Logic();
 	}
 }
 

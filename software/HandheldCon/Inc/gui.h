@@ -21,6 +21,8 @@ void LCD_DrawSqure(uint16_t x,uint16_t y,uint16_t whith,uint16_t length,uint16_t
 void LCD_DrawSqure1(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t border_color,uint16_t internal_color);
 void LCD_DrawFullCircle(uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint16_t color);
 void LCD_DrawSqureBorder(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t border_color);
+void LCD_DrawBmp565Pic(uint16_t StartX, uint16_t StartY, uint16_t Width, uint16_t Height, const uint16_t *BmpAddress);
+void LCD_Image2LcdDrawBmp565Pic(uint16_t StartX, uint16_t StartY, const uint8_t *BmpAddress);
 #ifdef __cplusplus
 }
 #endif

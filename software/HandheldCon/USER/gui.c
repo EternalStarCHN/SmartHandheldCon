@@ -2,6 +2,18 @@
 #include "gui.h"
 #include "font.h"
 #include <stdio.h>
+
+typedef struct _HEADCOLOR
+{
+   unsigned char scan;
+   unsigned char gray;
+   unsigned short w;
+   unsigned short h;
+   unsigned char is565;
+   unsigned char rgb;
+}HEADCOLOR;
+
+
 //从ILI93xx读出的数据为GBR格式，而我们写入的时候为RGB格式。
 //通过该函数转换
 //c:GBR格式的颜色值
@@ -417,10 +429,78 @@ void LCD_DrawFullCircle(uint16_t Xpos,uint16_t Ypos,uint16_t Radius,uint16_t col
 		}
 }
 
+
 void LCD_DrawSqureBorder(uint16_t x,uint16_t y,uint16_t width,uint16_t length,uint16_t border_color){
 	if((x+width)>320||(y+length)>240) return;
 		Gui_DrawLine( x,  y, x+width, y, border_color);
 		Gui_DrawLine( x,  y+length, x+width, y+length, border_color);
 		Gui_DrawLine( x,  y+1, x, y+length-1, border_color);
 		Gui_DrawLine( x+width,  y+1, x+width, y+length-1, border_color);
+}
+
+//draw PIC
+void LCD_DrawBmp565Pic(uint16_t StartX, uint16_t StartY, uint16_t Width, uint16_t Height, const uint16_t *BmpAddress)
+{
+//    uint32_t total;
+    uint32_t i, j;
+    uint32_t pointor;
+    uint16_t line;
+
+    //LCD_DEBUG_PRINTF("LCD_DrawBmp565Picture StartX %d StartY %d Width %d Height %d \n\r"
+    //                              , StartX, StartY, Width, Height);
+
+    line=StartX;
+#if 0  // 这种方法绘制速度快，但是寄存器因为LCD驱动芯片的不同而不同
+    total = Width * Height;
+
+    LCD_WriteReg(0x0044,0xEF00 + StartX);        //Specify the start/end positions of the window address in the horizontal direction by an address unit
+    LCD_WriteReg(0x0045,StartY);        //Specify the start positions of the window address in the vertical direction by an address unit 
+    LCD_WriteReg(0x0046,StartY + Width -1 );        //Specify the end positions of the window address in the vertical direction by an address unit 
+
+    ili9320_SetCursor(line, StartY);
+  	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */
+
+    for (i=0;i<total;i++)
+    {
+        LCD_WriteRAM(BmpAddress[i]);
+    }
+
+    LCD_WriteReg(0x0044,0xEF00);        //Specify the start/end positions of the window address in the horizontal direction by an address unit
+    LCD_WriteReg(0x0045,0x0000);        //Specify the start positions of the window address in the vertical direction by an address unit 
+    LCD_WriteReg(0x0046,0x013F);        //Specify the end positions of the window address in the vertical direction by an address unit 
+#else
+    pointor = 0;
+    for (i=0;i<Height;i++)
+    {
+        Lcd_SetXY(line, StartY);
+//        LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */
+        for (j=0;j<Width;j++)
+        {
+            Lcd_WriteData_16Bit(BmpAddress[pointor]);
+            pointor++;
+        }
+        line++;
+    }
+#endif
+}
+
+void LCD_Image2LcdDrawBmp565Pic(uint16_t StartX, uint16_t StartY, const uint8_t *BmpAddress)
+{
+    HEADCOLOR * BmpHeadr;
+
+    uint16_t Width, Height;
+    uint8_t *BmpData;
+
+    BmpHeadr = (HEADCOLOR *)BmpAddress;
+    Width  = BmpHeadr->w;
+    Height = BmpHeadr->h;
+    BmpData = (uint8_t *)(BmpAddress + sizeof(HEADCOLOR));
+    if((BmpHeadr->is565 == 1) && (BmpHeadr->gray == 16))
+    {
+        LCD_DrawBmp565Pic(StartX, StartY, Width, Height, (const uint16_t *)BmpData);
+    }
+    else
+    {
+//        LCD_DEBUG_PRINTF("\n\r LCD_Image2LcdDrawBmp565Pic: Not Image2Lcd or Bmp565 format.");
+    }
 }

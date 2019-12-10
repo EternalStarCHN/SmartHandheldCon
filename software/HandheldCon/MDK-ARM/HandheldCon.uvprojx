@@ -17,8 +17,8 @@
         <TargetCommonOption>
           <Device>STM32F407ZGTx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.14.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.STM32F4xx_DFP.2.12.0</PackID>
+          <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IRAM(0x20000000-0x2001FFFF) IRAM2(0x10000000-0x1000FFFF) IROM(0x8000000-0x80FFFFF)  CLOCK(25000000) FPU2 CPUTYPE("Cortex-M4")</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -467,6 +467,11 @@
               <FileName>snake.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\USER\snake.c</FilePath>
+            </File>
+            <File>
+              <FileName>User_Pic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\User_Pic.c</FilePath>
             </File>
           </Files>
         </Group>

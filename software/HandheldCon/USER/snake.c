@@ -5,6 +5,8 @@ uint8_t Game1_Down_Pre=0;
 uint8_t Game1_Left_Pre=0;
 uint8_t Game1_Right_Pre=0;
 
+uint8_t Game1_Pre = 0;//Up:1 Down:2 Left:3 Right:4
+
 uint8_t Game1_Up_Status = 0;
 uint8_t Game1_Down_Status = 0;
 uint8_t Game1_Left_Status =0;
@@ -91,6 +93,7 @@ void Run_SNAKE(void){
 if(!Snake_R.Life){
 	if((Game1_Up_Status==1&&Game1_Down_Pre==0)||(Game1_Down_Flag==1&&Game1_Up_Pre==1))
 	{
+		
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Area,SNAKE_Area,BLACK);
 		for(i=0;i<Snake_R.Long-1;i++){
 			Snake_R.X[i]=Snake_R.X[i+1];
