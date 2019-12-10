@@ -25,6 +25,10 @@ extern uint8_t Game1_Right_Flag;
 
 
 char SCORE[256]={0};	
+char S_HeadX[256]={0};
+char S_HeadY[256]={0};
+char F_HeadX[256]={0};
+char F_HeadY[256]={0};
 
 Snake Snake_R;
 Food Food_R;
@@ -37,8 +41,8 @@ void Init_SNAKE(void){
 	
 	Lcd_Clear(BLACK); //背景色
 	//LCD_DrawSqure1(0,18,320,222,WHITE,BLACK);
-	LCD_DrawSqureBorder(0,18,320,222,WHITE);
-	Gui_DrawFont_GBK16(120,0,RED,BLACK,"YOUR SCORE:");
+	LCD_DrawSqureBorder(0,0,240,240,WHITE);
+	Gui_DrawFont_GBK16(270,20,YELLOW,BLACK,"SCORE:");
 
 	Snake_R.Long = 2; 
 	Snake_R.Life = 0; //初始化蛇还活着
@@ -49,12 +53,12 @@ void Init_SNAKE(void){
 	Food_R.Yes = 1;
 	
 	IntToString(Snake_R.Score,SCORE);
-	Gui_DrawFont_GBK16(210,0,YELLOW,BLACK,SCORE);
+	Gui_DrawFont_GBK16(270,40,YELLOW,BLACK,SCORE);
 	
 	for(i=0;i<Snake_R.Long;i++) //将蛇给赋值
 	{
-		Snake_R.X[i]=SNAKE_Area*i+10;
-		Snake_R.Y[i]=20; 
+		Snake_R.X[i]=SNAKE_Area*i+120;
+		Snake_R.Y[i]=120; 
 	}
 	for(i=0;i<Snake_R.Long;i++) //将蛇给画出来
 	{
@@ -73,7 +77,17 @@ void Run_SNAKE(void){
 		Game1_Left_Status = 1;
 	if(Game1_Right_Flag)
 		Game1_Right_Status = 1;
+	Show_Head();
+// 判蛇头是否撞到墙壁
+	if(Snake_R.X[Snake_R.Long-1]<5||Snake_R.X[Snake_R.Long-1]>230||Snake_R.Y[Snake_R.Long-1]<5||Snake_R.Y[Snake_R.Long-1]>230){
+		Snake_R.Life=1;
+	}
 	
+//判断蛇是否死亡
+	if(Snake_R.Life==1)
+	{
+		Display_Dead();
+	}
 if(!Snake_R.Life){
 	if((Game1_Up_Status==1&&Game1_Down_Pre==0)||(Game1_Down_Flag==1&&Game1_Up_Pre==1))
 	{
@@ -150,10 +164,7 @@ if(!Snake_R.Life){
 }	
 
 	
-// 判蛇头是否撞到墙壁
-	if(Snake_R.X[Snake_R.Long-1]<0||Snake_R.X[Snake_R.Long-1]>315||Snake_R.Y[Snake_R.Long-1]<20||Snake_R.Y[Snake_R.Long-1]>220){
-		Snake_R.Life=1;
-	}
+
 
 // 从第三节开始判断蛇头是否咬到自己	
 	for(i=3;i<Snake_R.Long;i++)
@@ -164,11 +175,7 @@ if(!Snake_R.Life){
 		}
 	}
 	
-//判断蛇是否死亡
-	if(Snake_R.Life==1)
-	{
-		Display_Dead();
-	} 
+ 
 	
 //判断蛇是否到达最长
 	if(Snake_R.Long==SNAKE_Max_Long)
@@ -180,14 +187,14 @@ if(!Snake_R.Life){
 	if(Snake_R.X[Snake_R.Long-1]==Food_R.X&&Snake_R.Y[Snake_R.Long-1]==Food_R.Y)
 	{
 		IntToString(Snake_R.Score,SCORE);						//将分数转换为String
-		Gui_DrawFont_GBK16(50,280,BLACK,BLACK,SCORE);
+		Gui_DrawFont_GBK16(270,40,BLACK,BLACK,1);
 		LCD_DrawSqure(Food_R.X,Food_R.Y,SNAKE_Area,SNAKE_Area,BLACK); //消隐食物
 		Snake_R.Long++;// 蛇节数加 1
 		Snake_R.X[Snake_R.Long-1]=Food_R.X;
 		Snake_R.Y[Snake_R.Long-1]=Food_R.Y;
 		Snake_R.Score+=10;
 		IntToString(Snake_R.Score,SCORE);					//将分数转换为String
-		Gui_DrawFont_GBK16(50,280,WHITE,BLACK,SCORE);
+		Gui_DrawFont_GBK16(270,40,YELLOW,BLACK,SCORE);
 		Food_R.Yes=1; //食物标志置 1
 	}
 	
@@ -196,8 +203,10 @@ if(!Snake_R.Life){
 	{
 		while(1)
 		{
-			Food_R.X=(abs(HAL_RNG_GetRandomNumber(&hrng))%72+1)*5; //随机生成食物X
-			Food_R.Y=(abs(HAL_RNG_GetRandomNumber(&hrng))%44+1)*5+20; //随机生成食物Y
+			Food_R.X=((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%72))*5; //随机生成食物X
+			if(Food_R.X%5==4)
+				Food_R.X++;
+			Food_R.Y=(int)(abs(HAL_RNG_GetRandomNumber(&hrng))%44)*5+20; //随机生成食物Y
 			for(i=0;i<Snake_R.Long;i++) //判断产生的食物坐标是否和蛇身重合
 			{
 			if((Food_R.X==Snake_R.X[i])&&(Food_R.X==Snake_R.Y[i]))
@@ -224,7 +233,7 @@ void Display_Dead(void)
 		Lcd_Clear(BLACK);
 		Game1_Dead_Refresh++;
 	}
-	LCD_DrawSqureBorder(0,18,320,222,RED);
+	LCD_DrawSqureBorder(0,0,320,240,RED);
 	Gui_DrawFont_GBK16(120,100,WHITE,BLACK,"GAME OVER! ");
 	Gui_DrawFont_GBK16(80,150,WHITE,BLACK,"press CONFIRM to restart");
 	Gui_DrawFont_GBK16(80,170,WHITE,BLACK,"press RETURN  to MENU");	
@@ -248,6 +257,7 @@ void Display_Pass(void)
 			Lcd_Clear(BLACK);
 			Game1_Pass_Refresh++;
 	}
+	LCD_DrawSqureBorder(0,0,320,240,GREEN);
 	Gui_DrawFont_GBK16(100,100,YELLOW,BLACK,"MISSION SUCCESS!");
 	Gui_DrawFont_GBK16(60,150,YELLOW,BLACK,"press Confirm to contiue");
 	if(Game1_Continue){
@@ -260,5 +270,18 @@ void Display_Pass(void)
 	}
 }
 
-
+void Show_Head(void){
+	Gui_DrawFont_GBK16(250,180,BLACK,BLACK,S_HeadX);
+	Gui_DrawFont_GBK16(290,180,BLACK,BLACK,S_HeadY);
+	Gui_DrawFont_GBK16(250,220,BLACK,BLACK,F_HeadX);
+	Gui_DrawFont_GBK16(290,220,BLACK,BLACK,F_HeadY);
+	IntToString(Snake_R.X[Snake_R.Long-1],S_HeadX);
+	IntToString(Snake_R.Y[Snake_R.Long-1],S_HeadY);
+	IntToString(Food_R.X,F_HeadX);
+	IntToString(Food_R.Y,F_HeadY);
+	Gui_DrawFont_GBK16(250,180,WHITE,BLACK,S_HeadX);
+	Gui_DrawFont_GBK16(290,180,WHITE,BLACK,S_HeadY);
+	Gui_DrawFont_GBK16(250,220,WHITE,BLACK,F_HeadX);
+	Gui_DrawFont_GBK16(290,220,WHITE,BLACK,F_HeadY);
+}
 	

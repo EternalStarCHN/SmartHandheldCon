@@ -35,7 +35,7 @@ void Display_Pass(void);
 void Display_Dead(void);
 void Trun_On_Point (uint8_t x,uint8_t y);
 void Trun_Off_Point (uint8_t x,uint8_t y);
-
+void Show_Head(void);
 
 //extern void Trun_On_Point (uchar x,uchar y,uchar color);
 #endif
