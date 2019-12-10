@@ -17,8 +17,8 @@ void User_main(void)
 	char num[256]={0};
 	while(1)
 	{
-		LCD_Image2LcdDrawBmp565Pic(0, 0,gImage_111);
-		//Logic();
+		//LCD_Image2LcdDrawBmp565Pic(0, 0,gImage_111);
+		Logic();
 	}
 }
 

@@ -26,7 +26,8 @@ extern uint8_t Game1_Left_Flag;
 extern uint8_t Game1_Right_Flag;
 
 
-char SCORE[256]={0};	
+char SCORE[256]={0};
+char LEVEL[256]={0};
 char S_HeadX[256]={0};
 char S_HeadY[256]={0};
 char F_HeadX[256]={0};
@@ -39,13 +40,14 @@ void Init_SNAKE(void){
 	uint8_t i;
 	
 	Game1_Up_Status = Game1_Down_Status = Game1_Left_Status = Game1_Right_Status = 0;//Status_CLear
-	Game1_Up_Pre = Game1_Down_Pre = Game1_Left_Pre = Game1_Right_Pre = 0;//Pre_CLear
+	//Game1_Up_Pre = Game1_Down_Pre = Game1_Left_Pre = Game1_Right_Pre = 0;//Pre_CLear
+	Game1_Pre = 0;
 	
 	Lcd_Clear(BLACK); //背景色
 	//LCD_DrawSqure1(0,18,320,222,WHITE,BLACK);
 	LCD_DrawSqureBorder(0,0,240,240,WHITE);
-	Gui_DrawFont_GBK16(270,20,YELLOW,BLACK,"SCORE:");
-
+	Gui_DrawFont_GBK16(250,20,YELLOW,BLACK,"SCORE:");
+	Gui_DrawFont_GBK16(250,70,YELLOW,BLACK,"LEVEL:");
 	Snake_R.Long = 2; 
 	Snake_R.Life = 0; //初始化蛇还活着
 	if(!Game1_InitFirst){
@@ -55,7 +57,9 @@ void Init_SNAKE(void){
 	Food_R.Yes = 1;
 	
 	IntToString(Snake_R.Score,SCORE);
-	Gui_DrawFont_GBK16(270,40,YELLOW,BLACK,SCORE);
+	IntToString(Snake_R.Level,LEVEL);
+	Gui_DrawFont_GBK16(250,40,YELLOW,BLACK,SCORE);
+	Gui_DrawFont_GBK16(250,90,YELLOW,BLACK,LEVEL);
 	
 	for(i=0;i<Snake_R.Long;i++) //将蛇给赋值
 	{
@@ -91,9 +95,8 @@ void Run_SNAKE(void){
 		Display_Dead();
 	}
 if(!Snake_R.Life){
-	if((Game1_Up_Status==1&&Game1_Down_Pre==0)||(Game1_Down_Flag==1&&Game1_Up_Pre==1))
-	{
-		
+	if((Game1_Up_Status==1&&Game1_Pre!=2)||(Game1_Down_Flag==1&&Game1_Pre==1))//Game1_Down_Pre==0 Game1_Up_Pre==1
+	{	
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Area,SNAKE_Area,BLACK);
 		for(i=0;i<Snake_R.Long-1;i++){
 			Snake_R.X[i]=Snake_R.X[i+1];
@@ -105,12 +108,13 @@ if(!Snake_R.Life){
 			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RED);
 		}
 		if(Game1_Down_Flag==0){
-			Game1_Up_Pre = Game1_Up_Status;
+			Game1_Pre = 1;
+			//Game1_Up_Pre = Game1_Up_Status;
 		}
 		Game1_Up_Flag = 0;
 	} 
 		
-	if((Game1_Down_Status==1&&Game1_Up_Pre==0)||(Game1_Up_Flag==1&&Game1_Down_Pre==1))
+	if((Game1_Down_Status==1&&Game1_Pre!=1)||(Game1_Up_Flag==1&&Game1_Pre==2))//Game1_Up_Pre==0 Game1_Down_Pre==1
 	{
 	
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Area,SNAKE_Area,BLACK);
@@ -124,12 +128,13 @@ if(!Snake_R.Life){
 			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RED);
 		}
 		if(Game1_Up_Flag==0){
-			Game1_Down_Pre = Game1_Down_Status;
+			Game1_Pre = 2;
+			//Game1_Down_Pre = Game1_Down_Status;
 		}
 		Game1_Down_Flag = 0;
 	} 
 	
-		if((Game1_Left_Status==1&&Game1_Right_Pre==0)||(Game1_Right_Flag==1&&Game1_Left_Pre==1))
+		if((Game1_Left_Status==1&&Game1_Pre!=4)||(Game1_Right_Flag==1&&Game1_Pre==3))//Game1_Right_Pre==0 Game1_Left_Pre==1
 	{
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Area,SNAKE_Area,BLACK);
 		for(i=0;i<Snake_R.Long-1;i++){
@@ -142,12 +147,13 @@ if(!Snake_R.Life){
 			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RED);
 		}
 		if(Game1_Right_Flag==0){
-			Game1_Left_Pre = Game1_Left_Status;
+			Game1_Pre = 3;
+			//Game1_Left_Pre = Game1_Left_Status;
 		}
 		Game1_Left_Flag = 0;
 	} 
 		
-	if((Game1_Right_Status==1&&Game1_Left_Pre==0)||(Game1_Left_Flag==1&&Game1_Right_Pre==1))
+	if((Game1_Right_Status==1&&Game1_Pre!=3)||(Game1_Left_Flag==1&&Game1_Pre==4))//Game1_Left_Pre==0 Game1_Right_Pre==1
 	{
 		LCD_DrawSqure(Snake_R.X[0],Snake_R.Y[0],SNAKE_Area,SNAKE_Area,BLACK);
 		for(i=0;i<Snake_R.Long-1;i++){
@@ -160,25 +166,24 @@ if(!Snake_R.Life){
 			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RED);
 		}
 		if(Game1_Left_Flag==0){
-			Game1_Right_Pre = Game1_Right_Status;
+			Game1_Pre = 4;
+			//Game1_Right_Pre = Game1_Right_Status;
 		}
-	Game1_Right_Flag = 0;
+		Game1_Right_Flag = 0;
 	}
 }	
 
 	
 
 
-// 从第三节开始判断蛇头是否咬到自己	
+//从第三节开始判断蛇头是否咬到自己	
 	for(i=3;i<Snake_R.Long;i++)
 	{
 		if(Snake_R.X[i]==Snake_R.X[0]&&Snake_R.Y[i]==Snake_R.Y[0])
 		{
 			Snake_R.Life=1;
 		}
-	}
-	
- 
+	} 
 	
 //判断蛇是否到达最长
 	if(Snake_R.Long==SNAKE_Max_Long)
@@ -190,14 +195,19 @@ if(!Snake_R.Life){
 	if(Snake_R.X[Snake_R.Long-1]==Food_R.X&&Snake_R.Y[Snake_R.Long-1]==Food_R.Y)
 	{
 		IntToString(Snake_R.Score,SCORE);						//将分数转换为String
-		Gui_DrawFont_GBK16(270,40,BLACK,BLACK,1);
+		Gui_DrawFont_GBK16(250,40,BLACK,BLACK,SCORE);
+		IntToString(Snake_R.Level,LEVEL);						//将等级转换为String
+		Gui_DrawFont_GBK16(250,90,BLACK,BLACK,LEVEL);
 		LCD_DrawSqure(Food_R.X,Food_R.Y,SNAKE_Area,SNAKE_Area,BLACK); //消隐食物
 		Snake_R.Long++;// 蛇节数加 1
 		Snake_R.X[Snake_R.Long-1]=Food_R.X;
 		Snake_R.Y[Snake_R.Long-1]=Food_R.Y;
 		Snake_R.Score+=10;
+		Snake_R.Level++;
 		IntToString(Snake_R.Score,SCORE);					//将分数转换为String
-		Gui_DrawFont_GBK16(270,40,YELLOW,BLACK,SCORE);
+		IntToString(Snake_R.Level,LEVEL);					//将分数转换为String
+		Gui_DrawFont_GBK16(250,40,YELLOW,BLACK,SCORE);
+		Gui_DrawFont_GBK16(250,90,YELLOW,BLACK,LEVEL);
 		Food_R.Yes=1; //食物标志置 1
 	}
 	
@@ -206,10 +216,10 @@ if(!Snake_R.Life){
 	{
 		while(1)
 		{
-			Food_R.X=((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%72))*5; //随机生成食物X
+			Food_R.X=((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%48))*5; //随机生成食物X
 			if(Food_R.X%5==4)
 				Food_R.X++;
-			Food_R.Y=(int)(abs(HAL_RNG_GetRandomNumber(&hrng))%44)*5+20; //随机生成食物Y
+			Food_R.Y=(int)(abs(HAL_RNG_GetRandomNumber(&hrng))%48)*5; //随机生成食物Y
 			for(i=0;i<Snake_R.Long;i++) //判断产生的食物坐标是否和蛇身重合
 			{
 			if((Food_R.X==Snake_R.X[i])&&(Food_R.X==Snake_R.Y[i]))
@@ -226,7 +236,7 @@ if(!Snake_R.Life){
 	{
 		LCD_DrawSqure(Food_R.X,Food_R.Y,SNAKE_Area,SNAKE_Area,GREEN); 
 	}
-	HAL_Delay(1000-Snake_R.Level*10);
+	HAL_Delay(1000-50*10);//Snake_R.Level
 }
 
 void Display_Dead(void)
@@ -237,9 +247,9 @@ void Display_Dead(void)
 		Game1_Dead_Refresh++;
 	}
 	LCD_DrawSqureBorder(0,0,320,240,RED);
-	Gui_DrawFont_GBK16(120,100,WHITE,BLACK,"GAME OVER! ");
-	Gui_DrawFont_GBK16(80,150,WHITE,BLACK,"press CONFIRM to restart");
-	Gui_DrawFont_GBK16(80,170,WHITE,BLACK,"press RETURN  to MENU");	
+	Gui_DrawFont_GBK16(100,100,WHITE,BLACK,"GAME OVER! ");
+	Gui_DrawFont_GBK16(60,150,WHITE,BLACK,"Press 'CONFIRM' to Restart");
+	Gui_DrawFont_GBK16(60,170,WHITE,BLACK,"Press 'RETURN'  to Menu");	
 	if(Game1_Restart){
 		
 		Snake_R.Score = 0;
@@ -262,7 +272,7 @@ void Display_Pass(void)
 	}
 	LCD_DrawSqureBorder(0,0,320,240,GREEN);
 	Gui_DrawFont_GBK16(100,100,YELLOW,BLACK,"MISSION SUCCESS!");
-	Gui_DrawFont_GBK16(60,150,YELLOW,BLACK,"press Confirm to contiue");
+	Gui_DrawFont_GBK16(60,150,YELLOW,BLACK,"Press ‘Confirm’ to Contiue");
 	if(Game1_Continue){
 
 		Init_SNAKE();
