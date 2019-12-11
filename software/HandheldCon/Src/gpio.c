@@ -204,7 +204,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			Game1_Dead = 0;
 			Game1_Pass = 0;
 			Game1_Restart = 0;
-			Game1_Refresh = 0;	   //主界面刷新标志复位
+			Game1_Refresh = 0;	   //主界面刷新标志复�?
 			Game1_Dead_Refresh = 0;//死亡界面刷新标志复位
 			Game1_Pass_Refresh = 0;//死亡界面刷新标志复位
 		}
@@ -212,7 +212,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Up_Pin){
-		delay_ms(20);
+		delay_ms(50);
 		if(HAL_GPIO_ReadPin(Up_GPIO_Port,Up_Pin))
 		{
 			if(Menu_Flag == 1){
@@ -233,7 +233,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Down_Pin){
-		delay_ms(20);
+		delay_ms(50);
 		if(HAL_GPIO_ReadPin(Down_GPIO_Port,Down_Pin))
 		{
 			if(Menu_Flag == 1){
@@ -254,7 +254,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Left_Pin){
-		delay_ms(20);
+		delay_ms(50);
 		if(HAL_GPIO_ReadPin(Left_GPIO_Port,Left_Pin))
 		{
 			if(Game_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass){
@@ -266,7 +266,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Right_Pin){
-		delay_ms(20);
+		delay_ms(50);
 		if(HAL_GPIO_ReadPin(Right_GPIO_Port,Right_Pin))
 		{
 			if(Game_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass){
@@ -278,14 +278,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == LightControl_Pin){
-		delay_ms(20);
+		delay_ms(50);
     if(HAL_GPIO_ReadPin(LightControl_GPIO_Port,LightControl_Pin))
 		HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 	}	
 	
 	
 	else if(GPIO_Pin == Return_Pin){
-		delay_ms(20);
+		delay_ms(50);
 		if(HAL_GPIO_ReadPin(Return_GPIO_Port,Return_Pin))
 		{
 			if(Game1_Flag&&Game1_Flag&&Game1_Dead){
@@ -296,7 +296,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Game1_Dead = 0;
 				Game1_Pass = 0;
 				Game1_Restart = 0;
-				Game1_Refresh = 0;	   //主界面刷新标志复位
+				Game1_Refresh = 0;	   //主界面刷新标志复�?
 				Game1_Dead_Refresh = 0;//死亡界面刷新标志复位
 			}
 				if(Game1_Flag&&Game1_Flag&&Game1_Pass){
@@ -308,12 +308,20 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Game1_Pass = 0;
 				Game1_Restart = 0;
 				Game1_Continue = 0;
-				Game1_Refresh = 0;	   //主界面刷新标志复位
+				Game1_Refresh = 0;	   //主界面刷新标志复�?
 				Game1_Dead_Refresh = 0;//死亡界面刷新标志复位
 				Game1_Pass_Refresh = 0;
 			}
 		}
 	}	
+	
+//	else if(GPIO_Pin == fuck1_Pin){
+//			Gui_DrawFont_GBK16(100,150,WHITE,BLACK,"MOTHER");	
+//	}
+//	
+//		else if(GPIO_Pin == fuck2_Pin){
+//			Gui_DrawFont_GBK16(50,100,WHITE,BLACK,"FUCKER");	
+//	}
 }
 
 /* USER CODE END 2 */
