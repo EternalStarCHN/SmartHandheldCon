@@ -72,6 +72,23 @@ GenerateClassCluster=0
 DocumentUniqueId=CBHRVOQA
 
 [Document3]
+DocumentPath=¿â\fszhang.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VEQYKUSF
+
+[Document4]
 DocumentPath=¿â\Pro.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -88,7 +105,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UHPRKXLF
 
-[Document4]
+[Document5]
 DocumentPath=¿â\PcbLib_autocar.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -105,7 +122,24 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document6]
+DocumentPath=¿â\fszhang.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=YCQDYXBP
+
+[Document7]
 DocumentPath=¿â\Schlib_autocar.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -122,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DBDPHQYI
 
-[Document6]
+[Document8]
 DocumentPath=¿â\Schlib1.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -138,10 +172,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LAJHSSGQ
-
-[GeneratedDocument1]
-DocumentPath=Project Outputs for HandheldCon\Design Rule Check - HandheldCon.html
-DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources

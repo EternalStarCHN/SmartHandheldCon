@@ -29,6 +29,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -61,6 +62,8 @@ void Error_Handler(void);
 #define Menu_Pin GPIO_PIN_1
 #define Menu_GPIO_Port GPIOF
 #define Menu_EXTI_IRQn EXTI1_IRQn
+#define LED_PWM_Pin GPIO_PIN_3
+#define LED_PWM_GPIO_Port GPIOA
 #define DC_Pin GPIO_PIN_4
 #define DC_GPIO_Port GPIOA
 #define RST_Pin GPIO_PIN_4
