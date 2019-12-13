@@ -194,6 +194,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Game1_Continue = 1;
 				Game1_Pass_Refresh = 0;
 			}
+		}
 	}
 	
 	
@@ -335,16 +336,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 					LEDControl_Refresh_Flag = 0;
 				}
 			}
-		}
 	}	
-	
-//	else if(GPIO_Pin == fuck1_Pin){
-//			Gui_DrawFont_GBK16(100,150,WHITE,BLACK,"MOTHER");	
-//	}
-//	
-//		else if(GPIO_Pin == fuck2_Pin){
-//			Gui_DrawFont_GBK16(50,100,WHITE,BLACK,"FUCKER");	
-//	}
 }
 
 /* USER CODE END 2 */

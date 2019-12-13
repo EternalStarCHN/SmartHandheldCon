@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/HP/Desktop/STM32FinalTask/software/HandheldCon/Inc
+HeaderPath=G:/Desktop/STM32FinalTask/software/HandheldCon/Inc
 HeaderFiles=gpio.h;adc.h;dma.h;spi.h;sys.h;tim.h;usart.h;stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;rng.h;i2c.h;
-SourcePath=C:/Users/HP/Desktop/STM32FinalTask/software/HandheldCon/Src
+SourcePath=G:/Desktop/STM32FinalTask/software/HandheldCon/Src
 SourceFiles=gpio.c;adc.c;dma.c;spi.c;sys.c;tim.c;usart.c;stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;rng.c;i2c.c;
 
 [PreviousLibFiles]

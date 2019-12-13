@@ -4,6 +4,8 @@
 #include "gpio.h"
 #include "gui.h"
 #include "spi.h"
+#include "User_adc.h"
+#include "User_Led.h"
 
 #define IntToString(VAL,ARR) sprintf(ARR,"%d",VAL) //itos转换
 #define DoubleToString(VAL,ARR) sprintf(ARR,"%lf",VAL) //itos转换

@@ -10,6 +10,13 @@ void Led_OpenALL(void){
 		HAL_GPIO_WritePin(Led_Green_GPIO_Port,Led_Green_Pin,GPIO_PIN_RESET);
 }
 
+void Led_CloseALL(void){
+		HAL_GPIO_WritePin(Led_Red_GPIO_Port,Led_Red_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(Led_Yellow_GPIO_Port,Led_Yellow_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(Led_Blue_GPIO_Port,Led_Blue_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(Led_Green_GPIO_Port,Led_Green_Pin,GPIO_PIN_SET);
+}
+
 void Led_WaterfallLight_Delay(uint8_t Delays){
 	uint8_t TimesCount = 0;
 	while(LED_Waterfall_Con){

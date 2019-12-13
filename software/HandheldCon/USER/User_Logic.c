@@ -74,7 +74,7 @@ void Menu_Show(uint8_t Menu_Index){
 			Gui_DrawLine(20, 30, 300, 30, RGB(255,215,0));	
 			Gui_DrawFont_GBK24(20,50,RGB(178,34,34),RGB(255,255,255),"Game:Gluttonous Snake");
 			Gui_DrawFont_GBK24(20,90,RGB(178,34,34),RGB(255,255,255),"Environment Information");
-			Gui_DrawFont_GBK24(20,130,RGB(178,34,34),RGB(255,255,255),"Control                 <-");
+			Gui_DrawFont_GBK24(20,130,RGB(178,34,34),RGB(255,255,255),"LED Control             <-");
 			Gui_DrawFont_GBK16(225,220,RGB(178,34,34),RGB(255,255,255),"Choose:");
 			Gui_DrawFont_Num32(280, 200, RED, WHITE, 3);
 			break;
@@ -101,6 +101,7 @@ void Func_Start(uint8_t Menu_Index){
 				Environment_Refresh_Flag++;
 			}
 			Environmen_Information();
+			HAL_Delay(500);
 			break;
 		case 3:
 				
@@ -111,11 +112,17 @@ void Func_Start(uint8_t Menu_Index){
 }
 
 void Environmen_Information(void){
+	MyADC_ValueGet();
 	Gui_DrawFont_GBK16(50,60,RGB(193,255,193),RGB(193,255,193),LUMI);
 	Gui_DrawFont_GBK16(50,120,RGB(193,255,193),RGB(193,255,193),TEMP);
-	HAL_Delay(1000);
 	DoubleToString(luminance,LUMI);
 	DoubleToString(temperture,TEMP);	
 	Gui_DrawFont_GBK16(50,60,RED,RGB(193,255,193),LUMI);
 	Gui_DrawFont_GBK16(50,120,RED,RGB(193,255,193),TEMP);	
+	if(temperture>2){
+		Led_OpenALL();
+	}
+	else{
+		Led_CloseALL();
+	}
 }
