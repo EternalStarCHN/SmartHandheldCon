@@ -101,6 +101,7 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   MX_USART1_UART_Init();
+  MX_ADC3_Init();
   /* USER CODE BEGIN 2 */
 	Lcd_Init();
 	Lcd_Clear(WHITE);
