@@ -5,8 +5,10 @@ uint8_t Game1_Flag = 0;
 uint8_t Game1_Refresh = 0;
 uint8_t Environment_Flag = 0;
 uint8_t Environment_Refresh_Flag = 0;
-uint8_t LEDControl_Flag = 0;
-uint8_t LEDControl_Refresh_Flag = 0;
+uint8_t PWMControl_Flag = 0;
+uint8_t PWMControl_Refresh_Flag = 0;
+uint8_t LEDPWM_Flag = 0;
+uint8_t FullColorPWM_Flag = 0;
 
 
 extern uint8_t Menu_Flag;
@@ -16,6 +18,7 @@ extern double luminance;
 extern double temperture;
 char LUMI[256]={0};
 char TEMP[256]={0};
+char AIRQ[256]={0};
 
 
 void Logic(void){
@@ -104,6 +107,8 @@ void Func_Start(uint8_t Menu_Index){
 			HAL_Delay(500);
 			break;
 		case 3:
+			PWMControl_Flag = 1;
+			
 				
 			break;
 		
@@ -113,12 +118,19 @@ void Func_Start(uint8_t Menu_Index){
 
 void Environmen_Information(void){
 	MyADC_ValueGet();
+	
 	Gui_DrawFont_GBK16(50,60,RGB(193,255,193),RGB(193,255,193),LUMI);
 	Gui_DrawFont_GBK16(50,120,RGB(193,255,193),RGB(193,255,193),TEMP);
+	Gui_DrawFont_GBK16(50,180,RGB(193,255,193),RGB(193,255,193),AIRQ);
+	
 	DoubleToString(luminance,LUMI);
 	DoubleToString(temperture,TEMP);	
+	DoubleToString(temperture,AIRQ);
+	
 	Gui_DrawFont_GBK16(50,60,RED,RGB(193,255,193),LUMI);
-	Gui_DrawFont_GBK16(50,120,RED,RGB(193,255,193),TEMP);	
+	Gui_DrawFont_GBK16(50,120,RED,RGB(193,255,193),TEMP);
+	Gui_DrawFont_GBK16(50,180,RED,RGB(193,255,193),AIRQ);
+	
 	if(temperture>2){
 		Led_OpenALL();
 	}

@@ -184,7 +184,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
     PC7     ------> TIM3_CH2
     PC8     ------> TIM3_CH3 
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8;
+    GPIO_InitStruct.Pin = FullColor_Blue_Pin|FullColor_Red_Pin|FullColor_Green_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

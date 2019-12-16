@@ -76,6 +76,12 @@ void Error_Handler(void);
 #define LED_HUMI_GPIO_Port GPIOB
 #define LED_TEMP_Pin GPIO_PIN_2
 #define LED_TEMP_GPIO_Port GPIOB
+#define FullColor_Blue_Pin GPIO_PIN_6
+#define FullColor_Blue_GPIO_Port GPIOC
+#define FullColor_Red_Pin GPIO_PIN_7
+#define FullColor_Red_GPIO_Port GPIOC
+#define FullColor_Green_Pin GPIO_PIN_8
+#define FullColor_Green_GPIO_Port GPIOC
 #define Return_Pin GPIO_PIN_11
 #define Return_GPIO_Port GPIOC
 #define Return_EXTI_IRQn EXTI15_10_IRQn
