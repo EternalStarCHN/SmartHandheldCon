@@ -10,6 +10,8 @@
 #include "adc.h"
 #include "User_adc.h"
 
+uint8_t START_Refresh = 0;
+
 extern uint8_t Menu_Flag;
 extern uint8_t LED_Waterfall_Con;
 
@@ -29,6 +31,11 @@ void User_main(void)
 	LED_Waterfall_Con = 1;
 	while(1)
 	{
+		if(!START_Refresh){
+			Buzzer_Yell_Times(3,50,50);
+			LED_TwinkleTEMP(2,30);
+			START_Refresh++;
+		}
 		Logic();
 	}
 }

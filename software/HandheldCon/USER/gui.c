@@ -34,7 +34,7 @@ void Gui_Circle(uint16_t X,uint16_t Y,uint16_t R,uint16_t fc)
     uint16_t a,b; 
     int32_t c; 
     a=0; 
-    b=R; 
+    b=R;
     c=3-2*R; 
     while (a<b) 
     { 

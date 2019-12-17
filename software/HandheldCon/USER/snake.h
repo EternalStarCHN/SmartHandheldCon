@@ -6,6 +6,8 @@
 #include "spi.h"
 #include "time.h"
 #include "rng.h"
+#include "User_Led.h"
+#include "User_Buzzer.h"
 
 #define SNAKE_Area 5
 #define SNAKE_Max_Long 64 

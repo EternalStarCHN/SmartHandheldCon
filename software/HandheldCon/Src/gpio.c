@@ -306,7 +306,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				if(PWMControl_Index <= 1){
 					PWMControl_Index = 4;
 				}
+				else{
 				PWMControl_Index--;
+				}
 			}
 		}
 	}	
@@ -324,7 +326,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				if(PWMControl_Index >= 4){
 					PWMControl_Index = 1;
 				}
+				else{
 				PWMControl_Index++;
+				}
 			}
 		}
 	}	
@@ -380,6 +384,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 					PWMControl_Refresh_Flag = 0;
 					PWMControl_Index = 1;
 				}
+
 			}
 	}	
 }

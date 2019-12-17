@@ -20,6 +20,9 @@ uint8_t Game1_Continue = 0;
 uint8_t Game1_Dead_Refresh = 0;
 uint8_t Game1_Pass_Refresh = 0;
 
+uint8_t LED_Refresh_Flag = 0;
+uint8_t Buzzer_Refresh_Flag = 0;
+
 extern uint8_t Game1_Up_Flag;
 extern uint8_t Game1_Down_Flag;
 extern uint8_t Game1_Left_Flag;
@@ -74,7 +77,8 @@ void Init_SNAKE(void){
 
 void Run_SNAKE(void){
 	uint8_t i = 0;
-	
+	LED_Refresh_Flag = 0;
+	Buzzer_Refresh_Flag = 0;
 	if(Game1_Up_Flag)
 		Game1_Up_Status = 1;
 	if(Game1_Down_Flag)
@@ -92,6 +96,10 @@ void Run_SNAKE(void){
 //判断蛇是否死亡
 	if(Snake_R.Life==1)
 	{
+		if(!Buzzer_Refresh_Flag){
+			Buzzer_Yell_Times(1,50,1000);
+			Buzzer_Refresh_Flag++;
+		}
 		Display_Dead();
 	}
 if(!Snake_R.Life){
@@ -194,6 +202,10 @@ if(!Snake_R.Life){
 //判断蛇是否吃到食物
 	if(Snake_R.X[Snake_R.Long-1]==Food_R.X&&Snake_R.Y[Snake_R.Long-1]==Food_R.Y)
 	{
+		if(!LED_Refresh_Flag){
+			Led_WaterfallLight_Times(2,50,30);
+			LED_Refresh_Flag++;
+		}
 		IntToString(Snake_R.Score,SCORE);						//将分数转换为String
 		Gui_DrawFont_GBK16(250,40,BLACK,BLACK,SCORE);
 		IntToString(Snake_R.Level,LEVEL);						//将等级转换为String
@@ -242,6 +254,7 @@ if(!Snake_R.Life){
 void Display_Dead(void)
 {
 	Game1_Dead = 1;
+	Buzzer_Refresh_Flag = 0;
 	if(!Game1_Dead_Refresh){
 		Lcd_Clear(BLACK);
 		Game1_Dead_Refresh++;

@@ -44,9 +44,15 @@ void LED_TwinkleHUMI(uint8_t times,uint8_t delay_ms){
 void LED_TwinkleTEMP(uint8_t times,uint8_t delay_ms){
 	int i;
 	for(i =0 ;i<times; i++){
-		HAL_GPIO_WritePin(LED_TEMP_GPIO_Port,LED_TEMP_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(Led_Red_GPIO_Port,Led_Red_Pin,GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(Led_Yellow_GPIO_Port,Led_Yellow_Pin,GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(Led_Blue_GPIO_Port,Led_Blue_Pin,GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(Led_Green_GPIO_Port,Led_Green_Pin,GPIO_PIN_RESET);
 		HAL_Delay(delay_ms);
-		HAL_GPIO_WritePin(LED_TEMP_GPIO_Port,LED_TEMP_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(Led_Red_GPIO_Port,Led_Red_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(Led_Yellow_GPIO_Port,Led_Yellow_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(Led_Blue_GPIO_Port,Led_Blue_Pin,GPIO_PIN_SET);
+		HAL_GPIO_WritePin(Led_Green_GPIO_Port,Led_Green_Pin,GPIO_PIN_SET);;
 		HAL_Delay(delay_ms);
 	}
 }
@@ -82,22 +88,25 @@ void Led_WaterfallLight_Delay(uint8_t delay_ms){
 	}
 }
 
-void Led_WaterfallLight_Times(uint8_t Times,uint8_t delay_ms){
-	uint8_t times = Times;
-while(times>=0){
+void Led_WaterfallLight_Times(uint8_t Times,uint8_t On_delay_ms,uint8_t Off_delay_ms){
+	uint8_t i = 0;
+for(i = 0;i<Times;i++){
 				HAL_GPIO_WritePin(Led_Red_GPIO_Port,Led_Red_Pin,GPIO_PIN_RESET);
-				HAL_Delay(delay_ms);
-				HAL_GPIO_WritePin(Led_Red_GPIO_Port,Led_Red_Pin,GPIO_PIN_SET);			
+				HAL_Delay(On_delay_ms);
+				HAL_GPIO_WritePin(Led_Red_GPIO_Port,Led_Red_Pin,GPIO_PIN_SET);		
+				HAL_Delay(Off_delay_ms);	
 				HAL_GPIO_WritePin(Led_Yellow_GPIO_Port,Led_Yellow_Pin,GPIO_PIN_RESET);
-				HAL_Delay(delay_ms);
+				HAL_Delay(On_delay_ms);
 				HAL_GPIO_WritePin(Led_Yellow_GPIO_Port,Led_Yellow_Pin,GPIO_PIN_SET);
+				HAL_Delay(Off_delay_ms);
 				HAL_GPIO_WritePin(Led_Blue_GPIO_Port,Led_Blue_Pin,GPIO_PIN_RESET);
-				HAL_Delay(delay_ms);
+				HAL_Delay(On_delay_ms);
 				HAL_GPIO_WritePin(Led_Blue_GPIO_Port,Led_Blue_Pin,GPIO_PIN_SET);
+				HAL_Delay(Off_delay_ms);
 				HAL_GPIO_WritePin(Led_Green_GPIO_Port,Led_Green_Pin,GPIO_PIN_RESET);
-				HAL_Delay(delay_ms);
+				HAL_Delay(On_delay_ms);
 				HAL_GPIO_WritePin(Led_Green_GPIO_Port,Led_Green_Pin,GPIO_PIN_SET);
-				times--;
+				HAL_Delay(Off_delay_ms);
 		}
 }
 

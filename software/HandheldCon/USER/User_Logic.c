@@ -125,7 +125,8 @@ void Func_Start(uint8_t Menu_Index){
 				Gui_DrawFont_GBK16(40,60,RGB(255,245,238),PWMControl_BG,"LEDPWM");
 				Gui_DrawFont_GBK16(120,60,RGB(255,245,238),PWMControl_BG,"Red");
 				Gui_DrawFont_GBK16(180,60,RGB(255,245,238),PWMControl_BG,"Green");
-				Gui_DrawFont_GBK16(240,60,RGB(255,245,238),PWMControl_BG,"Blue");				
+				Gui_DrawFont_GBK16(240,60,RGB(255,245,238),PWMControl_BG,"Blue");	
+				PWMControl_Refresh_Flag++;				
 			}
 			PWM_Control();
 			break;
