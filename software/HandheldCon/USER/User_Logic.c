@@ -9,7 +9,14 @@ uint8_t PWMControl_Flag = 0;
 uint8_t PWMControl_Refresh_Flag = 0;
 uint8_t LEDPWM_Flag = 0;
 uint8_t FullColorPWM_Flag = 0;
-
+uint8_t PWM_CRR_Refresh = 0;
+uint8_t PWM_CRRRED_Refresh = 0;
+uint8_t PWM_CRRGREEN_Refresh = 0;
+uint8_t PWM_CRRBLUE_Refresh = 0;
+uint8_t CRR_Pre = 0;
+uint8_t CRRRED_Pre = 0;
+uint8_t CRRGREEN_Pre = 0;
+uint8_t CRRBLUE_Pre = 0;
 
 extern uint8_t Menu_Flag;
 extern uint8_t Menu_Index;
@@ -122,11 +129,16 @@ void Func_Start(uint8_t Menu_Index){
 			if(!PWMControl_Refresh_Flag){
 				Lcd_Clear(PWMControl_BG);
 				LCD_DrawSqureBorder(0,0,320,240,WHITE);
-				Gui_DrawFont_GBK16(40,60,RGB(255,245,238),PWMControl_BG,"LEDPWM");
-				Gui_DrawFont_GBK16(120,60,RGB(255,245,238),PWMControl_BG,"Red");
-				Gui_DrawFont_GBK16(180,60,RGB(255,245,238),PWMControl_BG,"Green");
-				Gui_DrawFont_GBK16(240,60,RGB(255,245,238),PWMControl_BG,"Blue");	
-				PWMControl_Refresh_Flag++;				
+				Gui_DrawLine(100,0,100,240,WHITE);
+				Gui_DrawFont_GBK16(30,60,RGB(255,245,238),PWMControl_BG,"LEDPWM");
+				Gui_DrawFont_GBK16(120,60,RED,PWMControl_BG,"Red");
+				Gui_DrawFont_GBK16(180,60,GREEN,PWMControl_BG,"Green");
+				Gui_DrawFont_GBK16(240,60,BLUE,PWMControl_BG,"Blue");	
+				PWMControl_Refresh_Flag++;
+				PWM_CRR_Refresh = 0;
+				PWM_CRRRED_Refresh = 0;
+				PWM_CRRGREEN_Refresh = 0;
+				PWM_CRRBLUE_Refresh = 0;
 			}
 			PWM_Control();
 			break;
@@ -161,46 +173,62 @@ void Environmen_Information(void){
 void PWM_Control(void){
 	switch(PWMControl_Index){
 		case 1:
-			LCD_DrawSqure(60,30,8,8,RGB(255,255,0));
-			LCD_DrawSqure(140,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(200,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(260,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(50,30,8,8,RGB(255,255,0));
+			LCD_DrawSqure(128,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(193,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(248,30,8,8,PWMControl_BG);
 			break;
 		case 2:
-			LCD_DrawSqure(60,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(140,30,8,8,RGB(255,255,0));
-			LCD_DrawSqure(200,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(260,30,8,8,PWMControl_BG);			
+			LCD_DrawSqure(50,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(128,30,8,8,RGB(255,255,0));
+			LCD_DrawSqure(193,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(248,30,8,8,PWMControl_BG);			
 			break;
 		case 3:
-			LCD_DrawSqure(60,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(140,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(200,30,8,8,RGB(255,255,0));
-			LCD_DrawSqure(260,30,8,8,PWMControl_BG);			
+			LCD_DrawSqure(50,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(128,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(193,30,8,8,RGB(255,255,0));
+			LCD_DrawSqure(248,30,8,8,PWMControl_BG);			
 			break;
 		case 4:
-			LCD_DrawSqure(60,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(140,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(200,30,8,8,PWMControl_BG);
-			LCD_DrawSqure(260,30,8,8,RGB(255,255,0));			
+			LCD_DrawSqure(50,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(128,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(193,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(248,30,8,8,RGB(255,255,0));			
 			break;
 		default: ;break;
-	}
-	Gui_DrawFont_GBK16(60,120,PWMControl_BG,PWMControl_BG,Crr);
-	Gui_DrawFont_GBK16(140,120,PWMControl_BG,PWMControl_BG,Crr_Red);
-	Gui_DrawFont_GBK16(200,120,PWMControl_BG,PWMControl_BG,Crr_Green);
-	Gui_DrawFont_GBK16(260,120,PWMControl_BG,PWMControl_BG,Crr_Blue);	
+	}	
 	
 	IntToString(CRR,Crr);
 	IntToString(CRR_Red,Crr_Red);
 	IntToString(CRR_Green,Crr_Green);
 	IntToString(CRR_Blue,Crr_Blue);
-	
-	Gui_DrawFont_GBK16(60,120,RGB(255,245,238),PWMControl_BG,Crr);
-	Gui_DrawFont_GBK16(140,120,RGB(255,245,238),PWMControl_BG,Crr_Red);
-	Gui_DrawFont_GBK16(200,120,RGB(255,245,238),PWMControl_BG,Crr_Green);
-	Gui_DrawFont_GBK16(260,120,RGB(255,245,238),PWMControl_BG,Crr_Blue);
 
+	Gui_DrawFont_GBK16(45,120,RGB(255,245,238),PWMControl_BG,Crr);
+	Gui_DrawFont_GBK16(125,120,RGB(255,245,238),PWMControl_BG,Crr_Red);
+	Gui_DrawFont_GBK16(185,120,RGB(255,245,238),PWMControl_BG,Crr_Green);
+	Gui_DrawFont_GBK16(245,120,RGB(255,245,238),PWMControl_BG,Crr_Blue);		
 	Led_PWMControl(CRR);
 	FullColor_PWMControl(CRR_Red,CRR_Green,CRR_Blue);
+
+	if(CRR_Pre == 10 && CRR!=10){
+		Gui_DrawFont_GBK16(45,120,PWMControl_BG,PWMControl_BG,Crr);
+	}
+		
+	if(CRRRED_Pre == 10 && CRR_Red!=10){
+		Gui_DrawFont_GBK16(125,120,PWMControl_BG,PWMControl_BG,Crr_Red);
+	}
+
+	if(CRRGREEN_Pre == 10 && CRR_Green!=10){
+		Gui_DrawFont_GBK16(185,120,PWMControl_BG,PWMControl_BG,Crr_Green);
+	}
+	
+	if(CRRBLUE_Pre == 10 && CRR_Blue!=10){
+		Gui_DrawFont_GBK16(245,120,PWMControl_BG,PWMControl_BG,Crr_Blue);
+	}	
+	
+	CRR_Pre = CRR;
+	CRRRED_Pre = CRR_Red;
+	CRRGREEN_Pre = CRR_Green;
+	CRRBLUE_Pre = CRR_Blue;	
 }

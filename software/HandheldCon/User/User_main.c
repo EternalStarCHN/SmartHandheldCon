@@ -31,12 +31,12 @@ void User_main(void)
 	LED_Waterfall_Con = 1;
 	while(1)
 	{
+		Logic();
 		if(!START_Refresh){
 			Buzzer_Yell_Times(3,50,50);
 			LED_TwinkleTEMP(2,30);
 			START_Refresh++;
 		}
-		Logic();
 	}
 }
 
