@@ -2,6 +2,10 @@
 
 uint8_t LED_Waterfall_Con = 0;
 uint8_t LEDPWM_Refresh_Flag = 0;
+uint8_t CRR = 0;
+uint8_t CRR_Red = 0;
+uint8_t CRR_Green = 0;
+uint8_t CRR_Blue = 0;
 
 void Led_OpenALL(void){
 		HAL_GPIO_WritePin(Led_Red_GPIO_Port,Led_Red_Pin,GPIO_PIN_RESET);

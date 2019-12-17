@@ -55,6 +55,10 @@ extern uint8_t Environment_Flag;
 extern uint8_t Environment_Refresh_Flag;
 extern uint8_t PWMControl_Flag;
 extern uint8_t PWMControl_Refresh_Flag;
+extern uint8_t CRR;
+extern uint8_t CRR_Red;
+extern uint8_t CRR_Green;
+extern uint8_t CRR_Blue;
 /* USER CODE END 1 */
 
 /** Configure pins as 
@@ -223,6 +227,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			Environment_Refresh_Flag = 0;
 			PWMControl_Flag = 0;
 			PWMControl_Refresh_Flag = 0;
+			PWMControl_Index = 1;
 		}
 	}	
 	
@@ -243,6 +248,16 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Down_Flag && !Game1_Left_Flag && !Game1_Right_Flag){
 				Game1_Up_Flag = 1;
 				Game1_Down_Status = Game1_Left_Status = Game1_Right_Status = 0;
+			}
+			if(PWMControl_Flag && Func_Flag){
+				if(PWMControl_Index == 1)
+					CRR++;
+				else if(PWMControl_Index == 2)
+					CRR_Red++;
+				else if(PWMControl_Index == 3)
+					CRR_Green++;
+				else if(PWMControl_Index == 4)
+					CRR_Blue++;
 			}
 		}
 	}	
@@ -265,10 +280,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Game1_Down_Flag = 1;
 				Game1_Up_Status = Game1_Left_Status = Game1_Right_Status = 0;
 			}
-			if(PWMControl_Flag && !Func_Flag){
-				if(PWMControl_Index >=2){
-					
-				}
+			if(PWMControl_Flag && Func_Flag){
+				if(PWMControl_Index == 1)
+					CRR--;
+				else if(PWMControl_Index == 2)
+					CRR_Red--;
+				else if(PWMControl_Index == 3)
+					CRR_Green--;
+				else if(PWMControl_Index == 4)
+					CRR_Blue--;
 			}
 		}
 	}	
@@ -282,6 +302,12 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Game1_Left_Flag = 1;
 				Game1_Down_Status =Game1_Up_Status = Game1_Right_Status = 0;
 			}
+			if(PWMControl_Flag && Func_Flag){
+				if(PWMControl_Index <= 1){
+					PWMControl_Index = 4;
+				}
+				PWMControl_Index--;
+			}
 		}
 	}	
 	
@@ -293,6 +319,12 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Up_Flag && !Game1_Down_Flag && !Game1_Left_Flag){
 				Game1_Right_Flag = 1;
 				Game1_Down_Status = Game1_Left_Status = Game1_Up_Status = 0;
+			}
+			if(PWMControl_Flag && Func_Flag){
+				if(PWMControl_Index >= 4){
+					PWMControl_Index = 1;
+				}
+				PWMControl_Index++;
 			}
 		}
 	}	
@@ -346,6 +378,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 					Func_Flag = 0;
 					PWMControl_Flag = 0;
 					PWMControl_Refresh_Flag = 0;
+					PWMControl_Index = 1;
 				}
 			}
 	}	

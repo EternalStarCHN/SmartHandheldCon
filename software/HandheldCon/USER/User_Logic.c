@@ -16,9 +16,20 @@ extern uint8_t Menu_Index;
 extern uint8_t Func_Flag;
 extern double luminance;
 extern double temperture;
+extern uint8_t PWMControl_Index;
+extern uint8_t CRR;
+extern uint8_t CRR_Red;
+extern uint8_t CRR_Green;
+extern uint8_t CRR_Blue;
+
 char LUMI[256]={0};
 char TEMP[256]={0};
 char AIRQ[256]={0};
+char Crr[256]={0};
+char Crr_Red[256]={0};
+char Crr_Green[256]={0};
+char Crr_Blue[256]={0};
+
 
 
 void Logic(void){
@@ -98,9 +109,9 @@ void Func_Start(uint8_t Menu_Index){
 		case 2:
 			Environment_Flag = 1;
 			if(!Environment_Refresh_Flag){
-				Lcd_Clear(RGB(193,255,193));
+				Lcd_Clear(EnvironmentInformation_BG);
 				LCD_DrawSqureBorder(0,0,320,240,BLUE);
-				Gui_DrawFont_GBK16(20,20,RED,RGB(193,255,193),"Environment Information:");
+				Gui_DrawFont_GBK16(20,20,RED,EnvironmentInformation_BG,"Environment Information:");
 				Environment_Refresh_Flag++;
 			}
 			Environmen_Information();
@@ -108,8 +119,15 @@ void Func_Start(uint8_t Menu_Index){
 			break;
 		case 3:
 			PWMControl_Flag = 1;
-			
-				
+			if(!PWMControl_Refresh_Flag){
+				Lcd_Clear(PWMControl_BG);
+				LCD_DrawSqureBorder(0,0,320,240,WHITE);
+				Gui_DrawFont_GBK16(40,60,RGB(255,245,238),PWMControl_BG,"LEDPWM");
+				Gui_DrawFont_GBK16(120,60,RGB(255,245,238),PWMControl_BG,"Red");
+				Gui_DrawFont_GBK16(180,60,RGB(255,245,238),PWMControl_BG,"Green");
+				Gui_DrawFont_GBK16(240,60,RGB(255,245,238),PWMControl_BG,"Blue");				
+			}
+			PWM_Control();
 			break;
 		
 		default: ;break;
@@ -119,17 +137,17 @@ void Func_Start(uint8_t Menu_Index){
 void Environmen_Information(void){
 	MyADC_ValueGet();
 	
-	Gui_DrawFont_GBK16(50,60,RGB(193,255,193),RGB(193,255,193),LUMI);
-	Gui_DrawFont_GBK16(50,120,RGB(193,255,193),RGB(193,255,193),TEMP);
-	Gui_DrawFont_GBK16(50,180,RGB(193,255,193),RGB(193,255,193),AIRQ);
+	Gui_DrawFont_GBK16(50,60,EnvironmentInformation_BG,EnvironmentInformation_BG,LUMI);
+	Gui_DrawFont_GBK16(50,120,EnvironmentInformation_BG,EnvironmentInformation_BG,TEMP);
+	Gui_DrawFont_GBK16(50,180,EnvironmentInformation_BG,EnvironmentInformation_BG,AIRQ);
 	
 	DoubleToString(luminance,LUMI);
 	DoubleToString(temperture,TEMP);	
 	DoubleToString(temperture,AIRQ);
 	
-	Gui_DrawFont_GBK16(50,60,RED,RGB(193,255,193),LUMI);
-	Gui_DrawFont_GBK16(50,120,RED,RGB(193,255,193),TEMP);
-	Gui_DrawFont_GBK16(50,180,RED,RGB(193,255,193),AIRQ);
+	Gui_DrawFont_GBK16(50,60,RED,EnvironmentInformation_BG,LUMI);
+	Gui_DrawFont_GBK16(50,120,RED,EnvironmentInformation_BG,TEMP);
+	Gui_DrawFont_GBK16(50,180,RED,EnvironmentInformation_BG,AIRQ);
 	
 	if(temperture>2){
 		Led_OpenALL();
@@ -137,4 +155,51 @@ void Environmen_Information(void){
 	else{
 		Led_CloseALL();
 	}
+}
+
+void PWM_Control(void){
+	switch(PWMControl_Index){
+		case 1:
+			LCD_DrawSqure(60,30,8,8,RGB(255,255,0));
+			LCD_DrawSqure(140,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(200,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(260,30,8,8,PWMControl_BG);
+			break;
+		case 2:
+			LCD_DrawSqure(60,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(140,30,8,8,RGB(255,255,0));
+			LCD_DrawSqure(200,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(260,30,8,8,PWMControl_BG);			
+			break;
+		case 3:
+			LCD_DrawSqure(60,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(140,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(200,30,8,8,RGB(255,255,0));
+			LCD_DrawSqure(260,30,8,8,PWMControl_BG);			
+			break;
+		case 4:
+			LCD_DrawSqure(60,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(140,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(200,30,8,8,PWMControl_BG);
+			LCD_DrawSqure(260,30,8,8,RGB(255,255,0));			
+			break;
+		default: ;break;
+	}
+	Gui_DrawFont_GBK16(60,120,PWMControl_BG,PWMControl_BG,Crr);
+	Gui_DrawFont_GBK16(140,120,PWMControl_BG,PWMControl_BG,Crr_Red);
+	Gui_DrawFont_GBK16(200,120,PWMControl_BG,PWMControl_BG,Crr_Green);
+	Gui_DrawFont_GBK16(260,120,PWMControl_BG,PWMControl_BG,Crr_Blue);	
+	
+	IntToString(CRR,Crr);
+	IntToString(CRR_Red,Crr_Red);
+	IntToString(CRR_Green,Crr_Green);
+	IntToString(CRR_Blue,Crr_Blue);
+	
+	Gui_DrawFont_GBK16(60,120,RGB(255,245,238),PWMControl_BG,Crr);
+	Gui_DrawFont_GBK16(140,120,RGB(255,245,238),PWMControl_BG,Crr_Red);
+	Gui_DrawFont_GBK16(200,120,RGB(255,245,238),PWMControl_BG,Crr_Green);
+	Gui_DrawFont_GBK16(260,120,RGB(255,245,238),PWMControl_BG,Crr_Blue);
+
+	Led_PWMControl(CRR);
+	FullColor_PWMControl(CRR_Red,CRR_Green,CRR_Blue);
 }
