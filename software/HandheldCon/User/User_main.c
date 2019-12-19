@@ -26,7 +26,6 @@ extern double airquality;
 
 void User_main(void)
 {
-	Lcd_Clear(WHITE);
 	Menu_Flag = 1;
 	LED_Waterfall_Con = 1;
 	while(1)

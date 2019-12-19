@@ -39,6 +39,7 @@ uint8_t Game1_Right_Flag = 0;
 uint8_t PWMControl_Index = 1;
 
 extern uint8_t Menu_Refresh;
+extern uint8_t Menu_Index_Refresh;
 extern uint8_t Game1_Up_Status;
 extern uint8_t Game1_Down_Status;
 extern uint8_t Game1_Left_Status;
@@ -189,13 +190,14 @@ void MX_GPIO_Init(void)
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	if(GPIO_Pin == Confirm_Pin){
-		delay_ms(20);
+		delay_ms(Elimination_times);
 		if(HAL_GPIO_ReadPin(Confirm_GPIO_Port,Confirm_Pin))
 		{
 			if(Menu_Flag == 1){
 				Func_Flag = 1;
 				Menu_Flag = 0;
 				Menu_Refresh = 0;
+				Menu_Index_Refresh = 0;
 			}
 			if(Func_Flag&&Game1_Flag&&Game1_Dead){
 				Game1_Restart = 1;
@@ -210,11 +212,13 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Menu_Pin){
-		delay_ms(20);
+		delay_ms(Elimination_times);
 		if(HAL_GPIO_ReadPin(Menu_GPIO_Port,Menu_Pin))
 		{
 			Menu_Flag = 1;
 			Menu_Index = 1;
+			Menu_Refresh = 0;
+			Menu_Index_Refresh = 0;
 			Func_Flag = 0;
 			Game1_Flag = 0;
 			Game1_Dead = 0;
@@ -233,11 +237,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Up_Pin){
-		delay_ms(50);
+		delay_ms(Elimination_times);
 		if(HAL_GPIO_ReadPin(Up_GPIO_Port,Up_Pin))
 		{
 			if(Menu_Flag == 1){
-				Menu_Refresh = 0;
+				Menu_Index_Refresh = 0;
 				if(Menu_Index <= 1){
 					Menu_Index = 3;
 				}
@@ -245,7 +249,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 					Menu_Index--;
 				}
 			}
-			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Down_Flag && !Game1_Left_Flag && !Game1_Right_Flag){
+			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Down_Flag && !Game1_Left_Flag && !Game1_Right_Flag && !Game1_Down_Status){
 				Game1_Up_Flag = 1;
 				Game1_Down_Status = Game1_Left_Status = Game1_Right_Status = 0;
 			}
@@ -264,11 +268,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Down_Pin){
-		delay_ms(50);
+		delay_ms(Elimination_times);
 		if(HAL_GPIO_ReadPin(Down_GPIO_Port,Down_Pin))
 		{
 			if(Menu_Flag == 1){
-				Menu_Refresh = 0;
+				Menu_Index_Refresh = 0;
 				if(Menu_Index >= 3){
 					Menu_Index = 1;
 				}
@@ -276,7 +280,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 				Menu_Index ++;
 				}
 			}
-			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Up_Flag && !Game1_Left_Flag && !Game1_Right_Flag){
+			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Up_Flag && !Game1_Left_Flag && !Game1_Right_Flag&& !Game1_Up_Status){
 				Game1_Down_Flag = 1;
 				Game1_Up_Status = Game1_Left_Status = Game1_Right_Status = 0;
 			}
@@ -295,10 +299,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Left_Pin){
-		delay_ms(50);
+		delay_ms(Elimination_times);
 		if(HAL_GPIO_ReadPin(Left_GPIO_Port,Left_Pin))
 		{
-			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Up_Flag && !Game1_Down_Flag && !Game1_Right_Flag){
+			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Up_Flag && !Game1_Down_Flag && !Game1_Right_Flag && !Game1_Right_Status){
 				Game1_Left_Flag = 1;
 				Game1_Down_Status =Game1_Up_Status = Game1_Right_Status = 0;
 			}
@@ -315,10 +319,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == Right_Pin){
-		delay_ms(50);
+		delay_ms(Elimination_times);
 		if(HAL_GPIO_ReadPin(Right_GPIO_Port,Right_Pin))
 		{
-			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Up_Flag && !Game1_Down_Flag && !Game1_Left_Flag){
+			if(Func_Flag && Game1_Flag && !Game1_Dead && !Game1_Pass && !Game1_Up_Flag && !Game1_Down_Flag && !Game1_Left_Flag && !Game1_Left_Status){
 				Game1_Right_Flag = 1;
 				Game1_Down_Status = Game1_Left_Status = Game1_Up_Status = 0;
 			}
@@ -335,14 +339,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	
 	
 	else if(GPIO_Pin == LightControl_Pin){
-		delay_ms(50);
+		delay_ms(Elimination_times);
     if(HAL_GPIO_ReadPin(LightControl_GPIO_Port,LightControl_Pin))
 		HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 	}	
 	
 	
 	else if(GPIO_Pin == Return_Pin){
-		delay_ms(50);
+		delay_ms(Elimination_times);
 		if(HAL_GPIO_ReadPin(Return_GPIO_Port,Return_Pin))
 		{
 			if(Func_Flag&&Game1_Flag&&Game1_Dead){

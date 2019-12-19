@@ -14,7 +14,8 @@
 #define Menu_Font_Color RGB(255,255,240)
 #define Menu_Num_Color RGB(255,215,0)
 
-#define EnvironmentInformation_BG RGB(193,255,193)
+#define EnvironmentInformation_Font_BG RGB(34,139,34)
+#define EnvironmentInformation_BG RGB(152,251,152)
 
 #define PWMControl_BG RGB(186,85,211)
 

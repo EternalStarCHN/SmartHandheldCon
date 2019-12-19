@@ -3,7 +3,7 @@
 <title>Static Call Graph - [HandheldCon\HandheldCon.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image HandheldCon\HandheldCon.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6120001: Last Updated: Thu Dec 19 09:40:10 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6120001: Last Updated: Thu Dec 19 21:57:35 2019
 <BR><P>
 <H3>Maximum Stack Usage =        240 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -656,7 +656,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Control
 </UL>
 
-<P><STRONG><a name="[85]"></a>Func_Start</STRONG> (Thumb, 424 bytes, Stack size 24 bytes, user_logic.o(.text.Func_Start))
+<P><STRONG><a name="[85]"></a>Func_Start</STRONG> (Thumb, 476 bytes, Stack size 24 bytes, user_logic.o(.text.Func_Start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = Func_Start &rArr; Run_SNAKE &rArr; Display_Pass &rArr; Init_SNAKE &rArr; LCD_DrawSqureBorder &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
@@ -681,7 +681,6 @@ Global Symbols
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Pass
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Dead
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_SNAKE
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Control
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Menu_Show
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_SNAKE
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Func_Start
@@ -701,7 +700,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gui_DrawPoint
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Menu_Show
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Control
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Menu_Show
 </UL>
 
 <P><STRONG><a name="[87]"></a>Gui_DrawLine</STRONG> (Thumb, 198 bytes, Stack size 48 bytes, gui.o(.text.Gui_DrawLine))
@@ -788,7 +788,7 @@ Global Symbols
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SPI_Init
 </UL>
 
-<P><STRONG><a name="[94]"></a>HAL_GPIO_EXTI_Callback</STRONG> (Thumb, 1846 bytes, Stack size 8 bytes, gpio.o(.text.HAL_GPIO_EXTI_Callback))
+<P><STRONG><a name="[94]"></a>HAL_GPIO_EXTI_Callback</STRONG> (Thumb, 1892 bytes, Stack size 8 bytes, gpio.o(.text.HAL_GPIO_EXTI_Callback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_GPIO_EXTI_Callback
 </UL>
 <BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
@@ -1171,7 +1171,6 @@ Global Symbols
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_SetRegion
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_main
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Pass
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Dead
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Menu_Show
@@ -1398,8 +1397,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[c3]"></a>Menu_Show</STRONG> (Thumb, 664 bytes, Stack size 16 bytes, user_logic.o(.text.Menu_Show))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = Menu_Show &rArr; Gui_DrawFont_GBK24 &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
+<P><STRONG><a name="[c3]"></a>Menu_Show</STRONG> (Thumb, 748 bytes, Stack size 24 bytes, user_logic.o(.text.Menu_Show))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = Menu_Show &rArr; Gui_DrawFont_GBK24 &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gui_DrawLine
@@ -1425,14 +1424,13 @@ Global Symbols
 <P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[88]"></a>PWM_Control</STRONG> (Thumb, 662 bytes, Stack size 40 bytes, user_logic.o(.text.PWM_Control))
+<P><STRONG><a name="[88]"></a>PWM_Control</STRONG> (Thumb, 760 bytes, Stack size 40 bytes, user_logic.o(.text.PWM_Control))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = PWM_Control &rArr; LCD_DrawSqure &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawSqure
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gui_DrawFont_GBK16
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gui_DrawFont_Num32
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_PWMControl
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FullColor_PWMControl
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Func_Start
 </UL>
@@ -1504,11 +1502,10 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[da]"></a>User_main</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, user_main.o(.text.User_main))
+<P><STRONG><a name="[da]"></a>User_main</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, user_main.o(.text.User_main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = User_main &rArr; Logic &rArr; Func_Start &rArr; Run_SNAKE &rArr; Display_Pass &rArr; Init_SNAKE &rArr; LCD_DrawSqureBorder &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
-<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logic
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logic
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_TwinkleTEMP
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buzzer_Yell_Times
 </UL>
@@ -1552,7 +1549,6 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_Head
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_SNAKE
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Control
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_SNAKE
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Environmen_Information
 </UL>

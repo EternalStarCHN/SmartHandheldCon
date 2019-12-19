@@ -33,7 +33,7 @@
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */
-
+#define Elimination_times 40
 /* USER CODE END Private defines */
 
 void MX_GPIO_Init(void);
