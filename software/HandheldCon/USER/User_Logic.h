@@ -10,7 +10,12 @@
 #define IntToString(VAL,ARR) sprintf(ARR,"%d",VAL) //itos转换
 #define DoubleToString(VAL,ARR) sprintf(ARR,"%lf",VAL) //itos转换
 
+#define Menu_BG RGB(0,191,255)
+#define Menu_Font_Color RGB(255,255,240)
+#define Menu_Num_Color RGB(255,215,0)
+
 #define EnvironmentInformation_BG RGB(193,255,193)
+
 #define PWMControl_BG RGB(186,85,211)
 
 void Logic(void);

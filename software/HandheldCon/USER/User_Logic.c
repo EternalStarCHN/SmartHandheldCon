@@ -62,42 +62,42 @@ void Menu_Show(uint8_t Menu_Index){
 	switch(Menu_Index){
 		case 1:
 			if(Menu_Refresh == 0 ){
-				Lcd_Clear(WHITE);
+				Lcd_Clear(Menu_BG);
 				Menu_Refresh++;
 			}
-			Gui_DrawFont_GBK24(110,5,RGB(178,34,34),RGB(255,255,255),"-HandHeldCon-");
+			Gui_DrawFont_GBK24(110,5,Menu_Font_Color,Menu_BG,"-HandHeldCon-");
 			Gui_DrawLine(20, 30, 300, 30, RGB(255,215,0));		
-			Gui_DrawFont_GBK24(20,50,RGB(178,34,34),RGB(255,255,255),"Game:Gluttonous Snake  <-");
-			Gui_DrawFont_GBK24(20,90,RGB(178,34,34),RGB(255,255,255),"Environment Information");
-			Gui_DrawFont_GBK24(20,130,RGB(178,34,34),RGB(255,255,255),"LED Control");
-			Gui_DrawFont_GBK16(225,220,RGB(178,34,34),RGB(255,255,255),"Choose:");
-			Gui_DrawFont_Num32(280, 200, RED, WHITE, 1);
+			Gui_DrawFont_GBK24(20,50,Menu_Font_Color,Menu_BG,"Game:Gluttonous Snake  <-");
+			Gui_DrawFont_GBK24(20,90,Menu_Font_Color,Menu_BG,"Environment Information");
+			Gui_DrawFont_GBK24(20,130,Menu_Font_Color,Menu_BG,"LED Control");
+			Gui_DrawFont_GBK16(225,220,Menu_Font_Color,Menu_BG,"Choose:");
+			Gui_DrawFont_Num32(280, 200,Menu_Num_Color,Menu_BG, 1);
 			break;
 		case 2:
 			if(Menu_Refresh == 0 ){
 				Lcd_Clear(WHITE);
 				Menu_Refresh++;
 			}
-			Gui_DrawFont_GBK24(110,5,RGB(178,34,34),RGB(255,255,255),"-HandHeldCon-");
+			Gui_DrawFont_GBK24(110,5,Menu_Font_Color,Menu_BG,"-HandHeldCon-");
 			Gui_DrawLine(20, 30, 300, 30, RGB(255,215,0));				
-			Gui_DrawFont_GBK24(20,50,RGB(178,34,34),RGB(255,255,255),"Game:Gluttonous Snake");
-			Gui_DrawFont_GBK24(20,90,RGB(178,34,34),RGB(255,255,255),"Environment Information <-");
-			Gui_DrawFont_GBK24(20,130,RGB(178,34,34),RGB(255,255,255),"LED Control");
-			Gui_DrawFont_GBK16(225,220,RGB(178,34,34),RGB(255,255,255),"Choose:");
-			Gui_DrawFont_Num32(280, 200, RED, WHITE, 2);			
+			Gui_DrawFont_GBK24(20,50,Menu_Font_Color,Menu_BG,"Game:Gluttonous Snake");
+			Gui_DrawFont_GBK24(20,90,Menu_Font_Color,Menu_BG,"Environment Information <-");
+			Gui_DrawFont_GBK24(20,130,Menu_Font_Color,Menu_BG,"LED Control");
+			Gui_DrawFont_GBK16(225,220,Menu_Font_Color,Menu_BG,"Choose:");
+			Gui_DrawFont_Num32(280, 200,Menu_Num_Color,Menu_BG, 2);			
 			break;
 		case 3:
 			if(Menu_Refresh == 0 ){
 				Lcd_Clear(WHITE);
 				Menu_Refresh++;
 			}
-			Gui_DrawFont_GBK24(110,5,RGB(178,34,34),RGB(255,255,255),"-HandHeldCon-");
+			Gui_DrawFont_GBK24(110,5,Menu_Font_Color,Menu_BG,"-HandHeldCon-");
 			Gui_DrawLine(20, 30, 300, 30, RGB(255,215,0));	
-			Gui_DrawFont_GBK24(20,50,RGB(178,34,34),RGB(255,255,255),"Game:Gluttonous Snake");
-			Gui_DrawFont_GBK24(20,90,RGB(178,34,34),RGB(255,255,255),"Environment Information");
-			Gui_DrawFont_GBK24(20,130,RGB(178,34,34),RGB(255,255,255),"LED Control             <-");
-			Gui_DrawFont_GBK16(225,220,RGB(178,34,34),RGB(255,255,255),"Choose:");
-			Gui_DrawFont_Num32(280, 200, RED, WHITE, 3);
+			Gui_DrawFont_GBK24(20,50,Menu_Font_Color,Menu_BG,"Game:Gluttonous Snake");
+			Gui_DrawFont_GBK24(20,90,Menu_Font_Color,Menu_BG,"Environment Information");
+			Gui_DrawFont_GBK24(20,130,Menu_Font_Color,Menu_BG,"LED Control             <-");
+			Gui_DrawFont_GBK16(225,220,Menu_Font_Color,Menu_BG,"Choose:");
+			Gui_DrawFont_Num32(280, 200,Menu_Num_Color,Menu_BG, 3);
 			break;
 		default:;break;
 	}
