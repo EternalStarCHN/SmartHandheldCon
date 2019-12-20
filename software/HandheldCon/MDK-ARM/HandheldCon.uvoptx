@@ -135,7 +135,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>d</Name>
+          <Name></Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -164,6 +164,11 @@
           <count>1</count>
           <WinNumber>1</WinNumber>
           <ItemText>temperture</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>airquality</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>

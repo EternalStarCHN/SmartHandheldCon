@@ -24,6 +24,7 @@ extern uint8_t Menu_Index;
 extern uint8_t Func_Flag;
 extern double luminance;
 extern double temperture;
+extern double airquality;
 extern uint8_t PWMControl_Index;
 extern uint8_t CRR;
 extern uint8_t CRR_Red;
@@ -168,17 +169,24 @@ void Environmen_Information(void){
 	
 	DoubleToString(luminance,LUMI);
 	DoubleToString(temperture,TEMP);	
-	DoubleToString(temperture,AIRQ);
+	DoubleToString(airquality,AIRQ);
 	
 	Gui_DrawFont_GBK16(50,60,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,LUMI);
 	Gui_DrawFont_GBK16(50,120,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,TEMP);
 	Gui_DrawFont_GBK16(50,180,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,AIRQ);
 	
-	if(temperture>2){
-		Led_OpenALL();
+	if(temperture<1.2){
+		Led_OpenTEMP();
 	}
 	else{
-		Led_CloseALL();
+		Led_CloseTEMP();
+	}
+
+	if(luminance>0.1){
+		Led_OpenLUMI();
+	}
+	else{
+		Led_CloseLUMI();
 	}
 }
 
@@ -242,8 +250,8 @@ void PWM_Control(void){
 //	Gui_DrawFont_GBK16(125,120,RGB(255,245,238),PWMControl_BG,Crr_Red);
 //	Gui_DrawFont_GBK16(185,120,RGB(255,245,238),PWMControl_BG,Crr_Green);
 //	Gui_DrawFont_GBK16(245,120,RGB(255,245,238),PWMControl_BG,Crr_Blue);		
-	Led_PWMControl(CRR);
-	FullColor_PWMControl(CRR_Red,CRR_Green,CRR_Blue);
+	Led_PWMControl(CRR*10);
+	FullColor_PWMControl(CRR_Red*50,CRR_Green*50,CRR_Blue*50);
 
 	if(CRR_Pre == 10 && CRR!=10){
 		Gui_DrawFont_Num32(25, 120,PWMControl_BG,PWMControl_BG, 1);

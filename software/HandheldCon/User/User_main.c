@@ -9,6 +9,8 @@
 #include "User_Led.h"
 #include "adc.h"
 #include "User_adc.h"
+#include "usart.h"
+#include "stdio.h"
 
 uint8_t START_Refresh = 0;
 
@@ -36,8 +38,30 @@ void User_main(void)
 			LED_TwinkleTEMP(2,30);
 			START_Refresh++;
 		}
+					printf("1\r\n");
 	}
 }
 
+#ifdef __GNUC__
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif 
+
+
+/* printf??????1 */
+int fputc(int ch,FILE *f)
+{
+    uint8_t temp[1]={ch};
+    HAL_UART_Transmit(&huart1,temp,1,10);        //UartHandle??????
+  return ch;
+}
+
+
+PUTCHAR_PROTOTYPE
+{
+ HAL_UART_Transmit(&huart1,(uint8_t*)&ch,1,10);
+ return ch;
+}
 
 

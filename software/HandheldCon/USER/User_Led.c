@@ -21,7 +21,7 @@ void Led_CloseALL(void){
 		HAL_GPIO_WritePin(Led_Green_GPIO_Port,Led_Green_Pin,GPIO_PIN_SET);
 }
 
-void Led_OpenHUMI(void){
+void Led_OpenLUMI(void){
 	HAL_GPIO_WritePin(LED_HUMI_GPIO_Port,LED_HUMI_Pin,GPIO_PIN_RESET);
 	HAL_Delay(50);
 }
@@ -31,7 +31,17 @@ void Led_OpenTEMP(void){
 	HAL_Delay(50);
 }
 
-void LED_TwinkleHUMI(uint8_t times,uint8_t delay_ms){
+void Led_CloseLUMI(void){
+	HAL_GPIO_WritePin(LED_HUMI_GPIO_Port,LED_HUMI_Pin,GPIO_PIN_SET);
+	HAL_Delay(50);
+}
+
+void Led_CloseTEMP(void){
+	HAL_GPIO_WritePin(LED_TEMP_GPIO_Port,LED_TEMP_Pin,GPIO_PIN_SET);
+	HAL_Delay(50);
+}
+
+void LED_TwinkleLUMI(uint8_t times,uint8_t delay_ms){
 	int i;
 	for(i =0 ;i<times; i++){
 		HAL_GPIO_WritePin(LED_HUMI_GPIO_Port,LED_HUMI_Pin,GPIO_PIN_RESET);
@@ -121,9 +131,9 @@ void Led_PWMControl(uint8_t CRR){
 void FullColor_PWMControl(uint8_t CRR_Red,uint8_t CRR_Green,uint8_t CRR_Blue){
 		if(!LEDPWM_Refresh_Flag){
 		HAL_TIM_PWM_Init(&htim3);
-		HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
-		HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_2);
-		HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_3);
+		HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_1);
+		HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_2);
+		HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_3);
 	}
 		__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,CRR_Blue);
 		__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2,CRR_Red);

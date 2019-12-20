@@ -6,9 +6,11 @@
 
 void Led_OpenALL(void);
 void Led_CloseALL(void);
-void Led_OpenHUMI(void);
+void Led_OpenLUMI(void);
 void Led_OpenTEMP(void);
-void LED_TwinkleHUMI(uint8_t times,uint8_t delay_ms);
+void Led_CloseLUMI(void);
+void Led_CloseTEMP(void);
+void LED_TwinkleLUMI(uint8_t times,uint8_t delay_ms);
 void LED_TwinkleTEMP(uint8_t times,uint8_t delay_ms);
 
 void Led_WaterfallLight_Delay(uint8_t delay_ms);

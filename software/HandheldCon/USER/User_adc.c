@@ -10,11 +10,13 @@ double airquality;
 void MyADC_Init(void){
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_Start(&hadc2);
+	HAL_ADC_Start(&hadc3);
 }
 
 void MyADC_ValueGet(void){
 		HAL_ADC_Start(&hadc1);
-		HAL_ADC_Start(&hadc2);		
+		HAL_ADC_Start(&hadc2);
+		HAL_ADC_Start(&hadc3);	
 		if(HAL_ADC_PollForConversion(&hadc1,0xff)==HAL_OK){
 			adc1_Value = HAL_ADC_GetValue(&hadc1);
 			luminance = adc1_Value*3.3/4096;
