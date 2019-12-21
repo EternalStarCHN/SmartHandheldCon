@@ -38,7 +38,7 @@ void User_main(void)
 			LED_TwinkleTEMP(2,30);
 			START_Refresh++;
 		}
-					printf("1\r\n");
+				printf("1\r\n");
 	}
 }
 

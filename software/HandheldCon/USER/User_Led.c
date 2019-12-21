@@ -125,7 +125,7 @@ void Led_PWMControl(uint8_t CRR){
 		HAL_TIM_PWM_Init(&htim2);
 		HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_4);
 	}
-	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_4,CRR);
+	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_4,CRR*10);
 }
 
 void FullColor_PWMControl(uint8_t CRR_Red,uint8_t CRR_Green,uint8_t CRR_Blue){
@@ -135,7 +135,7 @@ void FullColor_PWMControl(uint8_t CRR_Red,uint8_t CRR_Green,uint8_t CRR_Blue){
 		HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_2);
 		HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_3);
 	}
-		__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,CRR_Blue);
-		__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2,CRR_Red);
-		__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3,CRR_Green);	
+		__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,CRR_Blue*10);
+		__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2,CRR_Red*10);
+		__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3,CRR_Green*10);	
 }

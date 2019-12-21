@@ -175,7 +175,7 @@ void Environmen_Information(void){
 	Gui_DrawFont_GBK16(50,120,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,TEMP);
 	Gui_DrawFont_GBK16(50,180,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,AIRQ);
 	
-	if(temperture<1.2){
+	if(temperture<1.1){
 		Led_OpenTEMP();
 	}
 	else{
@@ -250,8 +250,8 @@ void PWM_Control(void){
 //	Gui_DrawFont_GBK16(125,120,RGB(255,245,238),PWMControl_BG,Crr_Red);
 //	Gui_DrawFont_GBK16(185,120,RGB(255,245,238),PWMControl_BG,Crr_Green);
 //	Gui_DrawFont_GBK16(245,120,RGB(255,245,238),PWMControl_BG,Crr_Blue);		
-	Led_PWMControl(CRR*10);
-	FullColor_PWMControl(CRR_Red*50,CRR_Green*50,CRR_Blue*50);
+	Led_PWMControl(CRR);
+	FullColor_PWMControl(CRR_Red,CRR_Green,CRR_Blue);
 
 	if(CRR_Pre == 10 && CRR!=10){
 		Gui_DrawFont_Num32(25, 120,PWMControl_BG,PWMControl_BG, 1);
