@@ -3,30 +3,219 @@
 <pre>
 <h1>�Vision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ��Vision V5.27.1.0
+IDE-Version: ��Vision V5.28.0.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 11, 111, LIC=V85FJ-UBY14-RF8IZ-JRMCK-Y1SVB-QJPEW
+License Information: L HP, HP Inc., LIC=MGXG8-3TWA0-UMS9A-1EWSY-9FM8J-M5I6G
  
 Tool Versions:
-Toolchain:       MDK-ARM Professional  Version: 5.27.1.0
-Toolchain Path:  D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\Bin
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin
 C Compiler:      ArmClang.exe V6.12
 Assembler:       Armasm.exe V6.12
 Linker/Locator:  ArmLink.exe V6.12
 Library Manager: ArmAr.exe V6.12
 Hex Converter:   FromElf.exe V6.12
-CPU DLL:         SARMCM3.DLL V5.27.1.0
-Dialog DLL:      DCM.DLL V1.17.2.0
-Target DLL:      Segger\JL2CM3.dll V2.99.35.0
-Dialog DLL:      TCM.DLL V1.36.1.0
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
-G:\Desktop\STM32FinalTask\software\HandheldCon\MDK-ARM\HandheldCon.uvprojx
-Project File Date:  12/21/2019
+C:\Users\HP\Desktop\STM32FinalTask\software\HandheldCon\MDK-ARM\HandheldCon.uvprojx
+Project File Date:  12/22/2019
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.12', folder: 'D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V6.12', folder: 'C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'HandheldCon'
+../USER/snake.c(1): warning: In file included from...
+../User\snake.h(3): warning: In file included from...
+../User\User_Logic.h(7): warning: In file included from...
+../User/User_adc.h(1): warning: '__USERADC_H_' is used as a header guard here, followed by #define of a different macro [-Wheader-guard]
+#ifndef __USERADC_H_
+        ^~~~~~~~~~~~
+../User/User_adc.h(2): note: '__USERADC_H' is defined here; did you mean '__USERADC_H_'?
+#define __USERADC_H
+        ^~~~~~~~~~~
+        __USERADC_H_
+../USER/snake.c(54): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(250,20,YELLOW,BLACK,"SCORE:");
+                                               ^~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(55): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(250,70,YELLOW,BLACK,"LEVEL:");
+                                               ^~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(64): warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+        IntToString(Snake_R.Score,SCORE);
+        ^
+../User\User_Logic.h(10): note: expanded from macro 'IntToString'
+#define IntToString(VAL,ARR) sprintf(ARR,"%d",VAL) //itos转换
+                             ^
+../USER/snake.c(64): note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+../User\User_Logic.h(10): note: expanded from macro 'IntToString'
+#define IntToString(VAL,ARR) sprintf(ARR,"%d",VAL) //itos转换
+                             ^
+../USER/snake.c(66): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(250,40,YELLOW,BLACK,SCORE);
+                                               ^~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(67): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(250,90,YELLOW,BLACK,LEVEL);
+                                               ^~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(208): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                Gui_DrawFont_GBK16(250,40,BLACK,BLACK,SCORE);
+                                                      ^~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(210): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                Gui_DrawFont_GBK16(250,90,BLACK,BLACK,LEVEL);
+                                                      ^~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(219): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                Gui_DrawFont_GBK16(250,40,YELLOW,BLACK,SCORE);
+                                                       ^~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(220): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                Gui_DrawFont_GBK16(250,90,YELLOW,BLACK,LEVEL);
+                                                       ^~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(229): warning: implicitly declaring library function 'abs' with type 'int (int)' [-Wimplicit-function-declaration]
+                        Food_R.X=((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%48))*5; //随机生成食物X
+                                        ^
+../USER/snake.c(229): note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+../USER/snake.c(229): warning: taking the absolute value of unsigned type 'uint32_t' (aka 'unsigned int') has no effect [-Wabsolute-value]
+                        Food_R.X=((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%48))*5; //随机生成食物X
+                                        ^
+../USER/snake.c(229): note: remove the call to 'abs' since unsigned values cannot be negative
+                        Food_R.X=((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%48))*5; //随机生成食物X
+                                        ^~~
+../USER/snake.c(232): warning: taking the absolute value of unsigned type 'uint32_t' (aka 'unsigned int') has no effect [-Wabsolute-value]
+                        Food_R.Y=(int)(abs(HAL_RNG_GetRandomNumber(&hrng))%48)*5; //随机生成食物Y
+                                       ^
+../USER/snake.c(232): note: remove the call to 'abs' since unsigned values cannot be negative
+                        Food_R.Y=(int)(abs(HAL_RNG_GetRandomNumber(&hrng))%48)*5; //随机生成食物Y
+                                       ^~~
+../USER/snake.c(248): warning: taking the absolute value of unsigned type 'uint32_t' (aka 'unsigned int') has no effect [-Wabsolute-value]
+                Snake_Color_R = ((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%100))+150;//生成随机R
+                                       ^
+../USER/snake.c(248): note: remove the call to 'abs' since unsigned values cannot be negative
+                Snake_Color_R = ((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%100))+150;//生成随机R
+                                       ^~~
+../USER/snake.c(249): warning: taking the absolute value of unsigned type 'uint32_t' (aka 'unsigned int') has no effect [-Wabsolute-value]
+                Snake_Color_G = ((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%100))+150;//生成随机G
+                                       ^
+../USER/snake.c(249): note: remove the call to 'abs' since unsigned values cannot be negative
+                Snake_Color_G = ((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%100))+150;//生成随机G
+                                       ^~~
+../USER/snake.c(250): warning: taking the absolute value of unsigned type 'uint32_t' (aka 'unsigned int') has no effect [-Wabsolute-value]
+                Snake_Color_B = ((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%100))+150;//生成随机B
+                                       ^
+../USER/snake.c(250): note: remove the call to 'abs' since unsigned values cannot be negative
+                Snake_Color_B = ((int)(abs(HAL_RNG_GetRandomNumber(&hrng))%100))+150;//生成随机B
+                                       ^~~
+../USER/snake.c(103): warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 1000 to 232 [-Wconstant-conversion]
+                        Buzzer_Yell_Times(1,50,1000);
+                        ~~~~~~~~~~~~~~~~~      ^~~~
+../USER/snake.c(265): warning: passing 'char [16]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(100,100,WHITE,BLACK,"MISSON FAILED! ");
+                                               ^~~~~~~~~~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(266): warning: passing 'char [27]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(60,150,WHITE,BLACK,"Press 'CONFIRM' to Restart");
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(267): warning: passing 'char [24]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(60,170,WHITE,BLACK,"Press 'RETURN'  to Menu");       
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(268): warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("MISSION FAILED！Waiting for user action... \r\n");
+        ^
+../USER/snake.c(268): note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+../USER/snake.c(290): warning: passing 'char [17]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(100,100,YELLOW,BLACK,"MISSION SUCCESS!");
+                                                ^~~~~~~~~~~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(291): warning: passing 'char [31]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(60,150,YELLOW,BLACK,"Press ‘Confirm’ to Contiue");
+                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(304): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(250,180,BLACK,BLACK,S_HeadX);
+                                               ^~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(305): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(290,180,BLACK,BLACK,S_HeadY);
+                                               ^~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(306): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(250,220,BLACK,BLACK,F_HeadX);
+                                               ^~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(307): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(290,220,BLACK,BLACK,F_HeadY);
+                                               ^~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(312): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(250,180,WHITE,BLACK,S_HeadX);
+                                               ^~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(313): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(290,180,WHITE,BLACK,S_HeadY);
+                                               ^~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(314): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(250,220,WHITE,BLACK,F_HeadX);
+                                               ^~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+../USER/snake.c(315): warning: passing 'char [256]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        Gui_DrawFont_GBK16(290,220,WHITE,BLACK,F_HeadY);
+                                               ^~~~~~~
+../Inc\gui.h(16): note: passing argument to parameter 's' here
+void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s);
+                                                                                   ^
+31 warnings generated.
+compiling snake.c...
 ../User/User_main.c(3): warning: In file included from...
 ../Inc\gpio.h(31): warning: In file included from...
 ../User\User_Logic.h(7): warning: In file included from...
@@ -44,9 +233,9 @@ Build target 'HandheldCon'
 2 warnings generated.
 compiling User_main.c...
 linking...
-Program Size: Code=24124 RO-data=4156 RW-data=20 ZI-data=4156  
+Program Size: Code=24412 RO-data=4156 RW-data=20 ZI-data=4164  
 FromELF: creating hex file...
-"HandheldCon\HandheldCon.axf" - 0 Error(s), 2 Warning(s).
+"HandheldCon\HandheldCon.axf" - 0 Error(s), 33 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -58,24 +247,24 @@ Package Vendor: ARM
    * Component: DSP Variant: Library Version: 1.6.0
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
-                Keil.STM32F4xx_DFP.2.14.0
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.12.0.pack
+                Keil.STM32F4xx_DFP.2.12.0
                 STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_HandheldCon
-  D:\SoftWare\Keil MDK-ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include
-  D:\SoftWare\Keil MDK-ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\DSP\Include
-  D:\SoftWare\Keil MDK-ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\SoftWare\Keil_v5\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\SoftWare\Keil_v5\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include
+  C:\SoftWare\Keil_v5\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.2.0
 
    * Component: ARM::CMSIS:DSP:Library:1.6.0
-      Include file:  CMSIS\DSP\Include\arm_math.h
       Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib
-Build Time Elapsed:  00:00:02
+      Include file:  CMSIS\DSP\Include\arm_math.h
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

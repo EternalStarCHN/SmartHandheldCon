@@ -34,11 +34,12 @@ void User_main(void)
 	{
 		Logic();
 		if(!START_Refresh){
+			HAL_Delay(100);
 			Buzzer_Yell_Times(3,50,50);
 			LED_TwinkleTEMP(2,30);
+			printf("Hello Human!\r\n");
 			START_Refresh++;
 		}
-				printf("1\r\n");
 	}
 }
 
