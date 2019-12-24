@@ -3249,17 +3249,17 @@ Image Symbol Table
     _sputc                                   0x080060b7   Thumb Code    10  printfa.o(i._sputc)
     i._sputc                                 0x080060b6   Section        0  printfa.o(i._sputc)
     i.puts                                   0x080060c0   Section        0  puts.o(i.puts)
-    .L.str.3                                 0x08006759   Data          28  user_logic.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08006759   Section        0  user_logic.o(.rodata.str1.1)
-    .L.str.1                                 0x08006775   Data          28  user_logic.o(.rodata.str1.1)
-    .L.str.2                                 0x08006791   Data          28  user_logic.o(.rodata.str1.1)
-    .L.str.6                                 0x080067ad   Data           8  user_logic.o(.rodata.str1.1)
-    .L.str.5                                 0x080067b5   Data          13  user_logic.o(.rodata.str1.1)
-    .L.str.7                                 0x080067c2   Data          18  user_logic.o(.rodata.str1.1)
-    .L.str.13                                0x080067d4   Data           4  user_logic.o(.rodata.str1.1)
-    .L.str.4                                 0x080067d8   Data          25  user_logic.o(.rodata.str1.1)
-    .L.str.2                                 0x080067f1   Data           3  snake.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x080067f1   Section        0  snake.o(.rodata.str1.1)
+    .L.str.3                                 0x08006825   Data          28  user_logic.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006825   Section        0  user_logic.o(.rodata.str1.1)
+    .L.str.1                                 0x08006841   Data          28  user_logic.o(.rodata.str1.1)
+    .L.str.2                                 0x0800685d   Data          28  user_logic.o(.rodata.str1.1)
+    .L.str.6                                 0x08006879   Data           8  user_logic.o(.rodata.str1.1)
+    .L.str.5                                 0x08006881   Data          13  user_logic.o(.rodata.str1.1)
+    .L.str.7                                 0x0800688e   Data          18  user_logic.o(.rodata.str1.1)
+    .L.str.13                                0x080068a0   Data           4  user_logic.o(.rodata.str1.1)
+    .L.str.4                                 0x080068a4   Data          25  user_logic.o(.rodata.str1.1)
+    .L.str.2                                 0x080068bd   Data           3  snake.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x080068bd   Section        0  snake.o(.rodata.str1.1)
     .data                                    0x20000000   Section        4  stdout.o(.data)
     STACK                                    0x20000c58   Section     1024  startup_stm32f407xx.o(STACK)
 
@@ -3562,11 +3562,11 @@ Image Symbol Table
     AHBPrescTable                            0x080060e4   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
     APBPrescTable                            0x080060f4   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
     asc16                                    0x080060fc   Data        1521  font.o(.rodata.asc16)
-    hz16                                     0x080066ed   Data          34  font.o(.rodata.hz16)
-    hz24                                     0x0800670f   Data          74  font.o(.rodata.hz24)
-    sz32                                     0x080067f4   Data        1921  font.o(.rodata.sz32)
-    Region$$Table$$Base                      0x08006f78   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08006f98   Number         0  anon$$obj.o(Region$$Table)
+    hz16                                     0x080066ed   Data         238  font.o(.rodata.hz16)
+    hz24                                     0x080067db   Data          74  font.o(.rodata.hz24)
+    sz32                                     0x080068c0   Data        1921  font.o(.rodata.sz32)
+    Region$$Table$$Base                      0x08007044   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08007064   Number         0  anon$$obj.o(Region$$Table)
     __stdout                                 0x20000000   Data           4  stdout.o(.data)
     Menu_Index                               0x20000004   Data           1  gpio.o(.data.Menu_Index)
     PWMControl_Index                         0x20000005   Data           1  gpio.o(.data.PWMControl_Index)
@@ -3656,9 +3656,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006fb0, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00007080, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00006f98, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00007064, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3855,28 +3855,28 @@ Memory Map of the image
     0x080060e4   0x080060e4   0x00000010   Data   RO          297    .rodata.AHBPrescTable  system_stm32f4xx.o
     0x080060f4   0x080060f4   0x00000008   Data   RO          298    .rodata.APBPrescTable  system_stm32f4xx.o
     0x080060fc   0x080060fc   0x000005f1   Data   RO           11    .rodata.asc16       font.o
-    0x080066ed   0x080066ed   0x00000022   Data   RO           13    .rodata.hz16        font.o
-    0x0800670f   0x0800670f   0x0000004a   Data   RO           14    .rodata.hz24        font.o
-    0x08006759   0x08006759   0x00000098   Data   RO          362    .rodata.str1.1      user_logic.o
-    0x080067f1   0x080067f1   0x00000003   Data   RO          411    .rodata.str1.1      snake.o
-    0x080067f4   0x080067f4   0x00000781   Data   RO           12    .rodata.sz32        font.o
-    0x08006f75   0x08006f75   0x00000003   PAD
-    0x08006f78   0x08006f78   0x00000020   Data   RO         2011    Region$$Table       anon$$obj.o
+    0x080066ed   0x080066ed   0x000000ee   Data   RO           13    .rodata.hz16        font.o
+    0x080067db   0x080067db   0x0000004a   Data   RO           14    .rodata.hz24        font.o
+    0x08006825   0x08006825   0x00000098   Data   RO          362    .rodata.str1.1      user_logic.o
+    0x080068bd   0x080068bd   0x00000003   Data   RO          411    .rodata.str1.1      snake.o
+    0x080068c0   0x080068c0   0x00000781   Data   RO           12    .rodata.sz32        font.o
+    0x08007041   0x08007041   0x00000003   PAD
+    0x08007044   0x08007044   0x00000020   Data   RO         2011    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006f98, Size: 0x00001058, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08007068, Size: 0x00001058, Max: 0x00020000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08006f98   0x00000004   Data   RW         1988    .data               mc_w.l(stdout.o)
-    0x20000004   0x08006f9c   0x00000001   Data   RW           86    .data.Menu_Index    gpio.o
-    0x20000005   0x08006f9d   0x00000001   Data   RW           93    .data.PWMControl_Index  gpio.o
-    0x20000006   0x08006f9e   0x00000002   PAD
-    0x20000008   0x08006fa0   0x00000004   Data   RW          296    .data.SystemCoreClock  system_stm32f4xx.o
-    0x2000000c   0x08006fa4   0x00000001   Data   RW          948    .data.uwTickFreq    stm32f4xx_hal.o
-    0x2000000d   0x08006fa5   0x00000003   PAD
-    0x20000010   0x08006fa8   0x00000004   Data   RW          947    .data.uwTickPrio    stm32f4xx_hal.o
-    0x20000014   0x08006fac   0x00000004   PAD
+    0x20000000   0x08007068   0x00000004   Data   RW         1988    .data               mc_w.l(stdout.o)
+    0x20000004   0x0800706c   0x00000001   Data   RW           86    .data.Menu_Index    gpio.o
+    0x20000005   0x0800706d   0x00000001   Data   RW           93    .data.PWMControl_Index  gpio.o
+    0x20000006   0x0800706e   0x00000002   PAD
+    0x20000008   0x08007070   0x00000004   Data   RW          296    .data.SystemCoreClock  system_stm32f4xx.o
+    0x2000000c   0x08007074   0x00000001   Data   RW          948    .data.uwTickFreq    stm32f4xx_hal.o
+    0x2000000d   0x08007075   0x00000003   PAD
+    0x20000010   0x08007078   0x00000004   Data   RW          947    .data.uwTickPrio    stm32f4xx_hal.o
+    0x20000014   0x0800707c   0x00000004   PAD
     0x20000018        -       0x00000100   Zero   RW          357    .bss.AIRQ           user_logic.o
     0x20000118        -       0x00000001   Zero   RW          399    .bss.Buzzer_Refresh_Flag  snake.o
     0x20000119        -       0x00000001   Zero   RW          463    .bss.CRR            user_led.o
@@ -3934,11 +3934,11 @@ Memory Map of the image
     0x20000848        -       0x00000001   Zero   RW          400    .bss.Snake_Color_R  snake.o
     0x20000849        -       0x00000084   Zero   RW          409    .bss.Snake_R        snake.o
     0x200008cd        -       0x00000100   Zero   RW          356    .bss.TEMP           user_logic.o
-    0x200009cd   0x08006fac   0x00000003   PAD
+    0x200009cd   0x0800707c   0x00000003   PAD
     0x200009d0        -       0x00000004   Zero   RW          480    .bss.adc1_Value     user_adc.o
     0x200009d4        -       0x00000004   Zero   RW          482    .bss.adc2_Value     user_adc.o
     0x200009d8        -       0x00000004   Zero   RW          484    .bss.adc3_Value     user_adc.o
-    0x200009dc   0x08006fac   0x00000004   PAD
+    0x200009dc   0x0800707c   0x00000004   PAD
     0x200009e0        -       0x00000008   Zero   RW          485    .bss.airquality     user_adc.o
     0x200009e8        -       0x00000048   Zero   RW          113    .bss.hadc1          adc.o
     0x20000a30        -       0x00000048   Zero   RW          114    .bss.hadc2          adc.o
@@ -3949,11 +3949,11 @@ Memory Map of the image
     0x20000b7c        -       0x00000040   Zero   RW          216    .bss.htim2          tim.o
     0x20000bbc        -       0x00000040   Zero   RW          217    .bss.htim3          tim.o
     0x20000bfc        -       0x00000040   Zero   RW          233    .bss.huart1         usart.o
-    0x20000c3c   0x08006fac   0x00000004   PAD
+    0x20000c3c   0x0800707c   0x00000004   PAD
     0x20000c40        -       0x00000008   Zero   RW          481    .bss.luminance      user_adc.o
     0x20000c48        -       0x00000008   Zero   RW          483    .bss.temperture     user_adc.o
     0x20000c50        -       0x00000004   Zero   RW          949    .bss.uwTick         stm32f4xx_hal.o
-    0x20000c54   0x08006fac   0x00000004   PAD
+    0x20000c54   0x0800707c   0x00000004   PAD
     0x20000c58        -       0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
 
 
@@ -3965,7 +3965,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        594          0          0          0        216       5594   adc.o
-         0          0       3550          0          0        818   font.o
+         0          0       3754          0          0        818   font.o
       2438         32          0          2          6       5616   gpio.o
       1408          0          0          0          0       9923   gui.o
        180          0          0          0         84       5127   i2c.o
@@ -3994,10 +3994,10 @@ Image component sizes
         70          0          0          0          0       1561   user_buzzer.o
        576          0          0          0          6       3370   user_led.o
       2378         92        152          0        784       2876   user_logic.o
-       132         16          0          0          1       1400   user_main.o
+       132         16          0          0          1       1401   user_main.o
 
     ----------------------------------------------------------------------
-     20528        404       4156         16       4164     241875   Object Totals
+     20528        404       4360         16       4164     241876   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         54          4          3          5         19          0   (incl. Padding)
 
@@ -4056,15 +4056,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     24412        512       4156         20       4164     242583   Grand Totals
-     24412        512       4156         20       4164     242583   ELF Image Totals
-     24412        512       4156         20          0          0   ROM Totals
+     24412        512       4360         20       4164     242584   Grand Totals
+     24412        512       4360         20       4164     242584   ELF Image Totals
+     24412        512       4360         20          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                28568 (  27.90kB)
+    Total RO  Size (Code + RO Data)                28772 (  28.10kB)
     Total RW  Size (RW Data + ZI Data)              4184 (   4.09kB)
-    Total ROM Size (Code + RO Data + RW Data)      28588 (  27.92kB)
+    Total ROM Size (Code + RO Data + RW Data)      28792 (  28.12kB)
 
 ==============================================================================
 

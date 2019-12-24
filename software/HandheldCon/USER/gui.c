@@ -300,6 +300,42 @@ void Gui_DrawFont_GBK16(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_
 	}
 }
 
+//void Fast_DrawFont_GBK16(uint8_t x, uint8_t y, uint8_t fc, uint8_t bc, uint8_t *s)
+//{
+//	unsigned char i,j;
+//	unsigned short k;
+//	uint8_t HZnum;
+//	HZnum=sizeof(hz16)/sizeof(typFNT_GB162);
+//	while(*s) 
+//	{	
+//		if((*s) >= 128) 
+//		{		
+//			for (k=0;k<HZnum;k++) 
+//			{
+//			  if ((hz16[k].Index[0]==*(s))&&(hz16[k].Index[1]==*(s+1)))
+//			  { 	Lcd_SetRegion(x,y,x+16-1,y+16-1);
+//				    for(i=0;i<16*2;i++)
+//				    {
+//						for(j=0;j<8;j++)
+//				    	{
+//							if(hz16[k].Msk[i]&(0x80>>j))	LCD_WriteData_16Bit(fc);
+//							else 
+//							{
+//							if (fc!=bc) LCD_WriteData_16Bit(bc);
+//							}
+//						}
+//					}
+//					
+//					
+//				}
+//			}
+//		s+=2;x+=16;
+//		}
+//	}		
+//		else
+//		s+=1; 		
+//}
+
 void Gui_DrawFont_GBK24(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, uint8_t *s)
 {
 	uint8_t i,j;

@@ -173,10 +173,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LAJHSSGQ
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for HandheldCon\Design Rule Check - HandheldCon.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Sources
 ParameterCount=0
