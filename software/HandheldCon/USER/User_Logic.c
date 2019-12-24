@@ -230,22 +230,22 @@ void PWM_Control(void){
 	else	Gui_DrawFont_Num32(40, 120,RGB(255,245,238),PWMControl_BG, CRR);	
 
 	if(CRR_Red == 10){
-		Gui_DrawFont_Num32(105, 120,RGB(255,245,238),PWMControl_BG, 1);	
-		Gui_DrawFont_Num32(135, 120,RGB(255,245,238),PWMControl_BG, 0);	
+		Gui_DrawFont_Num32(105, 120,RED,PWMControl_BG, 1);	
+		Gui_DrawFont_Num32(135, 120,RED,PWMControl_BG, 0);	
 	}
-	else Gui_DrawFont_Num32(120, 120,RGB(255,245,238),PWMControl_BG, CRR_Red);
+	else Gui_DrawFont_Num32(120, 120,RED,PWMControl_BG, CRR_Red);
 
 	if(CRR_Green == 10){
-		Gui_DrawFont_Num32(165, 120,RGB(255,245,238),PWMControl_BG, 1);
-		Gui_DrawFont_Num32(195, 120,RGB(255,245,238),PWMControl_BG, 0);
+		Gui_DrawFont_Num32(165, 120,GREEN,PWMControl_BG, 1);
+		Gui_DrawFont_Num32(195, 120,GREEN,PWMControl_BG, 0);
 	}
-	else Gui_DrawFont_Num32(180, 120,RGB(255,245,238),PWMControl_BG, CRR_Green);	
+	else Gui_DrawFont_Num32(180, 120,GREEN,PWMControl_BG, CRR_Green);	
 
 	if(CRR_Blue == 10){
-		Gui_DrawFont_Num32(225, 120,RGB(255,245,238),PWMControl_BG, 1);	
-		Gui_DrawFont_Num32(255, 120,RGB(255,245,238),PWMControl_BG, 0);	
+		Gui_DrawFont_Num32(225, 120,BLUE,PWMControl_BG, 1);	
+		Gui_DrawFont_Num32(255, 120,BLUE,PWMControl_BG, 0);	
 	}
-	else Gui_DrawFont_Num32(240, 120,RGB(255,245,238),PWMControl_BG, CRR_Blue);	
+	else Gui_DrawFont_Num32(240, 120,BLUE,PWMControl_BG, CRR_Blue);	
 //	Gui_DrawFont_GBK16(45,120,RGB(255,245,238),PWMControl_BG,Crr);
 //	Gui_DrawFont_GBK16(125,120,RGB(255,245,238),PWMControl_BG,Crr_Red);
 //	Gui_DrawFont_GBK16(185,120,RGB(255,245,238),PWMControl_BG,Crr_Green);

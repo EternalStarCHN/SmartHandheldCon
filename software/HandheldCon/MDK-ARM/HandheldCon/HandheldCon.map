@@ -3206,60 +3206,60 @@ Image Symbol Table
     [Anonymous Symbol]                       0x08004360   Section        0  user_adc.o(.text.MyADC_ValueGet)
     [Anonymous Symbol]                       0x08004498   Section        0  stm32f4xx_it.o(.text.NMI_Handler)
     [Anonymous Symbol]                       0x0800449c   Section        0  user_logic.o(.text.PWM_Control)
-    [Anonymous Symbol]                       0x08004794   Section        0  stm32f4xx_it.o(.text.PendSV_Handler)
-    [Anonymous Symbol]                       0x08004798   Section        0  snake.o(.text.Run_SNAKE)
-    SPI_EndRxTxTransaction                   0x08004e51   Thumb Code    96  stm32f4xx_hal_spi.o(.text.SPI_EndRxTxTransaction)
-    [Anonymous Symbol]                       0x08004e50   Section        0  stm32f4xx_hal_spi.o(.text.SPI_EndRxTxTransaction)
-    SPI_WaitFlagStateUntilTimeout            0x08004eb1   Thumb Code   140  stm32f4xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout)
-    [Anonymous Symbol]                       0x08004eb0   Section        0  stm32f4xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout)
-    [Anonymous Symbol]                       0x08004f3c   Section        0  stm32f4xx_it.o(.text.SVC_Handler)
-    [Anonymous Symbol]                       0x08004f3e   Section        0  snake.o(.text.Show_Head)
-    [Anonymous Symbol]                       0x08005042   Section        0  stm32f4xx_it.o(.text.SysTick_Handler)
-    [Anonymous Symbol]                       0x08005046   Section        0  main.o(.text.SystemClock_Config)
-    [Anonymous Symbol]                       0x080050d6   Section        0  system_stm32f4xx.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x0800512e   Section        0  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
-    TIM_OC1_SetConfig                        0x0800524d   Thumb Code    96  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
-    [Anonymous Symbol]                       0x0800524c   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
-    [Anonymous Symbol]                       0x080052ac   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
-    TIM_OC3_SetConfig                        0x08005315   Thumb Code   104  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
-    [Anonymous Symbol]                       0x08005314   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
-    TIM_OC4_SetConfig                        0x0800537d   Thumb Code    80  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
-    [Anonymous Symbol]                       0x0800537c   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
-    UART_SetConfig                           0x080053cd   Thumb Code   702  stm32f4xx_hal_uart.o(.text.UART_SetConfig)
-    [Anonymous Symbol]                       0x080053cc   Section        0  stm32f4xx_hal_uart.o(.text.UART_SetConfig)
-    UART_WaitOnFlagUntilTimeout              0x0800568d   Thumb Code    94  stm32f4xx_hal_uart.o(.text.UART_WaitOnFlagUntilTimeout)
-    [Anonymous Symbol]                       0x0800568c   Section        0  stm32f4xx_hal_uart.o(.text.UART_WaitOnFlagUntilTimeout)
-    [Anonymous Symbol]                       0x080056ec   Section        0  stm32f4xx_it.o(.text.UsageFault_Handler)
-    [Anonymous Symbol]                       0x080056f0   Section        0  user_main.o(.text.User_main)
-    [Anonymous Symbol]                       0x08005750   Section        0  user_logic.o(.text.delay_ms)
-    [Anonymous Symbol]                       0x08005752   Section        0  user_main.o(.text.fputc)
-    [Anonymous Symbol]                       0x08005778   Section        0  main.o(.text.main)
-    i.__0sprintf                             0x080057bc   Section        0  printfa.o(i.__0sprintf)
-    i.__scatterload_copy                     0x080057e4   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x080057f2   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x080057f4   Section       14  handlers.o(i.__scatterload_zeroinit)
-    _fp_digits                               0x08005805   Thumb Code   366  printfa.o(i._fp_digits)
-    i._fp_digits                             0x08005804   Section        0  printfa.o(i._fp_digits)
-    _printf_core                             0x08005989   Thumb Code  1744  printfa.o(i._printf_core)
-    i._printf_core                           0x08005988   Section        0  printfa.o(i._printf_core)
-    _printf_post_padding                     0x08006065   Thumb Code    36  printfa.o(i._printf_post_padding)
-    i._printf_post_padding                   0x08006064   Section        0  printfa.o(i._printf_post_padding)
-    _printf_pre_padding                      0x08006089   Thumb Code    46  printfa.o(i._printf_pre_padding)
-    i._printf_pre_padding                    0x08006088   Section        0  printfa.o(i._printf_pre_padding)
-    _sputc                                   0x080060b7   Thumb Code    10  printfa.o(i._sputc)
-    i._sputc                                 0x080060b6   Section        0  printfa.o(i._sputc)
-    i.puts                                   0x080060c0   Section        0  puts.o(i.puts)
-    .L.str.3                                 0x08006825   Data          28  user_logic.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08006825   Section        0  user_logic.o(.rodata.str1.1)
-    .L.str.1                                 0x08006841   Data          28  user_logic.o(.rodata.str1.1)
-    .L.str.2                                 0x0800685d   Data          28  user_logic.o(.rodata.str1.1)
-    .L.str.6                                 0x08006879   Data           8  user_logic.o(.rodata.str1.1)
-    .L.str.5                                 0x08006881   Data          13  user_logic.o(.rodata.str1.1)
-    .L.str.7                                 0x0800688e   Data          18  user_logic.o(.rodata.str1.1)
-    .L.str.13                                0x080068a0   Data           4  user_logic.o(.rodata.str1.1)
-    .L.str.4                                 0x080068a4   Data          25  user_logic.o(.rodata.str1.1)
-    .L.str.2                                 0x080068bd   Data           3  snake.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x080068bd   Section        0  snake.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08004790   Section        0  stm32f4xx_it.o(.text.PendSV_Handler)
+    [Anonymous Symbol]                       0x08004794   Section        0  snake.o(.text.Run_SNAKE)
+    SPI_EndRxTxTransaction                   0x08004e4d   Thumb Code    96  stm32f4xx_hal_spi.o(.text.SPI_EndRxTxTransaction)
+    [Anonymous Symbol]                       0x08004e4c   Section        0  stm32f4xx_hal_spi.o(.text.SPI_EndRxTxTransaction)
+    SPI_WaitFlagStateUntilTimeout            0x08004ead   Thumb Code   140  stm32f4xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout)
+    [Anonymous Symbol]                       0x08004eac   Section        0  stm32f4xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout)
+    [Anonymous Symbol]                       0x08004f38   Section        0  stm32f4xx_it.o(.text.SVC_Handler)
+    [Anonymous Symbol]                       0x08004f3a   Section        0  snake.o(.text.Show_Head)
+    [Anonymous Symbol]                       0x0800503e   Section        0  stm32f4xx_it.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x08005042   Section        0  main.o(.text.SystemClock_Config)
+    [Anonymous Symbol]                       0x080050d2   Section        0  system_stm32f4xx.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x0800512a   Section        0  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
+    TIM_OC1_SetConfig                        0x08005249   Thumb Code    96  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
+    [Anonymous Symbol]                       0x08005248   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
+    [Anonymous Symbol]                       0x080052a8   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
+    TIM_OC3_SetConfig                        0x08005311   Thumb Code   104  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
+    [Anonymous Symbol]                       0x08005310   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
+    TIM_OC4_SetConfig                        0x08005379   Thumb Code    80  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
+    [Anonymous Symbol]                       0x08005378   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
+    UART_SetConfig                           0x080053c9   Thumb Code   702  stm32f4xx_hal_uart.o(.text.UART_SetConfig)
+    [Anonymous Symbol]                       0x080053c8   Section        0  stm32f4xx_hal_uart.o(.text.UART_SetConfig)
+    UART_WaitOnFlagUntilTimeout              0x08005689   Thumb Code    94  stm32f4xx_hal_uart.o(.text.UART_WaitOnFlagUntilTimeout)
+    [Anonymous Symbol]                       0x08005688   Section        0  stm32f4xx_hal_uart.o(.text.UART_WaitOnFlagUntilTimeout)
+    [Anonymous Symbol]                       0x080056e8   Section        0  stm32f4xx_it.o(.text.UsageFault_Handler)
+    [Anonymous Symbol]                       0x080056ec   Section        0  user_main.o(.text.User_main)
+    [Anonymous Symbol]                       0x0800574c   Section        0  user_logic.o(.text.delay_ms)
+    [Anonymous Symbol]                       0x0800574e   Section        0  user_main.o(.text.fputc)
+    [Anonymous Symbol]                       0x08005774   Section        0  main.o(.text.main)
+    i.__0sprintf                             0x080057b8   Section        0  printfa.o(i.__0sprintf)
+    i.__scatterload_copy                     0x080057e0   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080057ee   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080057f0   Section       14  handlers.o(i.__scatterload_zeroinit)
+    _fp_digits                               0x08005801   Thumb Code   366  printfa.o(i._fp_digits)
+    i._fp_digits                             0x08005800   Section        0  printfa.o(i._fp_digits)
+    _printf_core                             0x08005985   Thumb Code  1744  printfa.o(i._printf_core)
+    i._printf_core                           0x08005984   Section        0  printfa.o(i._printf_core)
+    _printf_post_padding                     0x08006061   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_post_padding                   0x08006060   Section        0  printfa.o(i._printf_post_padding)
+    _printf_pre_padding                      0x08006085   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i._printf_pre_padding                    0x08006084   Section        0  printfa.o(i._printf_pre_padding)
+    _sputc                                   0x080060b3   Thumb Code    10  printfa.o(i._sputc)
+    i._sputc                                 0x080060b2   Section        0  printfa.o(i._sputc)
+    i.puts                                   0x080060bc   Section        0  puts.o(i.puts)
+    .L.str.3                                 0x08006821   Data          28  user_logic.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006821   Section        0  user_logic.o(.rodata.str1.1)
+    .L.str.1                                 0x0800683d   Data          28  user_logic.o(.rodata.str1.1)
+    .L.str.2                                 0x08006859   Data          28  user_logic.o(.rodata.str1.1)
+    .L.str.6                                 0x08006875   Data           8  user_logic.o(.rodata.str1.1)
+    .L.str.5                                 0x0800687d   Data          13  user_logic.o(.rodata.str1.1)
+    .L.str.7                                 0x0800688a   Data          18  user_logic.o(.rodata.str1.1)
+    .L.str.13                                0x0800689c   Data           4  user_logic.o(.rodata.str1.1)
+    .L.str.4                                 0x080068a0   Data          25  user_logic.o(.rodata.str1.1)
+    .L.str.2                                 0x080068b9   Data           3  snake.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x080068b9   Section        0  snake.o(.rodata.str1.1)
     .data                                    0x20000000   Section        4  stdout.o(.data)
     STACK                                    0x20000c58   Section     1024  startup_stm32f407xx.o(STACK)
 
@@ -3535,38 +3535,38 @@ Image Symbol Table
     Menu_Show                                0x08004071   Thumb Code   748  user_logic.o(.text.Menu_Show)
     MyADC_ValueGet                           0x08004361   Thumb Code   312  user_adc.o(.text.MyADC_ValueGet)
     NMI_Handler                              0x08004499   Thumb Code     2  stm32f4xx_it.o(.text.NMI_Handler)
-    PWM_Control                              0x0800449d   Thumb Code   760  user_logic.o(.text.PWM_Control)
-    PendSV_Handler                           0x08004795   Thumb Code     2  stm32f4xx_it.o(.text.PendSV_Handler)
-    Run_SNAKE                                0x08004799   Thumb Code  1718  snake.o(.text.Run_SNAKE)
-    SVC_Handler                              0x08004f3d   Thumb Code     2  stm32f4xx_it.o(.text.SVC_Handler)
-    Show_Head                                0x08004f3f   Thumb Code   260  snake.o(.text.Show_Head)
-    SysTick_Handler                          0x08005043   Thumb Code     4  stm32f4xx_it.o(.text.SysTick_Handler)
-    SystemClock_Config                       0x08005047   Thumb Code   144  main.o(.text.SystemClock_Config)
-    SystemInit                               0x080050d7   Thumb Code    88  system_stm32f4xx.o(.text.SystemInit)
-    TIM_Base_SetConfig                       0x0800512f   Thumb Code   286  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
-    TIM_OC2_SetConfig                        0x080052ad   Thumb Code   104  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
-    UsageFault_Handler                       0x080056ed   Thumb Code     2  stm32f4xx_it.o(.text.UsageFault_Handler)
-    User_main                                0x080056f1   Thumb Code    96  user_main.o(.text.User_main)
-    delay_ms                                 0x08005751   Thumb Code     2  user_logic.o(.text.delay_ms)
-    fputc                                    0x08005753   Thumb Code    36  user_main.o(.text.fputc)
-    main                                     0x08005779   Thumb Code    66  main.o(.text.main)
-    __0sprintf                               0x080057bd   Thumb Code    34  printfa.o(i.__0sprintf)
-    __1sprintf                               0x080057bd   Thumb Code     0  printfa.o(i.__0sprintf)
-    __2sprintf                               0x080057bd   Thumb Code     0  printfa.o(i.__0sprintf)
-    __c89sprintf                             0x080057bd   Thumb Code     0  printfa.o(i.__0sprintf)
-    sprintf                                  0x080057bd   Thumb Code     0  printfa.o(i.__0sprintf)
-    __scatterload_copy                       0x080057e5   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x080057f3   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x080057f5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    puts                                     0x080060c1   Thumb Code    30  puts.o(i.puts)
-    AHBPrescTable                            0x080060e4   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x080060f4   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
-    asc16                                    0x080060fc   Data        1521  font.o(.rodata.asc16)
-    hz16                                     0x080066ed   Data         238  font.o(.rodata.hz16)
-    hz24                                     0x080067db   Data          74  font.o(.rodata.hz24)
-    sz32                                     0x080068c0   Data        1921  font.o(.rodata.sz32)
-    Region$$Table$$Base                      0x08007044   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08007064   Number         0  anon$$obj.o(Region$$Table)
+    PWM_Control                              0x0800449d   Thumb Code   756  user_logic.o(.text.PWM_Control)
+    PendSV_Handler                           0x08004791   Thumb Code     2  stm32f4xx_it.o(.text.PendSV_Handler)
+    Run_SNAKE                                0x08004795   Thumb Code  1718  snake.o(.text.Run_SNAKE)
+    SVC_Handler                              0x08004f39   Thumb Code     2  stm32f4xx_it.o(.text.SVC_Handler)
+    Show_Head                                0x08004f3b   Thumb Code   260  snake.o(.text.Show_Head)
+    SysTick_Handler                          0x0800503f   Thumb Code     4  stm32f4xx_it.o(.text.SysTick_Handler)
+    SystemClock_Config                       0x08005043   Thumb Code   144  main.o(.text.SystemClock_Config)
+    SystemInit                               0x080050d3   Thumb Code    88  system_stm32f4xx.o(.text.SystemInit)
+    TIM_Base_SetConfig                       0x0800512b   Thumb Code   286  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
+    TIM_OC2_SetConfig                        0x080052a9   Thumb Code   104  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
+    UsageFault_Handler                       0x080056e9   Thumb Code     2  stm32f4xx_it.o(.text.UsageFault_Handler)
+    User_main                                0x080056ed   Thumb Code    96  user_main.o(.text.User_main)
+    delay_ms                                 0x0800574d   Thumb Code     2  user_logic.o(.text.delay_ms)
+    fputc                                    0x0800574f   Thumb Code    36  user_main.o(.text.fputc)
+    main                                     0x08005775   Thumb Code    66  main.o(.text.main)
+    __0sprintf                               0x080057b9   Thumb Code    34  printfa.o(i.__0sprintf)
+    __1sprintf                               0x080057b9   Thumb Code     0  printfa.o(i.__0sprintf)
+    __2sprintf                               0x080057b9   Thumb Code     0  printfa.o(i.__0sprintf)
+    __c89sprintf                             0x080057b9   Thumb Code     0  printfa.o(i.__0sprintf)
+    sprintf                                  0x080057b9   Thumb Code     0  printfa.o(i.__0sprintf)
+    __scatterload_copy                       0x080057e1   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080057ef   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080057f1   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    puts                                     0x080060bd   Thumb Code    30  puts.o(i.puts)
+    AHBPrescTable                            0x080060e0   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x080060f0   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
+    asc16                                    0x080060f8   Data        1521  font.o(.rodata.asc16)
+    hz16                                     0x080066e9   Data         238  font.o(.rodata.hz16)
+    hz24                                     0x080067d7   Data          74  font.o(.rodata.hz24)
+    sz32                                     0x080068bc   Data        1921  font.o(.rodata.sz32)
+    Region$$Table$$Base                      0x08007040   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08007060   Number         0  anon$$obj.o(Region$$Table)
     __stdout                                 0x20000000   Data           4  stdout.o(.data)
     Menu_Index                               0x20000004   Data           1  gpio.o(.data.Menu_Index)
     PWMControl_Index                         0x20000005   Data           1  gpio.o(.data.PWMControl_Index)
@@ -3656,9 +3656,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00007080, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00007078, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00007064, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00007060, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3812,71 +3812,71 @@ Memory Map of the image
     0x08004360   0x08004360   0x00000138   Code   RO          478    .text.MyADC_ValueGet  user_adc.o
     0x08004498   0x08004498   0x00000002   Code   RO          243    .text.NMI_Handler   stm32f4xx_it.o
     0x0800449a   0x0800449a   0x00000002   PAD
-    0x0800449c   0x0800449c   0x000002f8   Code   RO          335    .text.PWM_Control   user_logic.o
-    0x08004794   0x08004794   0x00000002   Code   RO          257    .text.PendSV_Handler  stm32f4xx_it.o
-    0x08004796   0x08004796   0x00000002   PAD
-    0x08004798   0x08004798   0x000006b6   Code   RO          374    .text.Run_SNAKE     snake.o
-    0x08004e4e   0x08004e4e   0x00000002   PAD
-    0x08004e50   0x08004e50   0x00000060   Code   RO         1163    .text.SPI_EndRxTxTransaction  stm32f4xx_hal_spi.o
-    0x08004eb0   0x08004eb0   0x0000008c   Code   RO         1261    .text.SPI_WaitFlagStateUntilTimeout  stm32f4xx_hal_spi.o
-    0x08004f3c   0x08004f3c   0x00000002   Code   RO          253    .text.SVC_Handler   stm32f4xx_it.o
-    0x08004f3e   0x08004f3e   0x00000104   Code   RO          376    .text.Show_Head     snake.o
-    0x08005042   0x08005042   0x00000004   Code   RO          259    .text.SysTick_Handler  stm32f4xx_it.o
-    0x08005046   0x08005046   0x00000090   Code   RO           66    .text.SystemClock_Config  main.o
-    0x080050d6   0x080050d6   0x00000058   Code   RO          292    .text.SystemInit    system_stm32f4xx.o
-    0x0800512e   0x0800512e   0x0000011e   Code   RO         1276    .text.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
-    0x0800524c   0x0800524c   0x00000060   Code   RO         1420    .text.TIM_OC1_SetConfig  stm32f4xx_hal_tim.o
-    0x080052ac   0x080052ac   0x00000068   Code   RO         1422    .text.TIM_OC2_SetConfig  stm32f4xx_hal_tim.o
-    0x08005314   0x08005314   0x00000068   Code   RO         1424    .text.TIM_OC3_SetConfig  stm32f4xx_hal_tim.o
-    0x0800537c   0x0800537c   0x00000050   Code   RO         1426    .text.TIM_OC4_SetConfig  stm32f4xx_hal_tim.o
-    0x080053cc   0x080053cc   0x000002be   Code   RO         1586    .text.UART_SetConfig  stm32f4xx_hal_uart.o
-    0x0800568a   0x0800568a   0x00000002   PAD
-    0x0800568c   0x0800568c   0x0000005e   Code   RO         1600    .text.UART_WaitOnFlagUntilTimeout  stm32f4xx_hal_uart.o
+    0x0800449c   0x0800449c   0x000002f4   Code   RO          335    .text.PWM_Control   user_logic.o
+    0x08004790   0x08004790   0x00000002   Code   RO          257    .text.PendSV_Handler  stm32f4xx_it.o
+    0x08004792   0x08004792   0x00000002   PAD
+    0x08004794   0x08004794   0x000006b6   Code   RO          374    .text.Run_SNAKE     snake.o
+    0x08004e4a   0x08004e4a   0x00000002   PAD
+    0x08004e4c   0x08004e4c   0x00000060   Code   RO         1163    .text.SPI_EndRxTxTransaction  stm32f4xx_hal_spi.o
+    0x08004eac   0x08004eac   0x0000008c   Code   RO         1261    .text.SPI_WaitFlagStateUntilTimeout  stm32f4xx_hal_spi.o
+    0x08004f38   0x08004f38   0x00000002   Code   RO          253    .text.SVC_Handler   stm32f4xx_it.o
+    0x08004f3a   0x08004f3a   0x00000104   Code   RO          376    .text.Show_Head     snake.o
+    0x0800503e   0x0800503e   0x00000004   Code   RO          259    .text.SysTick_Handler  stm32f4xx_it.o
+    0x08005042   0x08005042   0x00000090   Code   RO           66    .text.SystemClock_Config  main.o
+    0x080050d2   0x080050d2   0x00000058   Code   RO          292    .text.SystemInit    system_stm32f4xx.o
+    0x0800512a   0x0800512a   0x0000011e   Code   RO         1276    .text.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
+    0x08005248   0x08005248   0x00000060   Code   RO         1420    .text.TIM_OC1_SetConfig  stm32f4xx_hal_tim.o
+    0x080052a8   0x080052a8   0x00000068   Code   RO         1422    .text.TIM_OC2_SetConfig  stm32f4xx_hal_tim.o
+    0x08005310   0x08005310   0x00000068   Code   RO         1424    .text.TIM_OC3_SetConfig  stm32f4xx_hal_tim.o
+    0x08005378   0x08005378   0x00000050   Code   RO         1426    .text.TIM_OC4_SetConfig  stm32f4xx_hal_tim.o
+    0x080053c8   0x080053c8   0x000002be   Code   RO         1586    .text.UART_SetConfig  stm32f4xx_hal_uart.o
+    0x08005686   0x08005686   0x00000002   PAD
+    0x08005688   0x08005688   0x0000005e   Code   RO         1600    .text.UART_WaitOnFlagUntilTimeout  stm32f4xx_hal_uart.o
+    0x080056e6   0x080056e6   0x00000002   PAD
+    0x080056e8   0x080056e8   0x00000002   Code   RO          251    .text.UsageFault_Handler  stm32f4xx_it.o
     0x080056ea   0x080056ea   0x00000002   PAD
-    0x080056ec   0x080056ec   0x00000002   Code   RO          251    .text.UsageFault_Handler  stm32f4xx_it.o
-    0x080056ee   0x080056ee   0x00000002   PAD
-    0x080056f0   0x080056f0   0x00000060   Code   RO          308    .text.User_main     user_main.o
-    0x08005750   0x08005750   0x00000002   Code   RO          331    .text.delay_ms      user_logic.o
-    0x08005752   0x08005752   0x00000024   Code   RO          310    .text.fputc         user_main.o
-    0x08005776   0x08005776   0x00000002   PAD
-    0x08005778   0x08005778   0x00000042   Code   RO           64    .text.main          main.o
-    0x080057ba   0x080057ba   0x00000002   PAD
-    0x080057bc   0x080057bc   0x00000028   Code   RO         1938    i.__0sprintf        mc_w.l(printfa.o)
-    0x080057e4   0x080057e4   0x0000000e   Code   RO         2012    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080057f2   0x080057f2   0x00000002   Code   RO         2013    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080057f4   0x080057f4   0x0000000e   Code   RO         2014    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08005802   0x08005802   0x00000002   PAD
-    0x08005804   0x08005804   0x00000184   Code   RO         1943    i._fp_digits        mc_w.l(printfa.o)
-    0x08005988   0x08005988   0x000006dc   Code   RO         1944    i._printf_core      mc_w.l(printfa.o)
-    0x08006064   0x08006064   0x00000024   Code   RO         1945    i._printf_post_padding  mc_w.l(printfa.o)
-    0x08006088   0x08006088   0x0000002e   Code   RO         1946    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x080060b6   0x080060b6   0x0000000a   Code   RO         1948    i._sputc            mc_w.l(printfa.o)
-    0x080060c0   0x080060c0   0x00000024   Code   RO         1695    i.puts              mc_w.l(puts.o)
-    0x080060e4   0x080060e4   0x00000010   Data   RO          297    .rodata.AHBPrescTable  system_stm32f4xx.o
-    0x080060f4   0x080060f4   0x00000008   Data   RO          298    .rodata.APBPrescTable  system_stm32f4xx.o
-    0x080060fc   0x080060fc   0x000005f1   Data   RO           11    .rodata.asc16       font.o
-    0x080066ed   0x080066ed   0x000000ee   Data   RO           13    .rodata.hz16        font.o
-    0x080067db   0x080067db   0x0000004a   Data   RO           14    .rodata.hz24        font.o
-    0x08006825   0x08006825   0x00000098   Data   RO          362    .rodata.str1.1      user_logic.o
-    0x080068bd   0x080068bd   0x00000003   Data   RO          411    .rodata.str1.1      snake.o
-    0x080068c0   0x080068c0   0x00000781   Data   RO           12    .rodata.sz32        font.o
-    0x08007041   0x08007041   0x00000003   PAD
-    0x08007044   0x08007044   0x00000020   Data   RO         2011    Region$$Table       anon$$obj.o
+    0x080056ec   0x080056ec   0x00000060   Code   RO          308    .text.User_main     user_main.o
+    0x0800574c   0x0800574c   0x00000002   Code   RO          331    .text.delay_ms      user_logic.o
+    0x0800574e   0x0800574e   0x00000024   Code   RO          310    .text.fputc         user_main.o
+    0x08005772   0x08005772   0x00000002   PAD
+    0x08005774   0x08005774   0x00000042   Code   RO           64    .text.main          main.o
+    0x080057b6   0x080057b6   0x00000002   PAD
+    0x080057b8   0x080057b8   0x00000028   Code   RO         1938    i.__0sprintf        mc_w.l(printfa.o)
+    0x080057e0   0x080057e0   0x0000000e   Code   RO         2012    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080057ee   0x080057ee   0x00000002   Code   RO         2013    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080057f0   0x080057f0   0x0000000e   Code   RO         2014    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080057fe   0x080057fe   0x00000002   PAD
+    0x08005800   0x08005800   0x00000184   Code   RO         1943    i._fp_digits        mc_w.l(printfa.o)
+    0x08005984   0x08005984   0x000006dc   Code   RO         1944    i._printf_core      mc_w.l(printfa.o)
+    0x08006060   0x08006060   0x00000024   Code   RO         1945    i._printf_post_padding  mc_w.l(printfa.o)
+    0x08006084   0x08006084   0x0000002e   Code   RO         1946    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x080060b2   0x080060b2   0x0000000a   Code   RO         1948    i._sputc            mc_w.l(printfa.o)
+    0x080060bc   0x080060bc   0x00000024   Code   RO         1695    i.puts              mc_w.l(puts.o)
+    0x080060e0   0x080060e0   0x00000010   Data   RO          297    .rodata.AHBPrescTable  system_stm32f4xx.o
+    0x080060f0   0x080060f0   0x00000008   Data   RO          298    .rodata.APBPrescTable  system_stm32f4xx.o
+    0x080060f8   0x080060f8   0x000005f1   Data   RO           11    .rodata.asc16       font.o
+    0x080066e9   0x080066e9   0x000000ee   Data   RO           13    .rodata.hz16        font.o
+    0x080067d7   0x080067d7   0x0000004a   Data   RO           14    .rodata.hz24        font.o
+    0x08006821   0x08006821   0x00000098   Data   RO          362    .rodata.str1.1      user_logic.o
+    0x080068b9   0x080068b9   0x00000003   Data   RO          411    .rodata.str1.1      snake.o
+    0x080068bc   0x080068bc   0x00000781   Data   RO           12    .rodata.sz32        font.o
+    0x0800703d   0x0800703d   0x00000003   PAD
+    0x08007040   0x08007040   0x00000020   Data   RO         2011    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08007068, Size: 0x00001058, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08007060, Size: 0x00001058, Max: 0x00020000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08007068   0x00000004   Data   RW         1988    .data               mc_w.l(stdout.o)
-    0x20000004   0x0800706c   0x00000001   Data   RW           86    .data.Menu_Index    gpio.o
-    0x20000005   0x0800706d   0x00000001   Data   RW           93    .data.PWMControl_Index  gpio.o
-    0x20000006   0x0800706e   0x00000002   PAD
-    0x20000008   0x08007070   0x00000004   Data   RW          296    .data.SystemCoreClock  system_stm32f4xx.o
-    0x2000000c   0x08007074   0x00000001   Data   RW          948    .data.uwTickFreq    stm32f4xx_hal.o
-    0x2000000d   0x08007075   0x00000003   PAD
-    0x20000010   0x08007078   0x00000004   Data   RW          947    .data.uwTickPrio    stm32f4xx_hal.o
-    0x20000014   0x0800707c   0x00000004   PAD
+    0x20000000   0x08007060   0x00000004   Data   RW         1988    .data               mc_w.l(stdout.o)
+    0x20000004   0x08007064   0x00000001   Data   RW           86    .data.Menu_Index    gpio.o
+    0x20000005   0x08007065   0x00000001   Data   RW           93    .data.PWMControl_Index  gpio.o
+    0x20000006   0x08007066   0x00000002   PAD
+    0x20000008   0x08007068   0x00000004   Data   RW          296    .data.SystemCoreClock  system_stm32f4xx.o
+    0x2000000c   0x0800706c   0x00000001   Data   RW          948    .data.uwTickFreq    stm32f4xx_hal.o
+    0x2000000d   0x0800706d   0x00000003   PAD
+    0x20000010   0x08007070   0x00000004   Data   RW          947    .data.uwTickPrio    stm32f4xx_hal.o
+    0x20000014   0x08007074   0x00000004   PAD
     0x20000018        -       0x00000100   Zero   RW          357    .bss.AIRQ           user_logic.o
     0x20000118        -       0x00000001   Zero   RW          399    .bss.Buzzer_Refresh_Flag  snake.o
     0x20000119        -       0x00000001   Zero   RW          463    .bss.CRR            user_led.o
@@ -3934,11 +3934,11 @@ Memory Map of the image
     0x20000848        -       0x00000001   Zero   RW          400    .bss.Snake_Color_R  snake.o
     0x20000849        -       0x00000084   Zero   RW          409    .bss.Snake_R        snake.o
     0x200008cd        -       0x00000100   Zero   RW          356    .bss.TEMP           user_logic.o
-    0x200009cd   0x0800707c   0x00000003   PAD
+    0x200009cd   0x08007074   0x00000003   PAD
     0x200009d0        -       0x00000004   Zero   RW          480    .bss.adc1_Value     user_adc.o
     0x200009d4        -       0x00000004   Zero   RW          482    .bss.adc2_Value     user_adc.o
     0x200009d8        -       0x00000004   Zero   RW          484    .bss.adc3_Value     user_adc.o
-    0x200009dc   0x0800707c   0x00000004   PAD
+    0x200009dc   0x08007074   0x00000004   PAD
     0x200009e0        -       0x00000008   Zero   RW          485    .bss.airquality     user_adc.o
     0x200009e8        -       0x00000048   Zero   RW          113    .bss.hadc1          adc.o
     0x20000a30        -       0x00000048   Zero   RW          114    .bss.hadc2          adc.o
@@ -3949,11 +3949,11 @@ Memory Map of the image
     0x20000b7c        -       0x00000040   Zero   RW          216    .bss.htim2          tim.o
     0x20000bbc        -       0x00000040   Zero   RW          217    .bss.htim3          tim.o
     0x20000bfc        -       0x00000040   Zero   RW          233    .bss.huart1         usart.o
-    0x20000c3c   0x0800707c   0x00000004   PAD
+    0x20000c3c   0x08007074   0x00000004   PAD
     0x20000c40        -       0x00000008   Zero   RW          481    .bss.luminance      user_adc.o
     0x20000c48        -       0x00000008   Zero   RW          483    .bss.temperture     user_adc.o
     0x20000c50        -       0x00000004   Zero   RW          949    .bss.uwTick         stm32f4xx_hal.o
-    0x20000c54   0x0800707c   0x00000004   PAD
+    0x20000c54   0x08007074   0x00000004   PAD
     0x20000c58        -       0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
 
 
@@ -3964,40 +3964,40 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       594          0          0          0        216       5594   adc.o
-         0          0       3754          0          0        818   font.o
-      2438         32          0          2          6       5616   gpio.o
-      1408          0          0          0          0       9923   gui.o
-       180          0          0          0         84       5127   i2c.o
-       212          0          0          0          0       2693   main.o
-        90          0          0          0         16       2481   rng.o
-      2854        232          3          0       1688       4089   snake.o
-      1174          0          0          0         88       8053   spi.o
-        36          8        392          0       1024        836   startup_stm32f407xx.o
-       208          0          0          5          4       7147   stm32f4xx_hal.o
-      1012          0          0          0          0       9888   stm32f4xx_hal_adc.o
-       198          0          0          0          0       9734   stm32f4xx_hal_cortex.o
-       468          0          0          0          0       4923   stm32f4xx_hal_gpio.o
-       394          0          0          0          0      34683   stm32f4xx_hal_i2c.o
-        56          0          0          0          0       1447   stm32f4xx_hal_msp.o
-      1262          0          0          0          0       7033   stm32f4xx_hal_rcc.o
-       160          0          0          0          0       4037   stm32f4xx_hal_rng.o
-       726          0          0          0          0      19269   stm32f4xx_hal_spi.o
-      1402          4          0          0          0      41112   stm32f4xx_hal_tim.o
-        66          0          0          0          0      15852   stm32f4xx_hal_tim_ex.o
-      1064          0          0          0          0      16007   stm32f4xx_hal_uart.o
-        78          0          0          0          0       1768   stm32f4xx_it.o
-        88          0         24          4          0       2601   system_stm32f4xx.o
-       662          0          0          0        128       6193   tim.o
-       176          0          0          0         64       4763   usart.o
-       312         16          0          0         36        981   user_adc.o
-        70          0          0          0          0       1561   user_buzzer.o
-       576          0          0          0          6       3370   user_led.o
-      2378         92        152          0        784       2876   user_logic.o
-       132         16          0          0          1       1401   user_main.o
+       594          0          0          0        216       5589   adc.o
+         0          0       3754          0          0        813   font.o
+      2438         32          0          2          6       5611   gpio.o
+      1408          0          0          0          0       9918   gui.o
+       180          0          0          0         84       5122   i2c.o
+       212          0          0          0          0       2688   main.o
+        90          0          0          0         16       2476   rng.o
+      2854        232          3          0       1688       4084   snake.o
+      1174          0          0          0         88       8048   spi.o
+        36          8        392          0       1024        828   startup_stm32f407xx.o
+       208          0          0          5          4       7142   stm32f4xx_hal.o
+      1012          0          0          0          0       9883   stm32f4xx_hal_adc.o
+       198          0          0          0          0       9729   stm32f4xx_hal_cortex.o
+       468          0          0          0          0       4918   stm32f4xx_hal_gpio.o
+       394          0          0          0          0      34678   stm32f4xx_hal_i2c.o
+        56          0          0          0          0       1442   stm32f4xx_hal_msp.o
+      1262          0          0          0          0       7028   stm32f4xx_hal_rcc.o
+       160          0          0          0          0       4032   stm32f4xx_hal_rng.o
+       726          0          0          0          0      19264   stm32f4xx_hal_spi.o
+      1402          4          0          0          0      41107   stm32f4xx_hal_tim.o
+        66          0          0          0          0      15847   stm32f4xx_hal_tim_ex.o
+      1064          0          0          0          0      16002   stm32f4xx_hal_uart.o
+        78          0          0          0          0       1763   stm32f4xx_it.o
+        88          0         24          4          0       2596   system_stm32f4xx.o
+       662          0          0          0        128       6188   tim.o
+       176          0          0          0         64       4758   usart.o
+       312         16          0          0         36        972   user_adc.o
+        70          0          0          0          0       1556   user_buzzer.o
+       576          0          0          0          6       3365   user_led.o
+      2374         92        152          0        784       2871   user_logic.o
+       132         16          0          0          1       1351   user_main.o
 
     ----------------------------------------------------------------------
-     20528        404       4360         16       4164     241876   Object Totals
+     20524        404       4360         16       4164     241669   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         54          4          3          5         19          0   (incl. Padding)
 
@@ -4056,15 +4056,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     24412        512       4360         20       4164     242584   Grand Totals
-     24412        512       4360         20       4164     242584   ELF Image Totals
-     24412        512       4360         20          0          0   ROM Totals
+     24408        512       4360         20       4164     242377   Grand Totals
+     24408        512       4360         20       4164     242377   ELF Image Totals
+     24408        512       4360         20          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                28772 (  28.10kB)
+    Total RO  Size (Code + RO Data)                28768 (  28.09kB)
     Total RW  Size (RW Data + ZI Data)              4184 (   4.09kB)
-    Total ROM Size (Code + RO Data + RW Data)      28792 (  28.12kB)
+    Total ROM Size (Code + RO Data + RW Data)      28788 (  28.11kB)
 
 ==============================================================================
 
