@@ -51,7 +51,7 @@ void User_main(void)
 #endif 
 
 
-/* printf??????1 */
+/* printf重定向 */
 int fputc(int ch,FILE *f)
 {
     uint8_t temp[1]={ch};

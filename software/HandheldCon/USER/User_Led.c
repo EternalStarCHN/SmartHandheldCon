@@ -33,12 +33,10 @@ void Led_OpenTEMP(void){
 
 void Led_CloseLUMI(void){
 	HAL_GPIO_WritePin(LED_HUMI_GPIO_Port,LED_HUMI_Pin,GPIO_PIN_SET);
-	HAL_Delay(50);
 }
 
 void Led_CloseTEMP(void){
 	HAL_GPIO_WritePin(LED_TEMP_GPIO_Port,LED_TEMP_Pin,GPIO_PIN_SET);
-	HAL_Delay(50);
 }
 
 void LED_TwinkleLUMI(uint8_t times,uint8_t delay_ms){

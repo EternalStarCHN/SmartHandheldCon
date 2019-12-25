@@ -6,6 +6,7 @@ int adc3_Value;
 double luminance;
 double temperture;
 double airquality;
+double TEMPERTURE;
 
 void MyADC_Init(void){
 	HAL_ADC_Start(&hadc1);
@@ -29,4 +30,6 @@ void MyADC_ValueGet(void){
 			adc3_Value = HAL_ADC_GetValue(&hadc3);
 			airquality = adc3_Value*3.3/4096;
 		}
+		if(temperture>=0 && temperture<=3) TEMPERTURE = (1/temperture)*52;
+		else TEMPERTURE = 666;
 }

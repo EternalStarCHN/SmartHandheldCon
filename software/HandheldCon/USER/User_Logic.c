@@ -18,13 +18,15 @@ uint8_t CRR_Pre = 0;
 uint8_t CRRRED_Pre = 0;
 uint8_t CRRGREEN_Pre = 0;
 uint8_t CRRBLUE_Pre = 0;
-
+uint8_t Lumi_Pre = 0;
+uint8_t Airq_Pre = 0;
 extern uint8_t Menu_Flag;
 extern uint8_t Menu_Index;
 extern uint8_t Func_Flag;
 extern double luminance;
 extern double temperture;
 extern double airquality;
+extern double TEMPERTURE;
 extern uint8_t PWMControl_Index;
 extern uint8_t CRR;
 extern uint8_t CRR_Red;
@@ -131,6 +133,9 @@ void Func_Start(uint8_t Menu_Index){
 				LCD_DrawSqureBorder(0,0,320,240,RGB(205,155,29));
 				LCD_DrawSqureBorder(3,3,314,234,RGB(238,180,34));
 				LCD_DrawSqureBorder(6,6,308,228,RGB(255,193,37));
+				Gui_DrawFont_GBK16(40,60,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Lumi");
+				Gui_DrawFont_GBK16(40,120,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Temp");
+				Gui_DrawFont_GBK16(40,180,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Airq");
 				Gui_DrawFont_GBK16(20,20,RED,EnvironmentInformation_BG,"Environment Information:");
 				Environment_Refresh_Flag++;
 			}
@@ -163,31 +168,93 @@ void Func_Start(uint8_t Menu_Index){
 void Environmen_Information(void){
 	MyADC_ValueGet();
 	
-	Gui_DrawFont_GBK16(50,60,EnvironmentInformation_BG,EnvironmentInformation_BG,LUMI);
-	Gui_DrawFont_GBK16(50,120,EnvironmentInformation_BG,EnvironmentInformation_BG,TEMP);
-	Gui_DrawFont_GBK16(50,180,EnvironmentInformation_BG,EnvironmentInformation_BG,AIRQ);
+	switch(Lumi_Pre){
+		case 0:
+			Gui_DrawFont_GBK16(100,60,EnvironmentInformation_BG,EnvironmentInformation_BG,"Dark");
+			break;
+		case 1:
+			Gui_DrawFont_GBK16(100,60,EnvironmentInformation_BG,EnvironmentInformation_BG,"Moderate");
+			break;
+		case 2:
+			Gui_DrawFont_GBK16(100,60,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Bright");
+			break;
+		default:;break;
+	}
 	
-	DoubleToString(luminance,LUMI);
-	DoubleToString(temperture,TEMP);	
-	DoubleToString(airquality,AIRQ);
+	switch(Airq_Pre){
+		case 0:
+			Gui_DrawFont_GBK16(100,180,EnvironmentInformation_BG,EnvironmentInformation_BG,"Qualified");
+			break;
+		case 1:
+			Gui_DrawFont_GBK16(100,180,EnvironmentInformation_BG,EnvironmentInformation_BG,"Good");
+			break;
+		case 2:
+			Gui_DrawFont_GBK16(100,180,EnvironmentInformation_BG,EnvironmentInformation_BG,"Excellent");
+			break;
+		defalut:;break;
+	}
+	//Gui_DrawFont_GBK16(50,60,EnvironmentInformation_BG,EnvironmentInformation_BG,LUMI);
+	Gui_DrawFont_GBK16(100,120,EnvironmentInformation_BG,EnvironmentInformation_BG,TEMP);
+	//Gui_DrawFont_GBK16(50,180,EnvironmentInformation_BG,EnvironmentInformation_BG,AIRQ);
 	
-	Gui_DrawFont_GBK16(50,60,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,LUMI);
-	Gui_DrawFont_GBK16(50,120,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,TEMP);
-	Gui_DrawFont_GBK16(50,180,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,AIRQ);
+	//DoubleToString(luminance,LUMI);
+	DoubleToString(TEMPERTURE,TEMP);	//temperture
+	//DoubleToString(airquality,AIRQ);
 	
-	if(temperture<1.1){
+	//Luminance
+	//Gui_DrawFont_GBK16(50,60,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,LUMI);
+	if(luminance>0.2){
+		Gui_DrawFont_GBK16(100,60,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Bright");
+		Lumi_Pre = 2;
+	}
+	else if(luminance>0.1 && luminance<0.15){
+		Gui_DrawFont_GBK16(100,60,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Moderate");
+		Lumi_Pre = 1;
+	}
+	else {
+		Gui_DrawFont_GBK16(100,60,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Dark");
+		Lumi_Pre = 0;
+	}
+	
+	//Temperture
+	if(TEMPERTURE!=666){
+		Gui_DrawFont_GBK16(100,120,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,TEMP);
+	}
+	else{
+		Gui_DrawFont_GBK16(100,120,RED,EnvironmentInformation_BG,"ERROR");
+	}
+	
+	//Airquality
+	//Gui_DrawFont_GBK16(50,180,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,AIRQ);
+	if(airquality<0.8){
+		Gui_DrawFont_GBK16(100,180,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Excellent");
+		Airq_Pre=2;
+	}
+	else if(airquality>0.8 && airquality<1.4){
+		Gui_DrawFont_GBK16(100,180,BLUE,EnvironmentInformation_BG,"Good");
+		Airq_Pre=1;
+	}
+	else{
+		Gui_DrawFont_GBK16(100,180,RED,EnvironmentInformation_BG,"Qualified");
+		Airq_Pre=0;
+	}
+	
+	//led_control
+	if(TEMPERTURE>25){
 		Led_OpenTEMP();
 	}
 	else{
 		Led_CloseTEMP();
 	}
 
-	if(luminance>0.1){
+	if(luminance<0.1){
 		Led_OpenLUMI();
 	}
 	else{
 		Led_CloseLUMI();
 	}
+	
+	printf("光照:%lf   温度:%lf   空气:%lf\r\n",luminance,temperture,airquality);
 }
 
 void PWM_Control(void){
@@ -281,4 +348,7 @@ void PWM_Control(void){
 	CRRRED_Pre = CRR_Red;
 	CRRGREEN_Pre = CRR_Green;
 	CRRBLUE_Pre = CRR_Blue;	
+	
+	printf("LED:%d  红:%d  绿:%d  蓝:%d\r\n",CRR,CRR_Red,CRR_Green,CRR_Blue);
+	HAL_Delay(100);
 }

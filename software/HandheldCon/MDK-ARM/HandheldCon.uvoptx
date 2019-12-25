@@ -158,22 +158,17 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>CRR</ItemText>
+          <ItemText>luminance</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>CRR_Red</ItemText>
+          <ItemText>airquality</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>CRR_Green</ItemText>
-        </Ww>
-        <Ww>
-          <count>3</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>CRR_Blue</ItemText>
+          <ItemText>temperture</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>

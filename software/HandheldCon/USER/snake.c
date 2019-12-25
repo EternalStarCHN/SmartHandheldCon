@@ -73,7 +73,7 @@ void Init_SNAKE(void){
 	}
 	for(i=0;i<Snake_R.Long;i++) //将蛇给画出来
 	{
-		LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RGB(154,205,50)); //蛇身颜色
+		LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RGB(255,165,0)); //蛇身颜色
 	} 
 }
 
@@ -118,7 +118,7 @@ if(!Snake_R.Life){
 		Snake_R.X[Snake_R.Long-1]=Snake_R.X[Snake_R.Long-2]+0;
 		Snake_R.Y[Snake_R.Long-1]=Snake_R.Y[Snake_R.Long-2]-SNAKE_Area; 
 		for(i=0;i<Snake_R.Long;i++){
-			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RED);
+			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RGB(255,165,0));
 		}
 		if(Game1_Down_Flag==0){
 			Game1_Pre = 1;
@@ -137,7 +137,7 @@ if(!Snake_R.Life){
 		Snake_R.X[Snake_R.Long-1]=Snake_R.X[Snake_R.Long-2]+0;
 		Snake_R.Y[Snake_R.Long-1]=Snake_R.Y[Snake_R.Long-2]+SNAKE_Area; 
 		for(i=0;i<Snake_R.Long;i++){
-			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RED);
+			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RGB(255,165,0));
 		}
 		if(Game1_Up_Flag==0){
 			Game1_Pre = 2;
@@ -155,7 +155,7 @@ if(!Snake_R.Life){
 		Snake_R.X[Snake_R.Long-1]=Snake_R.X[Snake_R.Long-2]-SNAKE_Area;
 		Snake_R.Y[Snake_R.Long-1]=Snake_R.Y[Snake_R.Long-2]+0; 
 		for(i=0;i<Snake_R.Long;i++){
-			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RED);
+			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RGB(255,165,0));
 		}
 		if(Game1_Right_Flag==0){
 			Game1_Pre = 3;
@@ -173,7 +173,7 @@ if(!Snake_R.Life){
 		Snake_R.X[Snake_R.Long-1]=Snake_R.X[Snake_R.Long-2]+SNAKE_Area;
 		Snake_R.Y[Snake_R.Long-1]=Snake_R.Y[Snake_R.Long-2]+0; 
 		for(i=0;i<Snake_R.Long;i++){
-			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RED);
+			LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RGB(255,165,0));
 		}
 		if(Game1_Left_Flag==0){
 			Game1_Pre = 4;

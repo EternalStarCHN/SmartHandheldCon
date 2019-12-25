@@ -232,6 +232,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			PWMControl_Flag = 0;
 			PWMControl_Refresh_Flag = 0;
 			PWMControl_Index = 1;
+			Led_CloseTEMP();
+			Led_CloseLUMI();
 		}
 	}	
 	
@@ -379,6 +381,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 					Func_Flag = 0;
 					Environment_Flag = 0;
 					Environment_Refresh_Flag = 0;
+					Led_CloseTEMP();
+					Led_CloseLUMI();
 				}
 				if(Func_Flag&&PWMControl_Flag){
 					Menu_Flag = 1;
