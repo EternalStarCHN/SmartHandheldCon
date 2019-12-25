@@ -27,6 +27,18 @@ Project File Date:  12/24/2019
 <h2>Output:</h2>
 *** Using Compiler 'V6.12', folder: 'C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'HandheldCon'
+../Src/gpio.c(21): warning: In file included from...
+../Inc\gpio.h(31): warning: In file included from...
+../User\User_Logic.h(7): warning: In file included from...
+../User/User_adc.h(1): warning: '__USERADC_H_' is used as a header guard here, followed by #define of a different macro [-Wheader-guard]
+#ifndef __USERADC_H_
+        ^~~~~~~~~~~~
+../User/User_adc.h(2): note: '__USERADC_H' is defined here; did you mean '__USERADC_H_'?
+#define __USERADC_H
+        ^~~~~~~~~~~
+        __USERADC_H_
+1 warning generated.
+compiling gpio.c...
 ../USER/User_Logic.c(1): warning: In file included from...
 ../User\User_Logic.h(7): warning: In file included from...
 ../User/User_adc.h(1): warning: '__USERADC_H_' is used as a header guard here, followed by #define of a different macro [-Wheader-guard]
@@ -325,7 +337,7 @@ compiling User_Logic.c...
 linking...
 Program Size: Code=25384 RO-data=4400 RW-data=20 ZI-data=3660  
 FromELF: creating hex file...
-"HandheldCon\HandheldCon.axf" - 0 Error(s), 48 Warning(s).
+"HandheldCon\HandheldCon.axf" - 0 Error(s), 49 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -354,7 +366,7 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:DSP:Library:1.6.0
       Include file:  CMSIS\DSP\Include\arm_math.h
       Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib
-Build Time Elapsed:  00:00:05
+Build Time Elapsed:  00:00:12
 </pre>
 </body>
 </html>
