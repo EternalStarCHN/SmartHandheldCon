@@ -75,6 +75,7 @@ void Init_SNAKE(void){
 	{
 		LCD_DrawSqure(Snake_R.X[i],Snake_R.Y[i],SNAKE_Area,SNAKE_Area,RGB(255,165,0)); //蛇身颜色
 	} 
+	printf("游戏开始!请按任意方向键让蛇运动...\r\n");
 }
 
 void Run_SNAKE(void){
@@ -219,6 +220,7 @@ if(!Snake_R.Life){
 		Gui_DrawFont_GBK16(250,40,YELLOW,BLACK,SCORE);
 		Gui_DrawFont_GBK16(250,90,YELLOW,BLACK,LEVEL);
 		Food_R.Yes=1; //食物标志置 1
+		printf("吃到食物!继续加油！\r\n");
 	}
 	
 //生成食物坐标
@@ -265,7 +267,7 @@ void Display_Dead(void)
 	Gui_DrawFont_GBK16(100,100,WHITE,BLACK,"MISSON FAILED! ");
 	Gui_DrawFont_GBK16(60,150,WHITE,BLACK,"Press 'CONFIRM' to Restart");
 	Gui_DrawFont_GBK16(60,170,WHITE,BLACK,"Press 'RETURN'  to Menu");	
-	printf("MISSION FAILED！Waiting for user action... \r\n");
+	printf("游戏失败！等待用户操作... \r\n");
 	if(Game1_Restart){
 		
 		Snake_R.Score = 0;
@@ -289,7 +291,7 @@ void Display_Pass(void)
 	LCD_DrawSqureBorder(0,0,320,240,GREEN);
 	Gui_DrawFont_GBK16(100,100,YELLOW,BLACK,"MISSION SUCCESS!");
 	Gui_DrawFont_GBK16(60,150,YELLOW,BLACK,"Press ‘Confirm’ to Contiue");
-	printf("MISSION SUCCESS！Waiting for user action... \r\n");
+	printf("游戏胜利！等待用户操作... \r\n");
 	if(Game1_Continue){
 
 		Init_SNAKE();

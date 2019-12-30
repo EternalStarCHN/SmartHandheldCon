@@ -37,7 +37,7 @@ void User_main(void)
 			HAL_Delay(100);
 			Buzzer_Yell_Times(3,50,50);
 			LED_TwinkleTEMP(2,30);
-			printf("Hello Human!\r\n");
+			printf("欢迎使用！\r\n班级：电信1702\r\n姓名：刘永欣\r\n学号：31702440\r\n");
 //			Gui_DrawFont_GBK16(100,200,RED,WHITE,"电信信");
 			START_Refresh++;
 		}

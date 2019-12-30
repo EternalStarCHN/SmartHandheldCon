@@ -3,7 +3,7 @@
 <title>Static Call Graph - [HandheldCon\HandheldCon.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image HandheldCon\HandheldCon.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6120001: Last Updated: Wed Dec 25 22:10:30 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6120001: Last Updated: Thu Dec 26 20:34:40 2019
 <BR><P>
 <H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -579,7 +579,7 @@ Global Symbols
 <P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[76]"></a>Display_Dead</STRONG> (Thumb, 288 bytes, Stack size 24 bytes, snake.o(.text.Display_Dead))
+<P><STRONG><a name="[76]"></a>Display_Dead</STRONG> (Thumb, 280 bytes, Stack size 24 bytes, snake.o(.text.Display_Dead))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = Display_Dead &rArr; Init_SNAKE &rArr; LCD_DrawSqureBorder &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
@@ -591,7 +591,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_SNAKE
 </UL>
 
-<P><STRONG><a name="[7c]"></a>Display_Pass</STRONG> (Thumb, 248 bytes, Stack size 24 bytes, snake.o(.text.Display_Pass))
+<P><STRONG><a name="[7c]"></a>Display_Pass</STRONG> (Thumb, 240 bytes, Stack size 24 bytes, snake.o(.text.Display_Pass))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = Display_Pass &rArr; Init_SNAKE &rArr; LCD_DrawSqureBorder &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
@@ -691,7 +691,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Control
 </UL>
 
-<P><STRONG><a name="[8c]"></a>Func_Start</STRONG> (Thumb, 564 bytes, Stack size 24 bytes, user_logic.o(.text.Func_Start))
+<P><STRONG><a name="[8c]"></a>Func_Start</STRONG> (Thumb, 656 bytes, Stack size 24 bytes, user_logic.o(.text.Func_Start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = Func_Start &rArr; Run_SNAKE &rArr; Display_Pass &rArr; Init_SNAKE &rArr; LCD_DrawSqureBorder &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
@@ -703,6 +703,7 @@ Global Symbols
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_SNAKE
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Environmen_Information
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logic
 </UL>
@@ -1164,13 +1165,14 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[7b]"></a>Init_SNAKE</STRONG> (Thumb, 352 bytes, Stack size 32 bytes, snake.o(.text.Init_SNAKE))
+<P><STRONG><a name="[7b]"></a>Init_SNAKE</STRONG> (Thumb, 408 bytes, Stack size 32 bytes, snake.o(.text.Init_SNAKE))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = Init_SNAKE &rArr; LCD_DrawSqureBorder &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_Clear
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawSqureBorder
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawSqure
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gui_DrawFont_GBK16
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Func_Start
@@ -1513,7 +1515,7 @@ Global Symbols
 <P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[8d]"></a>Run_SNAKE</STRONG> (Thumb, 1714 bytes, Stack size 40 bytes, snake.o(.text.Run_SNAKE))
+<P><STRONG><a name="[8d]"></a>Run_SNAKE</STRONG> (Thumb, 1752 bytes, Stack size 40 bytes, snake.o(.text.Run_SNAKE))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = Run_SNAKE &rArr; Display_Pass &rArr; Init_SNAKE &rArr; LCD_DrawSqureBorder &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawSqure
@@ -1525,6 +1527,7 @@ Global Symbols
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RNG_GetRandomNumber
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Pass
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Dead
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Func_Start
@@ -1577,7 +1580,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[e5]"></a>User_main</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, user_main.o(.text.User_main))
+<P><STRONG><a name="[e5]"></a>User_main</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, user_main.o(.text.User_main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = User_main &rArr; Logic &rArr; Func_Start &rArr; Run_SNAKE &rArr; Display_Pass &rArr; Init_SNAKE &rArr; LCD_DrawSqureBorder &rArr; Gui_DrawLine &rArr; Gui_DrawPoint &rArr; Lcd_SetXY &rArr; Lcd_WriteIndex
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logic
@@ -1672,6 +1675,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User_main
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_SNAKE
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_SNAKE
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Func_Start
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Pass
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Dead
 </UL>

@@ -137,6 +137,7 @@ void Func_Start(uint8_t Menu_Index){
 				Gui_DrawFont_GBK16(40,120,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Temp");
 				Gui_DrawFont_GBK16(40,180,EnvironmentInformation_Font_BG,EnvironmentInformation_BG,"Airq");
 				Gui_DrawFont_GBK16(20,20,RED,EnvironmentInformation_BG,"Environment Information:");
+				printf("正在使用环境信息采集功能...\r\n");
 				Environment_Refresh_Flag++;
 			}
 			Environmen_Information();
@@ -152,6 +153,7 @@ void Func_Start(uint8_t Menu_Index){
 				Gui_DrawFont_GBK16(120,60,RED,PWMControl_BG,"Red");
 				Gui_DrawFont_GBK16(180,60,GREEN,PWMControl_BG,"Green");
 				Gui_DrawFont_GBK16(240,60,BLUE,PWMControl_BG,"Blue");	
+				printf("正在使用PWM波调光功能...\r\n");
 				PWMControl_Refresh_Flag++;
 				PWM_CRR_Refresh = 0;
 				PWM_CRRRED_Refresh = 0;
@@ -240,7 +242,7 @@ void Environmen_Information(void){
 	}
 	
 	//led_control
-	if(TEMPERTURE>25){
+	if(TEMPERTURE>22){
 		Led_OpenTEMP();
 	}
 	else{
