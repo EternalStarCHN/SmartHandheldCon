@@ -392,7 +392,6 @@ Section Cross References
     snake.o(.text.Run_SNAKE) refers to snake.o(.bss.Game1_Left_Status) for Game1_Left_Status
     snake.o(.text.Run_SNAKE) refers to gpio.o(.bss.Game1_Right_Flag) for Game1_Right_Flag
     snake.o(.text.Run_SNAKE) refers to snake.o(.bss.Game1_Right_Status) for Game1_Right_Status
-    snake.o(.text.Run_SNAKE) refers to snake.o(.text.Show_Head) for Show_Head
     snake.o(.text.Run_SNAKE) refers to snake.o(.bss.Snake_R) for Snake_R
     snake.o(.text.Run_SNAKE) refers to user_buzzer.o(.text.Buzzer_Yell_Times) for Buzzer_Yell_Times
     snake.o(.text.Run_SNAKE) refers to snake.o(.text.Display_Dead) for Display_Dead
@@ -414,16 +413,6 @@ Section Cross References
     snake.o(.text.Run_SNAKE) refers to snake.o(.bss.Snake_Color_B) for Snake_Color_B
     snake.o(.text.Run_SNAKE) refers to stm32f4xx_hal.o(.text.HAL_Delay) for HAL_Delay
     snake.o(.ARM.exidx.text.Run_SNAKE) refers to snake.o(.text.Run_SNAKE) for [Anonymous Symbol]
-    snake.o(.text.Show_Head) refers to snake.o(.bss.S_HeadX) for S_HeadX
-    snake.o(.text.Show_Head) refers to gui.o(.text.Gui_DrawFont_GBK16) for Gui_DrawFont_GBK16
-    snake.o(.text.Show_Head) refers to snake.o(.bss.S_HeadY) for S_HeadY
-    snake.o(.text.Show_Head) refers to snake.o(.bss.F_HeadX) for F_HeadX
-    snake.o(.text.Show_Head) refers to snake.o(.bss.F_HeadY) for F_HeadY
-    snake.o(.text.Show_Head) refers to snake.o(.bss.Snake_R) for Snake_R
-    snake.o(.text.Show_Head) refers to snake.o(.rodata.str1.1) for .L.str.2
-    snake.o(.text.Show_Head) refers to printfa.o(i.__0sprintf) for __2sprintf
-    snake.o(.text.Show_Head) refers to snake.o(.bss.Food_R) for Food_R
-    snake.o(.ARM.exidx.text.Show_Head) refers to snake.o(.text.Show_Head) for [Anonymous Symbol]
     snake.o(.text.Display_Dead) refers to snake.o(.bss.Buzzer_Refresh_Flag) for Buzzer_Refresh_Flag
     snake.o(.text.Display_Dead) refers to snake.o(.bss.Game1_Dead) for Game1_Dead
     snake.o(.text.Display_Dead) refers to snake.o(.bss.Game1_Dead_Refresh) for Game1_Dead_Refresh
@@ -445,6 +434,16 @@ Section Cross References
     snake.o(.text.Display_Pass) refers to snake.o(.bss.Game1_Continue) for Game1_Continue
     snake.o(.text.Display_Pass) refers to snake.o(.text.Init_SNAKE) for Init_SNAKE
     snake.o(.ARM.exidx.text.Display_Pass) refers to snake.o(.text.Display_Pass) for [Anonymous Symbol]
+    snake.o(.text.Show_Head) refers to snake.o(.bss.S_HeadX) for S_HeadX
+    snake.o(.text.Show_Head) refers to gui.o(.text.Gui_DrawFont_GBK16) for Gui_DrawFont_GBK16
+    snake.o(.text.Show_Head) refers to snake.o(.bss.S_HeadY) for S_HeadY
+    snake.o(.text.Show_Head) refers to snake.o(.bss.F_HeadX) for F_HeadX
+    snake.o(.text.Show_Head) refers to snake.o(.bss.F_HeadY) for F_HeadY
+    snake.o(.text.Show_Head) refers to snake.o(.bss.Snake_R) for Snake_R
+    snake.o(.text.Show_Head) refers to snake.o(.rodata.str1.1) for .L.str.2
+    snake.o(.text.Show_Head) refers to printfa.o(i.__0sprintf) for __2sprintf
+    snake.o(.text.Show_Head) refers to snake.o(.bss.Food_R) for Food_R
+    snake.o(.ARM.exidx.text.Show_Head) refers to snake.o(.text.Show_Head) for [Anonymous Symbol]
     user_buzzer.o(.text.Buzzer_Yell) refers to stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     user_buzzer.o(.ARM.exidx.text.Buzzer_Yell) refers to user_buzzer.o(.text.Buzzer_Yell) for [Anonymous Symbol]
     user_buzzer.o(.text.Buzzer_Stop) refers to stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
@@ -1963,13 +1962,18 @@ Removing Unused input sections from the image.
     Removing snake.o(.text), (0 bytes).
     Removing snake.o(.ARM.exidx.text.Init_SNAKE), (8 bytes).
     Removing snake.o(.ARM.exidx.text.Run_SNAKE), (8 bytes).
-    Removing snake.o(.ARM.exidx.text.Show_Head), (8 bytes).
     Removing snake.o(.ARM.exidx.text.Display_Dead), (8 bytes).
     Removing snake.o(.ARM.exidx.text.Display_Pass), (8 bytes).
+    Removing snake.o(.text.Show_Head), (260 bytes).
+    Removing snake.o(.ARM.exidx.text.Show_Head), (8 bytes).
     Removing snake.o(.bss.Game1_Up_Pre), (1 bytes).
     Removing snake.o(.bss.Game1_Down_Pre), (1 bytes).
     Removing snake.o(.bss.Game1_Left_Pre), (1 bytes).
     Removing snake.o(.bss.Game1_Right_Pre), (1 bytes).
+    Removing snake.o(.bss.S_HeadX), (256 bytes).
+    Removing snake.o(.bss.S_HeadY), (256 bytes).
+    Removing snake.o(.bss.F_HeadX), (256 bytes).
+    Removing snake.o(.bss.F_HeadY), (256 bytes).
     Removing user_pic.o(.text), (0 bytes).
     Removing user_buzzer.o(.text), (0 bytes).
     Removing user_buzzer.o(.text.Buzzer_Yell), (18 bytes).
@@ -2988,7 +2992,7 @@ Removing Unused input sections from the image.
     Removing stm32f4xx_hal_uart.o(.ARM.exidx.text.HAL_UART_GetError), (8 bytes).
     Removing f2d.o(.text), (38 bytes).
 
-1164 unused section(s) (total 121406 bytes) removed from the image.
+1169 unused section(s) (total 122690 bytes) removed from the image.
 
 ==============================================================================
 
@@ -3232,68 +3236,67 @@ Image Symbol Table
     [Anonymous Symbol]                       0x0800489c   Section        0  user_logic.o(.text.PWM_Control)
     [Anonymous Symbol]                       0x08004bc4   Section        0  stm32f4xx_it.o(.text.PendSV_Handler)
     [Anonymous Symbol]                       0x08004bc8   Section        0  snake.o(.text.Run_SNAKE)
-    SPI_EndRxTxTransaction                   0x080052a1   Thumb Code    96  stm32f4xx_hal_spi.o(.text.SPI_EndRxTxTransaction)
-    [Anonymous Symbol]                       0x080052a0   Section        0  stm32f4xx_hal_spi.o(.text.SPI_EndRxTxTransaction)
-    SPI_WaitFlagStateUntilTimeout            0x08005301   Thumb Code   140  stm32f4xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout)
-    [Anonymous Symbol]                       0x08005300   Section        0  stm32f4xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout)
-    [Anonymous Symbol]                       0x0800538c   Section        0  stm32f4xx_it.o(.text.SVC_Handler)
-    [Anonymous Symbol]                       0x0800538e   Section        0  snake.o(.text.Show_Head)
-    [Anonymous Symbol]                       0x08005492   Section        0  stm32f4xx_it.o(.text.SysTick_Handler)
-    [Anonymous Symbol]                       0x08005496   Section        0  main.o(.text.SystemClock_Config)
-    [Anonymous Symbol]                       0x08005526   Section        0  system_stm32f4xx.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x0800557e   Section        0  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
-    TIM_OC1_SetConfig                        0x0800569d   Thumb Code    96  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
-    [Anonymous Symbol]                       0x0800569c   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
-    [Anonymous Symbol]                       0x080056fc   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
-    TIM_OC3_SetConfig                        0x08005765   Thumb Code   104  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
-    [Anonymous Symbol]                       0x08005764   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
-    TIM_OC4_SetConfig                        0x080057cd   Thumb Code    80  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
-    [Anonymous Symbol]                       0x080057cc   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
-    UART_SetConfig                           0x0800581d   Thumb Code   702  stm32f4xx_hal_uart.o(.text.UART_SetConfig)
-    [Anonymous Symbol]                       0x0800581c   Section        0  stm32f4xx_hal_uart.o(.text.UART_SetConfig)
-    UART_WaitOnFlagUntilTimeout              0x08005add   Thumb Code    94  stm32f4xx_hal_uart.o(.text.UART_WaitOnFlagUntilTimeout)
-    [Anonymous Symbol]                       0x08005adc   Section        0  stm32f4xx_hal_uart.o(.text.UART_WaitOnFlagUntilTimeout)
-    [Anonymous Symbol]                       0x08005b3c   Section        0  stm32f4xx_it.o(.text.UsageFault_Handler)
-    [Anonymous Symbol]                       0x08005b40   Section        0  user_main.o(.text.User_main)
-    [Anonymous Symbol]                       0x08005b98   Section        0  user_logic.o(.text.delay_ms)
-    [Anonymous Symbol]                       0x08005b9a   Section        0  user_main.o(.text.fputc)
-    [Anonymous Symbol]                       0x08005bc0   Section        0  main.o(.text.main)
-    i.__0printf                              0x08005c04   Section        0  printfa.o(i.__0printf)
-    i.__0sprintf                             0x08005c24   Section        0  printfa.o(i.__0sprintf)
-    i.__scatterload_copy                     0x08005c4c   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08005c5a   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08005c5c   Section       14  handlers.o(i.__scatterload_zeroinit)
-    _fp_digits                               0x08005c6d   Thumb Code   366  printfa.o(i._fp_digits)
-    i._fp_digits                             0x08005c6c   Section        0  printfa.o(i._fp_digits)
-    _printf_core                             0x08005df1   Thumb Code  1744  printfa.o(i._printf_core)
-    i._printf_core                           0x08005df0   Section        0  printfa.o(i._printf_core)
-    _printf_post_padding                     0x080064cd   Thumb Code    36  printfa.o(i._printf_post_padding)
-    i._printf_post_padding                   0x080064cc   Section        0  printfa.o(i._printf_post_padding)
-    _printf_pre_padding                      0x080064f1   Thumb Code    46  printfa.o(i._printf_pre_padding)
-    i._printf_pre_padding                    0x080064f0   Section        0  printfa.o(i._printf_pre_padding)
-    _sputc                                   0x0800651f   Thumb Code    10  printfa.o(i._sputc)
-    i._sputc                                 0x0800651e   Section        0  printfa.o(i._sputc)
-    i.puts                                   0x08006528   Section        0  puts.o(i.puts)
-    .Lstr                                    0x08006c8d   Data          77  user_main.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08006c8d   Section        0  user_main.o(.rodata.str1.1)
-    .L.str.3                                 0x08006cda   Data          28  user_logic.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08006cda   Section        0  user_logic.o(.rodata.str1.1)
-    .L.str.1                                 0x08006cf6   Data          28  user_logic.o(.rodata.str1.1)
-    .L.str.2                                 0x08006d12   Data          28  user_logic.o(.rodata.str1.1)
-    .L.str.6                                 0x08006d2e   Data           8  user_logic.o(.rodata.str1.1)
-    .L.str.5                                 0x08006d36   Data          13  user_logic.o(.rodata.str1.1)
-    .L.str.21                                0x08006d43   Data          10  user_logic.o(.rodata.str1.1)
-    .L.str.22                                0x08006d4d   Data           5  user_logic.o(.rodata.str1.1)
-    .L.str.7                                 0x08006d52   Data          18  user_logic.o(.rodata.str1.1)
-    .L.str.19                                0x08006d64   Data           9  user_logic.o(.rodata.str1.1)
-    .L.str.18                                0x08006d6d   Data           5  user_logic.o(.rodata.str1.1)
-    .L.str.4                                 0x08006d72   Data          25  user_logic.o(.rodata.str1.1)
-    .L.str.20                                0x08006d8b   Data           7  user_logic.o(.rodata.str1.1)
-    .L.str.23                                0x08006d92   Data          10  user_logic.o(.rodata.str1.1)
-    .L.str.2                                 0x08006d9c   Data           3  snake.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08006d9c   Section        0  snake.o(.rodata.str1.1)
+    SPI_EndRxTxTransaction                   0x08005299   Thumb Code    96  stm32f4xx_hal_spi.o(.text.SPI_EndRxTxTransaction)
+    [Anonymous Symbol]                       0x08005298   Section        0  stm32f4xx_hal_spi.o(.text.SPI_EndRxTxTransaction)
+    SPI_WaitFlagStateUntilTimeout            0x080052f9   Thumb Code   140  stm32f4xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout)
+    [Anonymous Symbol]                       0x080052f8   Section        0  stm32f4xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout)
+    [Anonymous Symbol]                       0x08005384   Section        0  stm32f4xx_it.o(.text.SVC_Handler)
+    [Anonymous Symbol]                       0x08005386   Section        0  stm32f4xx_it.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x0800538a   Section        0  main.o(.text.SystemClock_Config)
+    [Anonymous Symbol]                       0x0800541a   Section        0  system_stm32f4xx.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x08005472   Section        0  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
+    TIM_OC1_SetConfig                        0x08005591   Thumb Code    96  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
+    [Anonymous Symbol]                       0x08005590   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
+    [Anonymous Symbol]                       0x080055f0   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
+    TIM_OC3_SetConfig                        0x08005659   Thumb Code   104  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
+    [Anonymous Symbol]                       0x08005658   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
+    TIM_OC4_SetConfig                        0x080056c1   Thumb Code    80  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
+    [Anonymous Symbol]                       0x080056c0   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
+    UART_SetConfig                           0x08005711   Thumb Code   702  stm32f4xx_hal_uart.o(.text.UART_SetConfig)
+    [Anonymous Symbol]                       0x08005710   Section        0  stm32f4xx_hal_uart.o(.text.UART_SetConfig)
+    UART_WaitOnFlagUntilTimeout              0x080059d1   Thumb Code    94  stm32f4xx_hal_uart.o(.text.UART_WaitOnFlagUntilTimeout)
+    [Anonymous Symbol]                       0x080059d0   Section        0  stm32f4xx_hal_uart.o(.text.UART_WaitOnFlagUntilTimeout)
+    [Anonymous Symbol]                       0x08005a30   Section        0  stm32f4xx_it.o(.text.UsageFault_Handler)
+    [Anonymous Symbol]                       0x08005a34   Section        0  user_main.o(.text.User_main)
+    [Anonymous Symbol]                       0x08005a8c   Section        0  user_logic.o(.text.delay_ms)
+    [Anonymous Symbol]                       0x08005a8e   Section        0  user_main.o(.text.fputc)
+    [Anonymous Symbol]                       0x08005ab4   Section        0  main.o(.text.main)
+    i.__0printf                              0x08005af8   Section        0  printfa.o(i.__0printf)
+    i.__0sprintf                             0x08005b18   Section        0  printfa.o(i.__0sprintf)
+    i.__scatterload_copy                     0x08005b40   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08005b4e   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08005b50   Section       14  handlers.o(i.__scatterload_zeroinit)
+    _fp_digits                               0x08005b61   Thumb Code   366  printfa.o(i._fp_digits)
+    i._fp_digits                             0x08005b60   Section        0  printfa.o(i._fp_digits)
+    _printf_core                             0x08005ce5   Thumb Code  1744  printfa.o(i._printf_core)
+    i._printf_core                           0x08005ce4   Section        0  printfa.o(i._printf_core)
+    _printf_post_padding                     0x080063c1   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_post_padding                   0x080063c0   Section        0  printfa.o(i._printf_post_padding)
+    _printf_pre_padding                      0x080063e5   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i._printf_pre_padding                    0x080063e4   Section        0  printfa.o(i._printf_pre_padding)
+    _sputc                                   0x08006413   Thumb Code    10  printfa.o(i._sputc)
+    i._sputc                                 0x08006412   Section        0  printfa.o(i._sputc)
+    i.puts                                   0x0800641c   Section        0  puts.o(i.puts)
+    .Lstr                                    0x08006b81   Data          77  user_main.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006b81   Section        0  user_main.o(.rodata.str1.1)
+    .L.str.3                                 0x08006bce   Data          28  user_logic.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006bce   Section        0  user_logic.o(.rodata.str1.1)
+    .L.str.1                                 0x08006bea   Data          28  user_logic.o(.rodata.str1.1)
+    .L.str.2                                 0x08006c06   Data          28  user_logic.o(.rodata.str1.1)
+    .L.str.6                                 0x08006c22   Data           8  user_logic.o(.rodata.str1.1)
+    .L.str.5                                 0x08006c2a   Data          13  user_logic.o(.rodata.str1.1)
+    .L.str.21                                0x08006c37   Data          10  user_logic.o(.rodata.str1.1)
+    .L.str.22                                0x08006c41   Data           5  user_logic.o(.rodata.str1.1)
+    .L.str.7                                 0x08006c46   Data          18  user_logic.o(.rodata.str1.1)
+    .L.str.19                                0x08006c58   Data           9  user_logic.o(.rodata.str1.1)
+    .L.str.18                                0x08006c61   Data           5  user_logic.o(.rodata.str1.1)
+    .L.str.4                                 0x08006c66   Data          25  user_logic.o(.rodata.str1.1)
+    .L.str.20                                0x08006c7f   Data           7  user_logic.o(.rodata.str1.1)
+    .L.str.23                                0x08006c86   Data          10  user_logic.o(.rodata.str1.1)
+    .L.str.2                                 0x08006c90   Data           3  snake.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006c90   Section        0  snake.o(.rodata.str1.1)
     .data                                    0x20000000   Section        4  stdout.o(.data)
-    STACK                                    0x20000a60   Section     1024  startup_stm32f407xx.o(STACK)
+    STACK                                    0x20000660   Section     1024  startup_stm32f407xx.o(STACK)
 
     Global Symbols
 
@@ -3572,41 +3575,40 @@ Image Symbol Table
     NMI_Handler                              0x08004899   Thumb Code     2  stm32f4xx_it.o(.text.NMI_Handler)
     PWM_Control                              0x0800489d   Thumb Code   808  user_logic.o(.text.PWM_Control)
     PendSV_Handler                           0x08004bc5   Thumb Code     2  stm32f4xx_it.o(.text.PendSV_Handler)
-    Run_SNAKE                                0x08004bc9   Thumb Code  1752  snake.o(.text.Run_SNAKE)
-    SVC_Handler                              0x0800538d   Thumb Code     2  stm32f4xx_it.o(.text.SVC_Handler)
-    Show_Head                                0x0800538f   Thumb Code   260  snake.o(.text.Show_Head)
-    SysTick_Handler                          0x08005493   Thumb Code     4  stm32f4xx_it.o(.text.SysTick_Handler)
-    SystemClock_Config                       0x08005497   Thumb Code   144  main.o(.text.SystemClock_Config)
-    SystemInit                               0x08005527   Thumb Code    88  system_stm32f4xx.o(.text.SystemInit)
-    TIM_Base_SetConfig                       0x0800557f   Thumb Code   286  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
-    TIM_OC2_SetConfig                        0x080056fd   Thumb Code   104  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
-    UsageFault_Handler                       0x08005b3d   Thumb Code     2  stm32f4xx_it.o(.text.UsageFault_Handler)
-    User_main                                0x08005b41   Thumb Code    88  user_main.o(.text.User_main)
-    delay_ms                                 0x08005b99   Thumb Code     2  user_logic.o(.text.delay_ms)
-    fputc                                    0x08005b9b   Thumb Code    36  user_main.o(.text.fputc)
-    main                                     0x08005bc1   Thumb Code    66  main.o(.text.main)
-    __0printf                                0x08005c05   Thumb Code    22  printfa.o(i.__0printf)
-    __1printf                                0x08005c05   Thumb Code     0  printfa.o(i.__0printf)
-    __2printf                                0x08005c05   Thumb Code     0  printfa.o(i.__0printf)
-    __c89printf                              0x08005c05   Thumb Code     0  printfa.o(i.__0printf)
-    printf                                   0x08005c05   Thumb Code     0  printfa.o(i.__0printf)
-    __0sprintf                               0x08005c25   Thumb Code    34  printfa.o(i.__0sprintf)
-    __1sprintf                               0x08005c25   Thumb Code     0  printfa.o(i.__0sprintf)
-    __2sprintf                               0x08005c25   Thumb Code     0  printfa.o(i.__0sprintf)
-    __c89sprintf                             0x08005c25   Thumb Code     0  printfa.o(i.__0sprintf)
-    sprintf                                  0x08005c25   Thumb Code     0  printfa.o(i.__0sprintf)
-    __scatterload_copy                       0x08005c4d   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08005c5b   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08005c5d   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    puts                                     0x08006529   Thumb Code    30  puts.o(i.puts)
-    AHBPrescTable                            0x0800654c   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x0800655c   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
-    asc16                                    0x08006564   Data        1521  font.o(.rodata.asc16)
-    hz16                                     0x08006b55   Data         238  font.o(.rodata.hz16)
-    hz24                                     0x08006c43   Data          74  font.o(.rodata.hz24)
-    sz32                                     0x08006d9f   Data        1921  font.o(.rodata.sz32)
-    Region$$Table$$Base                      0x08007520   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08007540   Number         0  anon$$obj.o(Region$$Table)
+    Run_SNAKE                                0x08004bc9   Thumb Code  1744  snake.o(.text.Run_SNAKE)
+    SVC_Handler                              0x08005385   Thumb Code     2  stm32f4xx_it.o(.text.SVC_Handler)
+    SysTick_Handler                          0x08005387   Thumb Code     4  stm32f4xx_it.o(.text.SysTick_Handler)
+    SystemClock_Config                       0x0800538b   Thumb Code   144  main.o(.text.SystemClock_Config)
+    SystemInit                               0x0800541b   Thumb Code    88  system_stm32f4xx.o(.text.SystemInit)
+    TIM_Base_SetConfig                       0x08005473   Thumb Code   286  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
+    TIM_OC2_SetConfig                        0x080055f1   Thumb Code   104  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
+    UsageFault_Handler                       0x08005a31   Thumb Code     2  stm32f4xx_it.o(.text.UsageFault_Handler)
+    User_main                                0x08005a35   Thumb Code    88  user_main.o(.text.User_main)
+    delay_ms                                 0x08005a8d   Thumb Code     2  user_logic.o(.text.delay_ms)
+    fputc                                    0x08005a8f   Thumb Code    36  user_main.o(.text.fputc)
+    main                                     0x08005ab5   Thumb Code    66  main.o(.text.main)
+    __0printf                                0x08005af9   Thumb Code    22  printfa.o(i.__0printf)
+    __1printf                                0x08005af9   Thumb Code     0  printfa.o(i.__0printf)
+    __2printf                                0x08005af9   Thumb Code     0  printfa.o(i.__0printf)
+    __c89printf                              0x08005af9   Thumb Code     0  printfa.o(i.__0printf)
+    printf                                   0x08005af9   Thumb Code     0  printfa.o(i.__0printf)
+    __0sprintf                               0x08005b19   Thumb Code    34  printfa.o(i.__0sprintf)
+    __1sprintf                               0x08005b19   Thumb Code     0  printfa.o(i.__0sprintf)
+    __2sprintf                               0x08005b19   Thumb Code     0  printfa.o(i.__0sprintf)
+    __c89sprintf                             0x08005b19   Thumb Code     0  printfa.o(i.__0sprintf)
+    sprintf                                  0x08005b19   Thumb Code     0  printfa.o(i.__0sprintf)
+    __scatterload_copy                       0x08005b41   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08005b4f   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08005b51   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    puts                                     0x0800641d   Thumb Code    30  puts.o(i.puts)
+    AHBPrescTable                            0x08006440   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x08006450   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
+    asc16                                    0x08006458   Data        1521  font.o(.rodata.asc16)
+    hz16                                     0x08006a49   Data         238  font.o(.rodata.hz16)
+    hz24                                     0x08006b37   Data          74  font.o(.rodata.hz24)
+    sz32                                     0x08006c93   Data        1921  font.o(.rodata.sz32)
+    Region$$Table$$Base                      0x08007414   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08007434   Number         0  anon$$obj.o(Region$$Table)
     __stdout                                 0x20000000   Data           4  stdout.o(.data)
     Menu_Index                               0x20000004   Data           1  gpio.o(.data.Menu_Index)
     PWMControl_Index                         0x20000005   Data           1  gpio.o(.data.PWMControl_Index)
@@ -3625,69 +3627,65 @@ Image Symbol Table
     CRR_Red                                  0x20000021   Data           1  user_led.o(.bss.CRR_Red)
     Environment_Flag                         0x20000022   Data           1  user_logic.o(.bss.Environment_Flag)
     Environment_Refresh_Flag                 0x20000023   Data           1  user_logic.o(.bss.Environment_Refresh_Flag)
-    F_HeadX                                  0x20000024   Data         256  snake.o(.bss.F_HeadX)
-    F_HeadY                                  0x20000124   Data         256  snake.o(.bss.F_HeadY)
-    Food_R                                   0x20000224   Data           3  snake.o(.bss.Food_R)
-    Func_Flag                                0x20000227   Data           1  gpio.o(.bss.Func_Flag)
-    Game1_Continue                           0x20000228   Data           1  snake.o(.bss.Game1_Continue)
-    Game1_Dead                               0x20000229   Data           1  snake.o(.bss.Game1_Dead)
-    Game1_Dead_Refresh                       0x2000022a   Data           1  snake.o(.bss.Game1_Dead_Refresh)
-    Game1_Down_Flag                          0x2000022b   Data           1  gpio.o(.bss.Game1_Down_Flag)
-    Game1_Down_Status                        0x2000022c   Data           1  snake.o(.bss.Game1_Down_Status)
-    Game1_Flag                               0x2000022d   Data           1  user_logic.o(.bss.Game1_Flag)
-    Game1_InitFirst                          0x2000022e   Data           1  snake.o(.bss.Game1_InitFirst)
-    Game1_Left_Flag                          0x2000022f   Data           1  gpio.o(.bss.Game1_Left_Flag)
-    Game1_Left_Status                        0x20000230   Data           1  snake.o(.bss.Game1_Left_Status)
-    Game1_Pass                               0x20000231   Data           1  snake.o(.bss.Game1_Pass)
-    Game1_Pass_Refresh                       0x20000232   Data           1  snake.o(.bss.Game1_Pass_Refresh)
-    Game1_Pre                                0x20000233   Data           1  snake.o(.bss.Game1_Pre)
-    Game1_Refresh                            0x20000234   Data           1  user_logic.o(.bss.Game1_Refresh)
-    Game1_Restart                            0x20000235   Data           1  snake.o(.bss.Game1_Restart)
-    Game1_Right_Flag                         0x20000236   Data           1  gpio.o(.bss.Game1_Right_Flag)
-    Game1_Right_Status                       0x20000237   Data           1  snake.o(.bss.Game1_Right_Status)
-    Game1_Up_Flag                            0x20000238   Data           1  gpio.o(.bss.Game1_Up_Flag)
-    Game1_Up_Status                          0x20000239   Data           1  snake.o(.bss.Game1_Up_Status)
-    LEDPWM_Refresh_Flag                      0x2000023a   Data           1  user_led.o(.bss.LEDPWM_Refresh_Flag)
-    LED_Refresh_Flag                         0x2000023b   Data           1  snake.o(.bss.LED_Refresh_Flag)
-    LED_Waterfall_Con                        0x2000023c   Data           1  user_led.o(.bss.LED_Waterfall_Con)
-    LEVEL                                    0x2000023d   Data         256  snake.o(.bss.LEVEL)
-    Lumi_Pre                                 0x2000033d   Data           1  user_logic.o(.bss.Lumi_Pre)
-    Menu_Flag                                0x2000033e   Data           1  gpio.o(.bss.Menu_Flag)
-    Menu_Index_Refresh                       0x2000033f   Data           1  user_logic.o(.bss.Menu_Index_Refresh)
-    Menu_Refresh                             0x20000340   Data           1  user_logic.o(.bss.Menu_Refresh)
-    PWMControl_Flag                          0x20000341   Data           1  user_logic.o(.bss.PWMControl_Flag)
-    PWMControl_Refresh_Flag                  0x20000342   Data           1  user_logic.o(.bss.PWMControl_Refresh_Flag)
-    PWM_CRRBLUE_Refresh                      0x20000343   Data           1  user_logic.o(.bss.PWM_CRRBLUE_Refresh)
-    PWM_CRRGREEN_Refresh                     0x20000344   Data           1  user_logic.o(.bss.PWM_CRRGREEN_Refresh)
-    PWM_CRRRED_Refresh                       0x20000345   Data           1  user_logic.o(.bss.PWM_CRRRED_Refresh)
-    PWM_CRR_Refresh                          0x20000346   Data           1  user_logic.o(.bss.PWM_CRR_Refresh)
-    SCORE                                    0x20000347   Data         256  snake.o(.bss.SCORE)
-    START_Refresh                            0x20000447   Data           1  user_main.o(.bss.START_Refresh)
-    S_HeadX                                  0x20000448   Data         256  snake.o(.bss.S_HeadX)
-    S_HeadY                                  0x20000548   Data         256  snake.o(.bss.S_HeadY)
-    Snake_Color_B                            0x20000648   Data           1  snake.o(.bss.Snake_Color_B)
-    Snake_Color_G                            0x20000649   Data           1  snake.o(.bss.Snake_Color_G)
-    Snake_Color_R                            0x2000064a   Data           1  snake.o(.bss.Snake_Color_R)
-    Snake_R                                  0x2000064b   Data         132  snake.o(.bss.Snake_R)
-    TEMP                                     0x200006cf   Data         256  user_logic.o(.bss.TEMP)
-    TEMPERTURE                               0x200007d0   Data           8  user_adc.o(.bss.TEMPERTURE)
-    adc1_Value                               0x200007d8   Data           4  user_adc.o(.bss.adc1_Value)
-    adc2_Value                               0x200007dc   Data           4  user_adc.o(.bss.adc2_Value)
-    adc3_Value                               0x200007e0   Data           4  user_adc.o(.bss.adc3_Value)
-    airquality                               0x200007e8   Data           8  user_adc.o(.bss.airquality)
-    hadc1                                    0x200007f0   Data          72  adc.o(.bss.hadc1)
-    hadc2                                    0x20000838   Data          72  adc.o(.bss.hadc2)
-    hadc3                                    0x20000880   Data          72  adc.o(.bss.hadc3)
-    hi2c1                                    0x200008c8   Data          84  i2c.o(.bss.hi2c1)
-    hrng                                     0x2000091c   Data          16  rng.o(.bss.hrng)
-    hspi1                                    0x2000092c   Data          88  spi.o(.bss.hspi1)
-    htim2                                    0x20000984   Data          64  tim.o(.bss.htim2)
-    htim3                                    0x200009c4   Data          64  tim.o(.bss.htim3)
-    huart1                                   0x20000a04   Data          64  usart.o(.bss.huart1)
-    luminance                                0x20000a48   Data           8  user_adc.o(.bss.luminance)
-    temperture                               0x20000a50   Data           8  user_adc.o(.bss.temperture)
-    uwTick                                   0x20000a58   Data           4  stm32f4xx_hal.o(.bss.uwTick)
-    __initial_sp                             0x20000e60   Data           0  startup_stm32f407xx.o(STACK)
+    Food_R                                   0x20000024   Data           3  snake.o(.bss.Food_R)
+    Func_Flag                                0x20000027   Data           1  gpio.o(.bss.Func_Flag)
+    Game1_Continue                           0x20000028   Data           1  snake.o(.bss.Game1_Continue)
+    Game1_Dead                               0x20000029   Data           1  snake.o(.bss.Game1_Dead)
+    Game1_Dead_Refresh                       0x2000002a   Data           1  snake.o(.bss.Game1_Dead_Refresh)
+    Game1_Down_Flag                          0x2000002b   Data           1  gpio.o(.bss.Game1_Down_Flag)
+    Game1_Down_Status                        0x2000002c   Data           1  snake.o(.bss.Game1_Down_Status)
+    Game1_Flag                               0x2000002d   Data           1  user_logic.o(.bss.Game1_Flag)
+    Game1_InitFirst                          0x2000002e   Data           1  snake.o(.bss.Game1_InitFirst)
+    Game1_Left_Flag                          0x2000002f   Data           1  gpio.o(.bss.Game1_Left_Flag)
+    Game1_Left_Status                        0x20000030   Data           1  snake.o(.bss.Game1_Left_Status)
+    Game1_Pass                               0x20000031   Data           1  snake.o(.bss.Game1_Pass)
+    Game1_Pass_Refresh                       0x20000032   Data           1  snake.o(.bss.Game1_Pass_Refresh)
+    Game1_Pre                                0x20000033   Data           1  snake.o(.bss.Game1_Pre)
+    Game1_Refresh                            0x20000034   Data           1  user_logic.o(.bss.Game1_Refresh)
+    Game1_Restart                            0x20000035   Data           1  snake.o(.bss.Game1_Restart)
+    Game1_Right_Flag                         0x20000036   Data           1  gpio.o(.bss.Game1_Right_Flag)
+    Game1_Right_Status                       0x20000037   Data           1  snake.o(.bss.Game1_Right_Status)
+    Game1_Up_Flag                            0x20000038   Data           1  gpio.o(.bss.Game1_Up_Flag)
+    Game1_Up_Status                          0x20000039   Data           1  snake.o(.bss.Game1_Up_Status)
+    LEDPWM_Refresh_Flag                      0x2000003a   Data           1  user_led.o(.bss.LEDPWM_Refresh_Flag)
+    LED_Refresh_Flag                         0x2000003b   Data           1  snake.o(.bss.LED_Refresh_Flag)
+    LED_Waterfall_Con                        0x2000003c   Data           1  user_led.o(.bss.LED_Waterfall_Con)
+    LEVEL                                    0x2000003d   Data         256  snake.o(.bss.LEVEL)
+    Lumi_Pre                                 0x2000013d   Data           1  user_logic.o(.bss.Lumi_Pre)
+    Menu_Flag                                0x2000013e   Data           1  gpio.o(.bss.Menu_Flag)
+    Menu_Index_Refresh                       0x2000013f   Data           1  user_logic.o(.bss.Menu_Index_Refresh)
+    Menu_Refresh                             0x20000140   Data           1  user_logic.o(.bss.Menu_Refresh)
+    PWMControl_Flag                          0x20000141   Data           1  user_logic.o(.bss.PWMControl_Flag)
+    PWMControl_Refresh_Flag                  0x20000142   Data           1  user_logic.o(.bss.PWMControl_Refresh_Flag)
+    PWM_CRRBLUE_Refresh                      0x20000143   Data           1  user_logic.o(.bss.PWM_CRRBLUE_Refresh)
+    PWM_CRRGREEN_Refresh                     0x20000144   Data           1  user_logic.o(.bss.PWM_CRRGREEN_Refresh)
+    PWM_CRRRED_Refresh                       0x20000145   Data           1  user_logic.o(.bss.PWM_CRRRED_Refresh)
+    PWM_CRR_Refresh                          0x20000146   Data           1  user_logic.o(.bss.PWM_CRR_Refresh)
+    SCORE                                    0x20000147   Data         256  snake.o(.bss.SCORE)
+    START_Refresh                            0x20000247   Data           1  user_main.o(.bss.START_Refresh)
+    Snake_Color_B                            0x20000248   Data           1  snake.o(.bss.Snake_Color_B)
+    Snake_Color_G                            0x20000249   Data           1  snake.o(.bss.Snake_Color_G)
+    Snake_Color_R                            0x2000024a   Data           1  snake.o(.bss.Snake_Color_R)
+    Snake_R                                  0x2000024b   Data         132  snake.o(.bss.Snake_R)
+    TEMP                                     0x200002cf   Data         256  user_logic.o(.bss.TEMP)
+    TEMPERTURE                               0x200003d0   Data           8  user_adc.o(.bss.TEMPERTURE)
+    adc1_Value                               0x200003d8   Data           4  user_adc.o(.bss.adc1_Value)
+    adc2_Value                               0x200003dc   Data           4  user_adc.o(.bss.adc2_Value)
+    adc3_Value                               0x200003e0   Data           4  user_adc.o(.bss.adc3_Value)
+    airquality                               0x200003e8   Data           8  user_adc.o(.bss.airquality)
+    hadc1                                    0x200003f0   Data          72  adc.o(.bss.hadc1)
+    hadc2                                    0x20000438   Data          72  adc.o(.bss.hadc2)
+    hadc3                                    0x20000480   Data          72  adc.o(.bss.hadc3)
+    hi2c1                                    0x200004c8   Data          84  i2c.o(.bss.hi2c1)
+    hrng                                     0x2000051c   Data          16  rng.o(.bss.hrng)
+    hspi1                                    0x2000052c   Data          88  spi.o(.bss.hspi1)
+    htim2                                    0x20000584   Data          64  tim.o(.bss.htim2)
+    htim3                                    0x200005c4   Data          64  tim.o(.bss.htim3)
+    huart1                                   0x20000604   Data          64  usart.o(.bss.huart1)
+    luminance                                0x20000648   Data           8  user_adc.o(.bss.luminance)
+    temperture                               0x20000650   Data           8  user_adc.o(.bss.temperture)
+    uwTick                                   0x20000658   Data           4  stm32f4xx_hal.o(.bss.uwTick)
+    __initial_sp                             0x20000a60   Data           0  startup_stm32f407xx.o(STACK)
 
 
 
@@ -3697,9 +3695,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00007558, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00007450, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00007540, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00007434, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3738,8 +3736,8 @@ Memory Map of the image
     0x08000856   0x08000856   0x00000002   PAD
     0x08000858   0x08000858   0x00000046   Code   RO          429    .text.Buzzer_Yell_Times  user_buzzer.o
     0x0800089e   0x0800089e   0x00000002   Code   RO          255    .text.DebugMon_Handler  stm32f4xx_it.o
-    0x080008a0   0x080008a0   0x00000118   Code   RO          381    .text.Display_Dead  snake.o
-    0x080009b8   0x080009b8   0x000000f0   Code   RO          383    .text.Display_Pass  snake.o
+    0x080008a0   0x080008a0   0x00000118   Code   RO          379    .text.Display_Dead  snake.o
+    0x080009b8   0x080009b8   0x000000f0   Code   RO          381    .text.Display_Pass  snake.o
     0x08000aa8   0x08000aa8   0x00000006   Code   RO          261    .text.EXTI0_IRQHandler  stm32f4xx_it.o
     0x08000aae   0x08000aae   0x00000016   Code   RO          273    .text.EXTI15_10_IRQHandler  stm32f4xx_it.o
     0x08000ac4   0x08000ac4   0x00000006   Code   RO          263    .text.EXTI1_IRQHandler  stm32f4xx_it.o
@@ -3858,68 +3856,67 @@ Memory Map of the image
     0x0800489c   0x0800489c   0x00000328   Code   RO          336    .text.PWM_Control   user_logic.o
     0x08004bc4   0x08004bc4   0x00000002   Code   RO          257    .text.PendSV_Handler  stm32f4xx_it.o
     0x08004bc6   0x08004bc6   0x00000002   PAD
-    0x08004bc8   0x08004bc8   0x000006d8   Code   RO          377    .text.Run_SNAKE     snake.o
-    0x080052a0   0x080052a0   0x00000060   Code   RO         1167    .text.SPI_EndRxTxTransaction  stm32f4xx_hal_spi.o
-    0x08005300   0x08005300   0x0000008c   Code   RO         1265    .text.SPI_WaitFlagStateUntilTimeout  stm32f4xx_hal_spi.o
-    0x0800538c   0x0800538c   0x00000002   Code   RO          253    .text.SVC_Handler   stm32f4xx_it.o
-    0x0800538e   0x0800538e   0x00000104   Code   RO          379    .text.Show_Head     snake.o
-    0x08005492   0x08005492   0x00000004   Code   RO          259    .text.SysTick_Handler  stm32f4xx_it.o
-    0x08005496   0x08005496   0x00000090   Code   RO           66    .text.SystemClock_Config  main.o
-    0x08005526   0x08005526   0x00000058   Code   RO          292    .text.SystemInit    system_stm32f4xx.o
-    0x0800557e   0x0800557e   0x0000011e   Code   RO         1280    .text.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
-    0x0800569c   0x0800569c   0x00000060   Code   RO         1424    .text.TIM_OC1_SetConfig  stm32f4xx_hal_tim.o
-    0x080056fc   0x080056fc   0x00000068   Code   RO         1426    .text.TIM_OC2_SetConfig  stm32f4xx_hal_tim.o
-    0x08005764   0x08005764   0x00000068   Code   RO         1428    .text.TIM_OC3_SetConfig  stm32f4xx_hal_tim.o
-    0x080057cc   0x080057cc   0x00000050   Code   RO         1430    .text.TIM_OC4_SetConfig  stm32f4xx_hal_tim.o
-    0x0800581c   0x0800581c   0x000002be   Code   RO         1590    .text.UART_SetConfig  stm32f4xx_hal_uart.o
-    0x08005ada   0x08005ada   0x00000002   PAD
-    0x08005adc   0x08005adc   0x0000005e   Code   RO         1604    .text.UART_WaitOnFlagUntilTimeout  stm32f4xx_hal_uart.o
-    0x08005b3a   0x08005b3a   0x00000002   PAD
-    0x08005b3c   0x08005b3c   0x00000002   Code   RO          251    .text.UsageFault_Handler  stm32f4xx_it.o
-    0x08005b3e   0x08005b3e   0x00000002   PAD
-    0x08005b40   0x08005b40   0x00000058   Code   RO          308    .text.User_main     user_main.o
-    0x08005b98   0x08005b98   0x00000002   Code   RO          332    .text.delay_ms      user_logic.o
-    0x08005b9a   0x08005b9a   0x00000024   Code   RO          310    .text.fputc         user_main.o
-    0x08005bbe   0x08005bbe   0x00000002   PAD
-    0x08005bc0   0x08005bc0   0x00000042   Code   RO           64    .text.main          main.o
-    0x08005c02   0x08005c02   0x00000002   PAD
-    0x08005c04   0x08005c04   0x00000020   Code   RO         1940    i.__0printf         mc_w.l(printfa.o)
-    0x08005c24   0x08005c24   0x00000028   Code   RO         1942    i.__0sprintf        mc_w.l(printfa.o)
-    0x08005c4c   0x08005c4c   0x0000000e   Code   RO         2022    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08005c5a   0x08005c5a   0x00000002   Code   RO         2023    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08005c5c   0x08005c5c   0x0000000e   Code   RO         2024    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08005c6a   0x08005c6a   0x00000002   PAD
-    0x08005c6c   0x08005c6c   0x00000184   Code   RO         1947    i._fp_digits        mc_w.l(printfa.o)
-    0x08005df0   0x08005df0   0x000006dc   Code   RO         1948    i._printf_core      mc_w.l(printfa.o)
-    0x080064cc   0x080064cc   0x00000024   Code   RO         1949    i._printf_post_padding  mc_w.l(printfa.o)
-    0x080064f0   0x080064f0   0x0000002e   Code   RO         1950    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x0800651e   0x0800651e   0x0000000a   Code   RO         1952    i._sputc            mc_w.l(printfa.o)
-    0x08006528   0x08006528   0x00000024   Code   RO         1699    i.puts              mc_w.l(puts.o)
-    0x0800654c   0x0800654c   0x00000010   Data   RO          297    .rodata.AHBPrescTable  system_stm32f4xx.o
-    0x0800655c   0x0800655c   0x00000008   Data   RO          298    .rodata.APBPrescTable  system_stm32f4xx.o
-    0x08006564   0x08006564   0x000005f1   Data   RO           11    .rodata.asc16       font.o
-    0x08006b55   0x08006b55   0x000000ee   Data   RO           13    .rodata.hz16        font.o
-    0x08006c43   0x08006c43   0x0000004a   Data   RO           14    .rodata.hz24        font.o
-    0x08006c8d   0x08006c8d   0x0000004d   Data   RO          316    .rodata.str1.1      user_main.o
-    0x08006cda   0x08006cda   0x000000c2   Data   RO          365    .rodata.str1.1      user_logic.o
-    0x08006d9c   0x08006d9c   0x00000003   Data   RO          414    .rodata.str1.1      snake.o
-    0x08006d9f   0x08006d9f   0x00000781   Data   RO           12    .rodata.sz32        font.o
-    0x08007520   0x08007520   0x00000020   Data   RO         2021    Region$$Table       anon$$obj.o
+    0x08004bc8   0x08004bc8   0x000006d0   Code   RO          377    .text.Run_SNAKE     snake.o
+    0x08005298   0x08005298   0x00000060   Code   RO         1167    .text.SPI_EndRxTxTransaction  stm32f4xx_hal_spi.o
+    0x080052f8   0x080052f8   0x0000008c   Code   RO         1265    .text.SPI_WaitFlagStateUntilTimeout  stm32f4xx_hal_spi.o
+    0x08005384   0x08005384   0x00000002   Code   RO          253    .text.SVC_Handler   stm32f4xx_it.o
+    0x08005386   0x08005386   0x00000004   Code   RO          259    .text.SysTick_Handler  stm32f4xx_it.o
+    0x0800538a   0x0800538a   0x00000090   Code   RO           66    .text.SystemClock_Config  main.o
+    0x0800541a   0x0800541a   0x00000058   Code   RO          292    .text.SystemInit    system_stm32f4xx.o
+    0x08005472   0x08005472   0x0000011e   Code   RO         1280    .text.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
+    0x08005590   0x08005590   0x00000060   Code   RO         1424    .text.TIM_OC1_SetConfig  stm32f4xx_hal_tim.o
+    0x080055f0   0x080055f0   0x00000068   Code   RO         1426    .text.TIM_OC2_SetConfig  stm32f4xx_hal_tim.o
+    0x08005658   0x08005658   0x00000068   Code   RO         1428    .text.TIM_OC3_SetConfig  stm32f4xx_hal_tim.o
+    0x080056c0   0x080056c0   0x00000050   Code   RO         1430    .text.TIM_OC4_SetConfig  stm32f4xx_hal_tim.o
+    0x08005710   0x08005710   0x000002be   Code   RO         1590    .text.UART_SetConfig  stm32f4xx_hal_uart.o
+    0x080059ce   0x080059ce   0x00000002   PAD
+    0x080059d0   0x080059d0   0x0000005e   Code   RO         1604    .text.UART_WaitOnFlagUntilTimeout  stm32f4xx_hal_uart.o
+    0x08005a2e   0x08005a2e   0x00000002   PAD
+    0x08005a30   0x08005a30   0x00000002   Code   RO          251    .text.UsageFault_Handler  stm32f4xx_it.o
+    0x08005a32   0x08005a32   0x00000002   PAD
+    0x08005a34   0x08005a34   0x00000058   Code   RO          308    .text.User_main     user_main.o
+    0x08005a8c   0x08005a8c   0x00000002   Code   RO          332    .text.delay_ms      user_logic.o
+    0x08005a8e   0x08005a8e   0x00000024   Code   RO          310    .text.fputc         user_main.o
+    0x08005ab2   0x08005ab2   0x00000002   PAD
+    0x08005ab4   0x08005ab4   0x00000042   Code   RO           64    .text.main          main.o
+    0x08005af6   0x08005af6   0x00000002   PAD
+    0x08005af8   0x08005af8   0x00000020   Code   RO         1940    i.__0printf         mc_w.l(printfa.o)
+    0x08005b18   0x08005b18   0x00000028   Code   RO         1942    i.__0sprintf        mc_w.l(printfa.o)
+    0x08005b40   0x08005b40   0x0000000e   Code   RO         2022    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08005b4e   0x08005b4e   0x00000002   Code   RO         2023    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08005b50   0x08005b50   0x0000000e   Code   RO         2024    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08005b5e   0x08005b5e   0x00000002   PAD
+    0x08005b60   0x08005b60   0x00000184   Code   RO         1947    i._fp_digits        mc_w.l(printfa.o)
+    0x08005ce4   0x08005ce4   0x000006dc   Code   RO         1948    i._printf_core      mc_w.l(printfa.o)
+    0x080063c0   0x080063c0   0x00000024   Code   RO         1949    i._printf_post_padding  mc_w.l(printfa.o)
+    0x080063e4   0x080063e4   0x0000002e   Code   RO         1950    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x08006412   0x08006412   0x0000000a   Code   RO         1952    i._sputc            mc_w.l(printfa.o)
+    0x0800641c   0x0800641c   0x00000024   Code   RO         1699    i.puts              mc_w.l(puts.o)
+    0x08006440   0x08006440   0x00000010   Data   RO          297    .rodata.AHBPrescTable  system_stm32f4xx.o
+    0x08006450   0x08006450   0x00000008   Data   RO          298    .rodata.APBPrescTable  system_stm32f4xx.o
+    0x08006458   0x08006458   0x000005f1   Data   RO           11    .rodata.asc16       font.o
+    0x08006a49   0x08006a49   0x000000ee   Data   RO           13    .rodata.hz16        font.o
+    0x08006b37   0x08006b37   0x0000004a   Data   RO           14    .rodata.hz24        font.o
+    0x08006b81   0x08006b81   0x0000004d   Data   RO          316    .rodata.str1.1      user_main.o
+    0x08006bce   0x08006bce   0x000000c2   Data   RO          365    .rodata.str1.1      user_logic.o
+    0x08006c90   0x08006c90   0x00000003   Data   RO          414    .rodata.str1.1      snake.o
+    0x08006c93   0x08006c93   0x00000781   Data   RO           12    .rodata.sz32        font.o
+    0x08007414   0x08007414   0x00000020   Data   RO         2021    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08007540, Size: 0x00000e60, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08007438, Size: 0x00000a60, Max: 0x00020000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08007540   0x00000004   Data   RW         2000    .data               mc_w.l(stdout.o)
-    0x20000004   0x08007544   0x00000001   Data   RW           86    .data.Menu_Index    gpio.o
-    0x20000005   0x08007545   0x00000001   Data   RW           93    .data.PWMControl_Index  gpio.o
-    0x20000006   0x08007546   0x00000002   PAD
-    0x20000008   0x08007548   0x00000004   Data   RW          296    .data.SystemCoreClock  system_stm32f4xx.o
-    0x2000000c   0x0800754c   0x00000001   Data   RW          952    .data.uwTickFreq    stm32f4xx_hal.o
-    0x2000000d   0x0800754d   0x00000003   PAD
-    0x20000010   0x08007550   0x00000004   Data   RW          951    .data.uwTickPrio    stm32f4xx_hal.o
-    0x20000014   0x08007554   0x00000004   PAD
+    0x20000000   0x08007438   0x00000004   Data   RW         2000    .data               mc_w.l(stdout.o)
+    0x20000004   0x0800743c   0x00000001   Data   RW           86    .data.Menu_Index    gpio.o
+    0x20000005   0x0800743d   0x00000001   Data   RW           93    .data.PWMControl_Index  gpio.o
+    0x20000006   0x0800743e   0x00000002   PAD
+    0x20000008   0x08007440   0x00000004   Data   RW          296    .data.SystemCoreClock  system_stm32f4xx.o
+    0x2000000c   0x08007444   0x00000001   Data   RW          952    .data.uwTickFreq    stm32f4xx_hal.o
+    0x2000000d   0x08007445   0x00000003   PAD
+    0x20000010   0x08007448   0x00000004   Data   RW          951    .data.uwTickPrio    stm32f4xx_hal.o
+    0x20000014   0x0800744c   0x00000004   PAD
     0x20000018        -       0x00000001   Zero   RW          357    .bss.Airq_Pre       user_logic.o
     0x20000019        -       0x00000001   Zero   RW          402    .bss.Buzzer_Refresh_Flag  snake.o
     0x2000001a        -       0x00000001   Zero   RW          466    .bss.CRR            user_led.o
@@ -3932,73 +3929,69 @@ Memory Map of the image
     0x20000021        -       0x00000001   Zero   RW          467    .bss.CRR_Red        user_led.o
     0x20000022        -       0x00000001   Zero   RW          342    .bss.Environment_Flag  user_logic.o
     0x20000023        -       0x00000001   Zero   RW          343    .bss.Environment_Refresh_Flag  user_logic.o
-    0x20000024        -       0x00000100   Zero   RW          410    .bss.F_HeadX        snake.o
-    0x20000124        -       0x00000100   Zero   RW          411    .bss.F_HeadY        snake.o
-    0x20000224        -       0x00000003   Zero   RW          413    .bss.Food_R         snake.o
-    0x20000227        -       0x00000001   Zero   RW           87    .bss.Func_Flag      gpio.o
-    0x20000228        -       0x00000001   Zero   RW          398    .bss.Game1_Continue  snake.o
-    0x20000229        -       0x00000001   Zero   RW          395    .bss.Game1_Dead     snake.o
-    0x2000022a        -       0x00000001   Zero   RW          399    .bss.Game1_Dead_Refresh  snake.o
-    0x2000022b        -       0x00000001   Zero   RW           90    .bss.Game1_Down_Flag  gpio.o
-    0x2000022c        -       0x00000001   Zero   RW          391    .bss.Game1_Down_Status  snake.o
-    0x2000022d        -       0x00000001   Zero   RW          340    .bss.Game1_Flag     user_logic.o
-    0x2000022e        -       0x00000001   Zero   RW          394    .bss.Game1_InitFirst  snake.o
-    0x2000022f        -       0x00000001   Zero   RW           91    .bss.Game1_Left_Flag  gpio.o
-    0x20000230        -       0x00000001   Zero   RW          392    .bss.Game1_Left_Status  snake.o
-    0x20000231        -       0x00000001   Zero   RW          397    .bss.Game1_Pass     snake.o
-    0x20000232        -       0x00000001   Zero   RW          400    .bss.Game1_Pass_Refresh  snake.o
-    0x20000233        -       0x00000001   Zero   RW          389    .bss.Game1_Pre      snake.o
-    0x20000234        -       0x00000001   Zero   RW          341    .bss.Game1_Refresh  user_logic.o
-    0x20000235        -       0x00000001   Zero   RW          396    .bss.Game1_Restart  snake.o
-    0x20000236        -       0x00000001   Zero   RW           92    .bss.Game1_Right_Flag  gpio.o
-    0x20000237        -       0x00000001   Zero   RW          393    .bss.Game1_Right_Status  snake.o
-    0x20000238        -       0x00000001   Zero   RW           89    .bss.Game1_Up_Flag  gpio.o
-    0x20000239        -       0x00000001   Zero   RW          390    .bss.Game1_Up_Status  snake.o
-    0x2000023a        -       0x00000001   Zero   RW          465    .bss.LEDPWM_Refresh_Flag  user_led.o
-    0x2000023b        -       0x00000001   Zero   RW          401    .bss.LED_Refresh_Flag  snake.o
-    0x2000023c        -       0x00000001   Zero   RW          464    .bss.LED_Waterfall_Con  user_led.o
-    0x2000023d        -       0x00000100   Zero   RW          407    .bss.LEVEL          snake.o
-    0x2000033d        -       0x00000001   Zero   RW          356    .bss.Lumi_Pre       user_logic.o
-    0x2000033e        -       0x00000001   Zero   RW           85    .bss.Menu_Flag      gpio.o
-    0x2000033f        -       0x00000001   Zero   RW          339    .bss.Menu_Index_Refresh  user_logic.o
-    0x20000340        -       0x00000001   Zero   RW          338    .bss.Menu_Refresh   user_logic.o
-    0x20000341        -       0x00000001   Zero   RW          344    .bss.PWMControl_Flag  user_logic.o
-    0x20000342        -       0x00000001   Zero   RW          345    .bss.PWMControl_Refresh_Flag  user_logic.o
-    0x20000343        -       0x00000001   Zero   RW          351    .bss.PWM_CRRBLUE_Refresh  user_logic.o
-    0x20000344        -       0x00000001   Zero   RW          350    .bss.PWM_CRRGREEN_Refresh  user_logic.o
-    0x20000345        -       0x00000001   Zero   RW          349    .bss.PWM_CRRRED_Refresh  user_logic.o
-    0x20000346        -       0x00000001   Zero   RW          348    .bss.PWM_CRR_Refresh  user_logic.o
-    0x20000347        -       0x00000100   Zero   RW          406    .bss.SCORE          snake.o
-    0x20000447        -       0x00000001   Zero   RW          315    .bss.START_Refresh  user_main.o
-    0x20000448        -       0x00000100   Zero   RW          408    .bss.S_HeadX        snake.o
-    0x20000548        -       0x00000100   Zero   RW          409    .bss.S_HeadY        snake.o
-    0x20000648        -       0x00000001   Zero   RW          405    .bss.Snake_Color_B  snake.o
-    0x20000649        -       0x00000001   Zero   RW          404    .bss.Snake_Color_G  snake.o
-    0x2000064a        -       0x00000001   Zero   RW          403    .bss.Snake_Color_R  snake.o
-    0x2000064b        -       0x00000084   Zero   RW          412    .bss.Snake_R        snake.o
-    0x200006cf        -       0x00000100   Zero   RW          359    .bss.TEMP           user_logic.o
-    0x200007cf   0x08007554   0x00000001   PAD
-    0x200007d0        -       0x00000008   Zero   RW          489    .bss.TEMPERTURE     user_adc.o
-    0x200007d8        -       0x00000004   Zero   RW          483    .bss.adc1_Value     user_adc.o
-    0x200007dc        -       0x00000004   Zero   RW          485    .bss.adc2_Value     user_adc.o
-    0x200007e0        -       0x00000004   Zero   RW          487    .bss.adc3_Value     user_adc.o
-    0x200007e4   0x08007554   0x00000004   PAD
-    0x200007e8        -       0x00000008   Zero   RW          488    .bss.airquality     user_adc.o
-    0x200007f0        -       0x00000048   Zero   RW          113    .bss.hadc1          adc.o
-    0x20000838        -       0x00000048   Zero   RW          114    .bss.hadc2          adc.o
-    0x20000880        -       0x00000048   Zero   RW          115    .bss.hadc3          adc.o
-    0x200008c8        -       0x00000054   Zero   RW          131    .bss.hi2c1          i2c.o
-    0x2000091c        -       0x00000010   Zero   RW          147    .bss.hrng           rng.o
-    0x2000092c        -       0x00000058   Zero   RW          187    .bss.hspi1          spi.o
-    0x20000984        -       0x00000040   Zero   RW          216    .bss.htim2          tim.o
-    0x200009c4        -       0x00000040   Zero   RW          217    .bss.htim3          tim.o
-    0x20000a04        -       0x00000040   Zero   RW          233    .bss.huart1         usart.o
-    0x20000a44   0x08007554   0x00000004   PAD
-    0x20000a48        -       0x00000008   Zero   RW          484    .bss.luminance      user_adc.o
-    0x20000a50        -       0x00000008   Zero   RW          486    .bss.temperture     user_adc.o
-    0x20000a58        -       0x00000004   Zero   RW          953    .bss.uwTick         stm32f4xx_hal.o
-    0x20000a5c   0x08007554   0x00000004   PAD
-    0x20000a60        -       0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
+    0x20000024        -       0x00000003   Zero   RW          413    .bss.Food_R         snake.o
+    0x20000027        -       0x00000001   Zero   RW           87    .bss.Func_Flag      gpio.o
+    0x20000028        -       0x00000001   Zero   RW          398    .bss.Game1_Continue  snake.o
+    0x20000029        -       0x00000001   Zero   RW          395    .bss.Game1_Dead     snake.o
+    0x2000002a        -       0x00000001   Zero   RW          399    .bss.Game1_Dead_Refresh  snake.o
+    0x2000002b        -       0x00000001   Zero   RW           90    .bss.Game1_Down_Flag  gpio.o
+    0x2000002c        -       0x00000001   Zero   RW          391    .bss.Game1_Down_Status  snake.o
+    0x2000002d        -       0x00000001   Zero   RW          340    .bss.Game1_Flag     user_logic.o
+    0x2000002e        -       0x00000001   Zero   RW          394    .bss.Game1_InitFirst  snake.o
+    0x2000002f        -       0x00000001   Zero   RW           91    .bss.Game1_Left_Flag  gpio.o
+    0x20000030        -       0x00000001   Zero   RW          392    .bss.Game1_Left_Status  snake.o
+    0x20000031        -       0x00000001   Zero   RW          397    .bss.Game1_Pass     snake.o
+    0x20000032        -       0x00000001   Zero   RW          400    .bss.Game1_Pass_Refresh  snake.o
+    0x20000033        -       0x00000001   Zero   RW          389    .bss.Game1_Pre      snake.o
+    0x20000034        -       0x00000001   Zero   RW          341    .bss.Game1_Refresh  user_logic.o
+    0x20000035        -       0x00000001   Zero   RW          396    .bss.Game1_Restart  snake.o
+    0x20000036        -       0x00000001   Zero   RW           92    .bss.Game1_Right_Flag  gpio.o
+    0x20000037        -       0x00000001   Zero   RW          393    .bss.Game1_Right_Status  snake.o
+    0x20000038        -       0x00000001   Zero   RW           89    .bss.Game1_Up_Flag  gpio.o
+    0x20000039        -       0x00000001   Zero   RW          390    .bss.Game1_Up_Status  snake.o
+    0x2000003a        -       0x00000001   Zero   RW          465    .bss.LEDPWM_Refresh_Flag  user_led.o
+    0x2000003b        -       0x00000001   Zero   RW          401    .bss.LED_Refresh_Flag  snake.o
+    0x2000003c        -       0x00000001   Zero   RW          464    .bss.LED_Waterfall_Con  user_led.o
+    0x2000003d        -       0x00000100   Zero   RW          407    .bss.LEVEL          snake.o
+    0x2000013d        -       0x00000001   Zero   RW          356    .bss.Lumi_Pre       user_logic.o
+    0x2000013e        -       0x00000001   Zero   RW           85    .bss.Menu_Flag      gpio.o
+    0x2000013f        -       0x00000001   Zero   RW          339    .bss.Menu_Index_Refresh  user_logic.o
+    0x20000140        -       0x00000001   Zero   RW          338    .bss.Menu_Refresh   user_logic.o
+    0x20000141        -       0x00000001   Zero   RW          344    .bss.PWMControl_Flag  user_logic.o
+    0x20000142        -       0x00000001   Zero   RW          345    .bss.PWMControl_Refresh_Flag  user_logic.o
+    0x20000143        -       0x00000001   Zero   RW          351    .bss.PWM_CRRBLUE_Refresh  user_logic.o
+    0x20000144        -       0x00000001   Zero   RW          350    .bss.PWM_CRRGREEN_Refresh  user_logic.o
+    0x20000145        -       0x00000001   Zero   RW          349    .bss.PWM_CRRRED_Refresh  user_logic.o
+    0x20000146        -       0x00000001   Zero   RW          348    .bss.PWM_CRR_Refresh  user_logic.o
+    0x20000147        -       0x00000100   Zero   RW          406    .bss.SCORE          snake.o
+    0x20000247        -       0x00000001   Zero   RW          315    .bss.START_Refresh  user_main.o
+    0x20000248        -       0x00000001   Zero   RW          405    .bss.Snake_Color_B  snake.o
+    0x20000249        -       0x00000001   Zero   RW          404    .bss.Snake_Color_G  snake.o
+    0x2000024a        -       0x00000001   Zero   RW          403    .bss.Snake_Color_R  snake.o
+    0x2000024b        -       0x00000084   Zero   RW          412    .bss.Snake_R        snake.o
+    0x200002cf        -       0x00000100   Zero   RW          359    .bss.TEMP           user_logic.o
+    0x200003cf   0x0800744c   0x00000001   PAD
+    0x200003d0        -       0x00000008   Zero   RW          489    .bss.TEMPERTURE     user_adc.o
+    0x200003d8        -       0x00000004   Zero   RW          483    .bss.adc1_Value     user_adc.o
+    0x200003dc        -       0x00000004   Zero   RW          485    .bss.adc2_Value     user_adc.o
+    0x200003e0        -       0x00000004   Zero   RW          487    .bss.adc3_Value     user_adc.o
+    0x200003e4   0x0800744c   0x00000004   PAD
+    0x200003e8        -       0x00000008   Zero   RW          488    .bss.airquality     user_adc.o
+    0x200003f0        -       0x00000048   Zero   RW          113    .bss.hadc1          adc.o
+    0x20000438        -       0x00000048   Zero   RW          114    .bss.hadc2          adc.o
+    0x20000480        -       0x00000048   Zero   RW          115    .bss.hadc3          adc.o
+    0x200004c8        -       0x00000054   Zero   RW          131    .bss.hi2c1          i2c.o
+    0x2000051c        -       0x00000010   Zero   RW          147    .bss.hrng           rng.o
+    0x2000052c        -       0x00000058   Zero   RW          187    .bss.hspi1          spi.o
+    0x20000584        -       0x00000040   Zero   RW          216    .bss.htim2          tim.o
+    0x200005c4        -       0x00000040   Zero   RW          217    .bss.htim3          tim.o
+    0x20000604        -       0x00000040   Zero   RW          233    .bss.huart1         usart.o
+    0x20000644   0x0800744c   0x00000004   PAD
+    0x20000648        -       0x00000008   Zero   RW          484    .bss.luminance      user_adc.o
+    0x20000650        -       0x00000008   Zero   RW          486    .bss.temperture     user_adc.o
+    0x20000658        -       0x00000004   Zero   RW          953    .bss.uwTick         stm32f4xx_hal.o
+    0x2000065c   0x0800744c   0x00000004   PAD
+    0x20000660        -       0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
 
 
 ==============================================================================
@@ -4015,7 +4008,7 @@ Image component sizes
        180          0          0          0         84       5127   i2c.o
        212          0          0          0          0       2693   main.o
         90          0          0          0         16       2481   rng.o
-      2940        300          3          0       1688       4087   snake.o
+      2672        300          3          0        664       4076   snake.o
       1174          0          0          0         88       8053   spi.o
         36          8        392          0       1024        836   startup_stm32f407xx.o
        208          0          0          5          4       7147   stm32f4xx_hal.o
@@ -4041,7 +4034,7 @@ Image component sizes
        124          0         77          0          1       1397   user_main.o
 
     ----------------------------------------------------------------------
-     21460        724       4476         16       3660     242234   Object Totals
+     21192        724       4476         16       2636     242223   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         52          0          0          5         17          0   (incl. Padding)
 
@@ -4103,15 +4096,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     25540        842       4476         20       3660     243058   Grand Totals
-     25540        842       4476         20       3660     243058   ELF Image Totals
-     25540        842       4476         20          0          0   ROM Totals
+     25272        842       4476         20       2636     243047   Grand Totals
+     25272        842       4476         20       2636     243047   ELF Image Totals
+     25272        842       4476         20          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                30016 (  29.31kB)
-    Total RW  Size (RW Data + ZI Data)              3680 (   3.59kB)
-    Total ROM Size (Code + RO Data + RW Data)      30036 (  29.33kB)
+    Total RO  Size (Code + RO Data)                29748 (  29.05kB)
+    Total RW  Size (RW Data + ZI Data)              2656 (   2.59kB)
+    Total ROM Size (Code + RO Data + RW Data)      29768 (  29.07kB)
 
 ==============================================================================
 

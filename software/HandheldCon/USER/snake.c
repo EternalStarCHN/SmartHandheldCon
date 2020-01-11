@@ -90,7 +90,7 @@ void Run_SNAKE(void){
 		Game1_Left_Status = 1;
 	if(Game1_Right_Flag)
 		Game1_Right_Status = 1;
-	Show_Head();
+//	Show_Head();
 // 判蛇头是否撞到墙壁
 	
 	if(Snake_R.X[Snake_R.Long-1]<5||Snake_R.X[Snake_R.Long-1]>230||Snake_R.Y[Snake_R.Long-1]<5||Snake_R.Y[Snake_R.Long-1]>230){
